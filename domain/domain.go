@@ -5,15 +5,15 @@ import (
 	"sync/atomic"
 	"unsafe"
 
-	"github.com/karlsen-network/karlsend/domain/consensusreference"
+	"github.com/PYVERT/testfork/domain/consensusreference"
 
-	"github.com/karlsen-network/karlsend/domain/consensus"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/miningmanager"
-	"github.com/karlsen-network/karlsend/domain/miningmanager/mempool"
-	"github.com/karlsen-network/karlsend/domain/prefixmanager"
-	"github.com/karlsen-network/karlsend/domain/prefixmanager/prefix"
-	infrastructuredatabase "github.com/karlsen-network/karlsend/infrastructure/db/database"
+	"github.com/PYVERT/testfork/domain/consensus"
+	"github.com/PYVERT/testfork/domain/consensus/model/externalapi"
+	"github.com/PYVERT/testfork/domain/miningmanager"
+	"github.com/PYVERT/testfork/domain/miningmanager/mempool"
+	"github.com/PYVERT/testfork/domain/prefixmanager"
+	"github.com/PYVERT/testfork/domain/prefixmanager/prefix"
+	infrastructuredatabase "github.com/PYVERT/testfork/infrastructure/db/database"
 	"github.com/pkg/errors"
 )
 
