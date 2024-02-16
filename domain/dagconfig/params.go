@@ -211,8 +211,8 @@ var MainnetParams = Params{
 	K:           defaultGHOSTDAGK,
 	Name:        "testfork-mainnet",
 	Net:         appmessage.Mainnet,
-	RPCPort:     "42110",
-	DefaultPort: "42111",
+	RPCPort:     "51321",
+	DefaultPort: "51413 ",
 	DNSSeeds: []string{
 		// Team DNS seed
 	},
@@ -277,10 +277,10 @@ var MainnetParams = Params{
 // TestnetParams defines the network parameters for the test Kaspa network.
 var TestnetParams = Params{
 	K:           defaultGHOSTDAGK,
-	Name:        "karlsen-testnet-1",
+	Name:        "testfork-testnet-1",
 	Net:         appmessage.Testnet,
-	RPCPort:     "42210",
-	DefaultPort: "42211",
+	RPCPort:     "51321",
+	DefaultPort: "51413 ",
 	DNSSeeds: []string{
 		"testnet-1.karlsencoin.com",
 	},
@@ -347,10 +347,10 @@ var TestnetParams = Params{
 // just turn into another public testnet.
 var SimnetParams = Params{
 	K:           defaultGHOSTDAGK,
-	Name:        "karlsen-simnet",
+	Name:        "testfork-simnet",
 	Net:         appmessage.Simnet,
-	RPCPort:     "42510",
-	DefaultPort: "42511",
+	RPCPort:     "51321",
+	DefaultPort: "51413 ",
 	DNSSeeds:    []string{}, // NOTE: There must NOT be any seeds.
 
 	// DAG parameters
@@ -407,10 +407,10 @@ var SimnetParams = Params{
 // DevnetParams defines the network parameters for the development Kaspa network.
 var DevnetParams = Params{
 	K:           defaultGHOSTDAGK,
-	Name:        "karlsen-devnet",
+	Name:        "testfork-devnet",
 	Net:         appmessage.Devnet,
-	RPCPort:     "42610",
-	DefaultPort: "42611",
+	RPCPort:     "51321",
+	DefaultPort: "51413 ",
 	DNSSeeds:    []string{}, // NOTE: There must NOT be any seeds.
 
 	// DAG parameters
