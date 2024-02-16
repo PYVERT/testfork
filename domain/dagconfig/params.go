@@ -8,14 +8,14 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/PYVERT/testfork/domain/consensus/model/externalapi"
 
-	"github.com/karlsen-network/karlsend/app/appmessage"
-	"github.com/karlsen-network/karlsend/util/network"
+	"github.com/PYVERT/testfork/app/appmessage"
+	"github.com/PYVERT/testfork/util/network"
 
 	"github.com/pkg/errors"
 
-	"github.com/karlsen-network/karlsend/util"
+	"github.com/PYVERT/testfork/util"
 )
 
 // These variables are the DAG proof-of-work limit parameters for each default
