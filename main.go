@@ -8,7 +8,7 @@ import (
 	_ "net/http/pprof"
 	"os"
 
-	"github.com/karlsend/PYVERT/testfork/karlsend/app"
+	"github.com/PYVERT/testfork/app"
 )
 
 func main() {
