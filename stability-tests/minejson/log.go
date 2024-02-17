@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/karlsen-network/karlsend/infrastructure/logger"
-	"github.com/karlsen-network/karlsend/util/panics"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/logger"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util/panics"
 )
 
 var (
@@ -10,3 +10,4 @@ var (
 	log        = backendLog.Logger("MNJS")
 	spawn      = panics.GoroutineWrapperFunc(log)
 )
+

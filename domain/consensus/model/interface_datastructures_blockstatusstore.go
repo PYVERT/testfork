@@ -1,6 +1,6 @@
 package model
 
-import "github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+import "github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 
 // BlockStatusStore represents a store of BlockStatuses
 type BlockStatusStore interface {
@@ -10,3 +10,4 @@ type BlockStatusStore interface {
 	Get(dbContext DBReader, stagingArea *StagingArea, blockHash *externalapi.DomainHash) (externalapi.BlockStatus, error)
 	Exists(dbContext DBReader, stagingArea *StagingArea, blockHash *externalapi.DomainHash) (bool, error)
 }
+

@@ -7,8 +7,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/karlsen-network/karlsend/infrastructure/logger"
-	"github.com/karlsen-network/karlsend/stability-tests/common"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/logger"
+	"github.com/karlsend/PYVERT/testfork/karlsend/stability-tests/common"
 	"github.com/pkg/errors"
 )
 
@@ -78,3 +78,4 @@ func handleDataDirArg(args []string, dataDir string) ([]string, error) {
 	}
 	return append([]string{"--appdir", dataDir}, args...), nil
 }
+

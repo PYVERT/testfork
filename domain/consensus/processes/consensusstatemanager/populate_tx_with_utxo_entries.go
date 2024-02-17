@@ -1,10 +1,10 @@
 package consensusstatemanager
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/ruleerrors"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/consensushashing"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/ruleerrors"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/consensushashing"
 )
 
 // PopulateTransactionWithUTXOEntries populates the transaction UTXO entries with data from the virtual's UTXO set.
@@ -124,3 +124,4 @@ func (csm *consensusStateManager) populateTransactionWithUTXOEntriesFromUTXOSet(
 	}
 	return nil
 }
+

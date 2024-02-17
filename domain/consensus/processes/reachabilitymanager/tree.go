@@ -5,10 +5,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/reachabilitydata"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/reachabilitydata"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 
 	"github.com/pkg/errors"
 )
@@ -548,3 +548,4 @@ func (rt *reachabilityManager) getAllNodes(stagingArea *model.StagingArea, root 
 
 	return nodes, nil
 }
+

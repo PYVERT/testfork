@@ -3,9 +3,9 @@ package rpchandlers
 import (
 	"net"
 
-	"github.com/karlsen-network/karlsend/app/appmessage"
-	"github.com/karlsen-network/karlsend/app/rpc/rpccontext"
-	"github.com/karlsen-network/karlsend/infrastructure/network/netadapter/router"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/appmessage"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/rpc/rpccontext"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/network/netadapter/router"
 )
 
 // HandleBan handles the respectively named RPC command
@@ -39,3 +39,4 @@ func HandleBan(context *rpccontext.Context, _ *router.Router, request appmessage
 	response := appmessage.NewBanResponseMessage()
 	return response, nil
 }
+

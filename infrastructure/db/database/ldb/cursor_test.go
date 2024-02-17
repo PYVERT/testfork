@@ -7,7 +7,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/karlsen-network/karlsend/infrastructure/db/database"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/db/database"
 )
 
 func validateCurrentCursorKeyAndValue(t *testing.T, testName string, cursor database.Cursor,
@@ -257,3 +257,4 @@ func TestCursorCloseFirstAndNext(t *testing.T) {
 		cursor.Next()
 	}()
 }
+

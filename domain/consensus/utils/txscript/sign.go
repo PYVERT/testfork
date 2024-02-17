@@ -5,13 +5,13 @@
 package txscript
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/consensushashing"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/consensushashing"
 	"github.com/kaspanet/go-secp256k1"
 	"github.com/pkg/errors"
 
-	"github.com/karlsen-network/karlsend/domain/dagconfig"
-	"github.com/karlsen-network/karlsend/util"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/dagconfig"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util"
 )
 
 // RawTxInSignature returns the serialized Schnorr signature for the input idx of
@@ -259,3 +259,4 @@ func SignTxOutput(dagParams *dagconfig.Params, tx *externalapi.DomainTransaction
 	// Merge scripts. with any previous data, if any.
 	return mergeScripts(dagParams, tx, idx, class, sigScript, previousScript)
 }
+

@@ -5,21 +5,21 @@ import (
 	"encoding/hex"
 	"fmt"
 
-	"github.com/karlsen-network/karlsend/cmd/karlsenwallet/daemon/client"
-	"github.com/karlsen-network/karlsend/cmd/karlsenwallet/daemon/pb"
-	"github.com/karlsen-network/karlsend/cmd/karlsenwallet/libkaspawallet"
-	"github.com/karlsen-network/karlsend/cmd/karlsenwallet/libkaspawallet/serialization"
-	"github.com/karlsen-network/karlsend/cmd/karlsenwallet/utils"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/consensushashing"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/constants"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/subnetworks"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/txscript"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/utxo"
-	"github.com/karlsen-network/karlsend/domain/dagconfig"
-	"github.com/karlsen-network/karlsend/domain/miningmanager/mempool"
-	"github.com/karlsen-network/karlsend/util"
-	"github.com/karlsen-network/karlsend/util/txmass"
+	"github.com/karlsend/PYVERT/testfork/karlsend/cmd/karlsenwallet/daemon/client"
+	"github.com/karlsend/PYVERT/testfork/karlsend/cmd/karlsenwallet/daemon/pb"
+	"github.com/karlsend/PYVERT/testfork/karlsend/cmd/karlsenwallet/libkaspawallet"
+	"github.com/karlsend/PYVERT/testfork/karlsend/cmd/karlsenwallet/libkaspawallet/serialization"
+	"github.com/karlsend/PYVERT/testfork/karlsend/cmd/karlsenwallet/utils"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/consensushashing"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/constants"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/subnetworks"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/txscript"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/utxo"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/dagconfig"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/miningmanager/mempool"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util/txmass"
 	"github.com/kaspanet/go-secp256k1"
 	"github.com/pkg/errors"
 )
@@ -240,3 +240,4 @@ func signWithSchnorrPrivateKey(params *dagconfig.Params, privateKeyBytes []byte,
 
 	return serializedDomainTransactions, nil
 }
+

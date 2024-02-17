@@ -5,18 +5,18 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/karlsen-network/karlsend/app/appmessage"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/consensushashing"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/constants"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/subnetworks"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/transactionhelper"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/txscript"
-	utxopkg "github.com/karlsen-network/karlsend/domain/consensus/utils/utxo"
-	"github.com/karlsen-network/karlsend/domain/dagconfig"
-	"github.com/karlsen-network/karlsend/infrastructure/network/rpcclient"
-	"github.com/karlsen-network/karlsend/stability-tests/common/mine"
-	"github.com/karlsen-network/karlsend/util"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/appmessage"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/consensushashing"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/constants"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/subnetworks"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/transactionhelper"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/txscript"
+	utxopkg "github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/utxo"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/dagconfig"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/network/rpcclient"
+	"github.com/karlsend/PYVERT/testfork/karlsend/stability-tests/common/mine"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util"
 	"github.com/kaspanet/go-secp256k1"
 )
 
@@ -199,3 +199,4 @@ func buildPayToPayAddressScript(t *testing.T) *externalapi.ScriptPublicKey {
 	}
 	return script
 }
+

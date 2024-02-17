@@ -3,8 +3,8 @@ package ruleerrors
 import (
 	"fmt"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/consensushashing"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/consensushashing"
 	"github.com/pkg/errors"
 )
 
@@ -338,3 +338,4 @@ func NewErrInvalidTransactionsInNewBlock(invalidTransactions []InvalidTransactio
 		inner:   ErrInvalidTransactionsInNewBlock{invalidTransactions},
 	})
 }
+

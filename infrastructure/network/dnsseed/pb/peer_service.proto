@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option go_package = "github.com/karlsen-network/karlsend/pb";
+option go_package = "github.com/karlsend/PYVERT/testfork/karlsend/pb";
 
 service PeerService {
   rpc GetPeersList(GetPeersListRequest) returns (GetPeersListResponse) {}

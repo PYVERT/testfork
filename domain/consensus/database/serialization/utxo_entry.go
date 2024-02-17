@@ -3,8 +3,8 @@ package serialization
 import (
 	"math"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/utxo"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/utxo"
 	"github.com/pkg/errors"
 )
 
@@ -40,3 +40,4 @@ func DBUTXOEntryToUTXOEntry(dbUtxoEntry *DbUtxoEntry) (externalapi.UTXOEntry, er
 	}
 	return utxo.NewUTXOEntry(dbUtxoEntry.Amount, scriptPublicKey, dbUtxoEntry.IsCoinbase, dbUtxoEntry.BlockDaaScore), nil
 }
+

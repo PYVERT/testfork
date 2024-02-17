@@ -3,9 +3,9 @@ package addressexchange
 import (
 	"math/rand"
 
-	"github.com/karlsen-network/karlsend/app/appmessage"
-	"github.com/karlsen-network/karlsend/infrastructure/network/addressmanager"
-	"github.com/karlsen-network/karlsend/infrastructure/network/netadapter/router"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/appmessage"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/network/addressmanager"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/network/netadapter/router"
 )
 
 // SendAddressesContext is the interface for the context needed for the SendAddresses flow.
@@ -50,3 +50,4 @@ func shuffleAddresses(addresses []*appmessage.NetAddress) []*appmessage.NetAddre
 	shuffleAddresses = shuffleAddresses[:appmessage.MaxAddressesPerMsg]
 	return shuffleAddresses
 }
+

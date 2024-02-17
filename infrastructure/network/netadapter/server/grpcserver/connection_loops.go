@@ -8,13 +8,13 @@ import (
 	"time"
 
 	"github.com/davecgh/go-spew/spew"
-	"github.com/karlsen-network/karlsend/app/appmessage"
-	"github.com/karlsen-network/karlsend/infrastructure/logger"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/appmessage"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/logger"
 
-	routerpkg "github.com/karlsen-network/karlsend/infrastructure/network/netadapter/router"
+	routerpkg "github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/network/netadapter/router"
 	"github.com/pkg/errors"
 
-	"github.com/karlsen-network/karlsend/infrastructure/network/netadapter/server/grpcserver/protowire"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/network/netadapter/server/grpcserver/protowire"
 )
 
 func (c *gRPCConnection) connectionLoops() error {
@@ -125,3 +125,4 @@ func (c *gRPCConnection) receiveLoop() error {
 	}
 	return nil
 }
+

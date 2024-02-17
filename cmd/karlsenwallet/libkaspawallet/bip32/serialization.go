@@ -3,7 +3,7 @@ package bip32
 import (
 	"encoding/binary"
 
-	"github.com/karlsen-network/karlsend/cmd/karlsenwallet/libkaspawallet/bip32/base58"
+	"github.com/karlsend/PYVERT/testfork/karlsend/cmd/karlsenwallet/libkaspawallet/bip32/base58"
 	"github.com/kaspanet/go-secp256k1"
 	"github.com/pkg/errors"
 )
@@ -147,3 +147,4 @@ func (extKey *ExtendedKey) serialize() ([]byte, error) {
 	)
 	return serialized[:], nil
 }
+

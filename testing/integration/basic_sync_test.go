@@ -4,9 +4,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/consensushashing"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/consensushashing"
 
-	"github.com/karlsen-network/karlsend/app/appmessage"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/appmessage"
 )
 
 func TestIntegrationBasicSync(t *testing.T) {
@@ -63,3 +63,4 @@ func TestIntegrationBasicSync(t *testing.T) {
 		t.Errorf("Expected block with hash '%s', but got '%s'", blockHash, rpcBlockHash)
 	}
 }
+

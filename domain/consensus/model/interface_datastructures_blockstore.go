@@ -1,6 +1,6 @@
 package model
 
-import "github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+import "github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 
 // BlockStore represents a store of blocks
 type BlockStore interface {
@@ -14,3 +14,4 @@ type BlockStore interface {
 	Count(stagingArea *StagingArea) uint64
 	AllBlockHashesIterator(dbContext DBReader) (BlockIterator, error)
 }
+

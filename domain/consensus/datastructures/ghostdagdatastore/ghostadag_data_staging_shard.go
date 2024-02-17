@@ -1,8 +1,8 @@
 package ghostdagdatastore
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 )
 
 type key struct {
@@ -50,3 +50,4 @@ func (gdss *ghostdagDataStagingShard) Commit(dbTx model.DBTransaction) error {
 func (gdss *ghostdagDataStagingShard) isStaged() bool {
 	return len(gdss.toAdd) != 0
 }
+

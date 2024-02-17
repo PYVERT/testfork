@@ -4,9 +4,9 @@ import (
 	"encoding/binary"
 	"net"
 
-	"github.com/karlsen-network/karlsend/app/appmessage"
-	"github.com/karlsen-network/karlsend/infrastructure/db/database"
-	"github.com/karlsen-network/karlsend/util/mstime"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/appmessage"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/db/database"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util/mstime"
 	"github.com/pkg/errors"
 )
 
@@ -269,3 +269,4 @@ func (as *addressStore) deserializeAddress(serializedAddress []byte) *address {
 		connectionFailedCount: connectionFailedCount,
 	}
 }
+

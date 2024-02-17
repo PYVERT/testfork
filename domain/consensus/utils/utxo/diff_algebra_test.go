@@ -4,9 +4,9 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/transactionid"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/transactionid"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 )
 
 func (mud *mutableUTXODiff) equal(other *mutableUTXODiff) bool {
@@ -614,3 +614,4 @@ func TestUTXODiffRules(t *testing.T) {
 		}
 	}
 }
+

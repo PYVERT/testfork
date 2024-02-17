@@ -1,13 +1,13 @@
 package consensusstatemanager
 
 import (
-	"github.com/karlsen-network/karlsend/infrastructure/logger"
-	"github.com/karlsen-network/karlsend/util/math"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/logger"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util/math"
 	"github.com/pkg/errors"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/hashset"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/hashset"
 )
 
 func (csm *consensusStateManager) pickVirtualParents(stagingArea *model.StagingArea, tips []*externalapi.DomainHash) ([]*externalapi.DomainHash, error) {
@@ -353,3 +353,4 @@ func (csm *consensusStateManager) boundedMergeBreakingParents(stagingArea *model
 
 	return boundedMergeBreakingParents, nil
 }
+

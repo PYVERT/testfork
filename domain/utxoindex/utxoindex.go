@@ -3,10 +3,10 @@ package utxoindex
 import (
 	"sync"
 
-	"github.com/karlsen-network/karlsend/domain"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/infrastructure/db/database"
-	"github.com/karlsen-network/karlsend/infrastructure/logger"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/db/database"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/logger"
 )
 
 // UTXOIndex maintains an index between transaction scriptPublicKeys
@@ -208,3 +208,4 @@ func (ui *UTXOIndex) GetCirculatingSompiSupply() (uint64, error) {
 
 	return ui.store.getCirculatingSompiSupply()
 }
+

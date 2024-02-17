@@ -4,8 +4,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/utxo"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/utxo"
 )
 
 func initTestTransactionAcceptanceDataForClone() []*externalapi.TransactionAcceptanceData {
@@ -824,3 +824,4 @@ func TestAcceptanceData_Clone(t *testing.T) {
 		}
 	}
 }
+

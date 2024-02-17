@@ -6,8 +6,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 )
 
 type reachabilityDataStoreMock struct {
@@ -1036,3 +1036,4 @@ func TestReachabilityTreeNodeString(t *testing.T) {
 			"string. Want: %s, got: %s", expectedStr, str)
 	}
 }
+

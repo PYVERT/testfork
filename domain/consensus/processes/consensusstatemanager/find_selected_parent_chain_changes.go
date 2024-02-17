@@ -1,8 +1,8 @@
 package consensusstatemanager
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 )
 
 func (csm *consensusStateManager) GetVirtualSelectedParentChainFromBlock(stagingArea *model.StagingArea, blockHash *externalapi.DomainHash) (*externalapi.SelectedChainPath, error) {
@@ -19,3 +19,4 @@ func (csm *consensusStateManager) GetVirtualSelectedParentChainFromBlock(staging
 
 	return csm.dagTraversalManager.CalculateChainPath(stagingArea, blockHash, virtualSelectedParent)
 }
+

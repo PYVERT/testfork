@@ -5,7 +5,7 @@
 package appmessage
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 )
 
 // defaultTransactionAlloc is the default size used for the backing array
@@ -72,3 +72,4 @@ func NewMsgBlock(blockHeader *MsgBlockHeader) *MsgBlock {
 		Transactions: make([]*MsgTx, 0, defaultTransactionAlloc),
 	}
 }
+

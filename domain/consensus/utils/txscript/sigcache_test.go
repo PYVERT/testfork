@@ -146,3 +146,4 @@ func TestSigCacheAddMaxEntriesZeroOrNegative(t *testing.T) {
 			"been added", len(sigCache.validSigs))
 	}
 }
+

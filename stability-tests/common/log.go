@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/karlsen-network/karlsend/infrastructure/logger"
-	"github.com/karlsen-network/karlsend/stability-tests/common/mine"
-	"github.com/karlsen-network/karlsend/stability-tests/common/rpc"
-	"github.com/karlsen-network/karlsend/util/panics"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/logger"
+	"github.com/karlsend/PYVERT/testfork/karlsend/stability-tests/common/mine"
+	"github.com/karlsend/PYVERT/testfork/karlsend/stability-tests/common/rpc"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util/panics"
 )
 
 // log is a logger that is initialized with no output filters. This
@@ -70,3 +70,4 @@ func InitBackend(backendLog *logger.Backend, logFile, errLogFile string) {
 		os.Exit(1)
 	}
 }
+

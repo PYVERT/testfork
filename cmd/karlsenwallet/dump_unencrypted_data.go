@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/karlsen-network/karlsend/cmd/karlsenwallet/keys"
-	"github.com/karlsen-network/karlsend/cmd/karlsenwallet/libkaspawallet"
-	"github.com/karlsen-network/karlsend/cmd/karlsenwallet/utils"
+	"github.com/karlsend/PYVERT/testfork/karlsend/cmd/karlsenwallet/keys"
+	"github.com/karlsend/PYVERT/testfork/karlsend/cmd/karlsenwallet/libkaspawallet"
+	"github.com/karlsend/PYVERT/testfork/karlsend/cmd/karlsenwallet/utils"
 
 	"github.com/pkg/errors"
 )
@@ -75,3 +75,4 @@ func confirmDump() error {
 
 	return nil
 }
+

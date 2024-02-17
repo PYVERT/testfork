@@ -5,14 +5,14 @@ import (
 	"os"
 	"time"
 
-	"github.com/karlsen-network/karlsend/version"
+	"github.com/karlsend/PYVERT/testfork/karlsend/version"
 
-	"github.com/karlsen-network/karlsend/infrastructure/network/netadapter/server/grpcserver/protowire"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/network/netadapter/server/grpcserver/protowire"
 
 	"github.com/pkg/errors"
 	"google.golang.org/protobuf/encoding/protojson"
 
-	"github.com/karlsen-network/karlsend/infrastructure/network/rpcclient/grpcclient"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/network/rpcclient/grpcclient"
 )
 
 func main() {
@@ -117,3 +117,4 @@ func printErrorAndExit(message string) {
 	fmt.Fprintf(os.Stderr, fmt.Sprintf("%s\n", message))
 	os.Exit(1)
 }
+

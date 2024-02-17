@@ -4,9 +4,9 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/karlsen-network/karlsend/infrastructure/config"
-	"github.com/karlsen-network/karlsend/infrastructure/logger"
-	"github.com/karlsen-network/karlsend/stability-tests/common"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/config"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/logger"
+	"github.com/karlsend/PYVERT/testfork/karlsend/stability-tests/common"
 
 	"github.com/jessevdk/go-flags"
 )
@@ -58,3 +58,4 @@ func parseConfig() error {
 
 	return nil
 }
+

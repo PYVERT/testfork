@@ -4,9 +4,9 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/karlsen-network/karlsend/cmd/karlsenwallet/daemon/client"
-	"github.com/karlsen-network/karlsend/cmd/karlsenwallet/daemon/pb"
-	"github.com/karlsen-network/karlsend/cmd/karlsenwallet/utils"
+	"github.com/karlsend/PYVERT/testfork/karlsend/cmd/karlsenwallet/daemon/client"
+	"github.com/karlsend/PYVERT/testfork/karlsend/cmd/karlsenwallet/daemon/pb"
+	"github.com/karlsend/PYVERT/testfork/karlsend/cmd/karlsenwallet/utils"
 )
 
 func balance(conf *balanceConfig) error {
@@ -41,3 +41,4 @@ func balance(conf *balanceConfig) error {
 
 	return nil
 }
+

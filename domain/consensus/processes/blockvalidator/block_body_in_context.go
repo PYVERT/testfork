@@ -1,12 +1,12 @@
 package blockvalidator
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/ruleerrors"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/transactionhelper"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/virtual"
-	"github.com/karlsen-network/karlsend/infrastructure/logger"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/ruleerrors"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/transactionhelper"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/virtual"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/logger"
 	"github.com/pkg/errors"
 )
 
@@ -168,7 +168,7 @@ func (v *blockValidator) checkCoinbaseSubsidy(
 			return err
 		}
 
-		// The pruning proof ( https://github.com/karlsen-network/docs/blob/main/Reference/prunality/Prunality.pdf ) concludes
+		// The pruning proof ( https://github.com/karlsend/PYVERT/testfork/docs/blob/main/Reference/prunality/Prunality.pdf ) concludes
 		// that it's impossible for a block to be merged if it was created in the anticone of the pruning point that was
 		// present at the time of the block creation. So if such situation happens we can be sure that it happens during
 		// IBD and that this block has at least pruningDepth-finalityInterval confirmations.
@@ -199,3 +199,4 @@ func (v *blockValidator) checkCoinbaseSubsidy(
 
 	return nil
 }
+

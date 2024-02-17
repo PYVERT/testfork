@@ -1,8 +1,8 @@
 package rpcclient
 
 import (
-	"github.com/karlsen-network/karlsend/app/appmessage"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/appmessage"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 )
 
 func (c *RPCClient) submitBlock(block *externalapi.DomainBlock, allowNonDAABlocks bool) (appmessage.RejectReason, error) {
@@ -31,3 +31,4 @@ func (c *RPCClient) SubmitBlock(block *externalapi.DomainBlock) (appmessage.Reje
 func (c *RPCClient) SubmitBlockAlsoIfNonDAA(block *externalapi.DomainBlock) (appmessage.RejectReason, error) {
 	return c.submitBlock(block, true)
 }
+

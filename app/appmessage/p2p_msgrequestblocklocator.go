@@ -1,7 +1,7 @@
 package appmessage
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 )
 
 // MsgRequestBlockLocator implements the Message interface and represents a kaspa
@@ -29,3 +29,4 @@ func NewMsgRequestBlockLocator(highHash *externalapi.DomainHash, limit uint32) *
 		Limit:    limit,
 	}
 }
+

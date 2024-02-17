@@ -3,8 +3,8 @@ package serialization
 import (
 	"io"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/util/binaryserializer"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util/binaryserializer"
 	"github.com/pkg/errors"
 )
 
@@ -234,3 +234,4 @@ func ReadElements(r io.Reader, elements ...interface{}) error {
 func IsMalformedError(err error) bool {
 	return errors.Is(err, io.ErrUnexpectedEOF) || errors.Is(err, io.EOF) || errors.Is(err, errMalformed)
 }
+

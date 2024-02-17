@@ -1,13 +1,13 @@
 package blockrelay
 
 import (
-	"github.com/karlsen-network/karlsend/app/protocol/peer"
-	"github.com/karlsen-network/karlsend/app/protocol/protocolerrors"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/protocol/peer"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/protocol/protocolerrors"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 
-	"github.com/karlsen-network/karlsend/app/appmessage"
-	"github.com/karlsen-network/karlsend/domain"
-	"github.com/karlsen-network/karlsend/infrastructure/network/netadapter/router"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/appmessage"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/network/netadapter/router"
 )
 
 // This constant must be equal at both syncer and syncee. Therefore, never (!!) change this constant unless a new p2p
@@ -132,3 +132,4 @@ func receiveRequestHeaders(incomingRoute *router.Route) (lowHash *externalapi.Do
 
 	return msgRequestIBDBlocks.LowHash, msgRequestIBDBlocks.HighHash, nil
 }
+

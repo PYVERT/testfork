@@ -4,8 +4,8 @@ import (
 	"net"
 	"strconv"
 
-	"github.com/karlsen-network/karlsend/app/appmessage"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/appmessage"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 	"github.com/pkg/errors"
 )
 
@@ -29,3 +29,4 @@ func AddAddressByIP(am *AddressManager, addressIP string, subnetworkID *external
 	netAddress := appmessage.NewNetAddressIPPort(ip, uint16(port))
 	return am.AddAddresses(netAddress)
 }
+

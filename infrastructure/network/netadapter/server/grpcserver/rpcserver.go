@@ -1,9 +1,9 @@
 package grpcserver
 
 import (
-	"github.com/karlsen-network/karlsend/infrastructure/network/netadapter/server"
-	"github.com/karlsen-network/karlsend/infrastructure/network/netadapter/server/grpcserver/protowire"
-	"github.com/karlsen-network/karlsend/util/panics"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/network/netadapter/server"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/network/netadapter/server/grpcserver/protowire"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util/panics"
 )
 
 type rpcServer struct {
@@ -27,3 +27,4 @@ func (r *rpcServer) MessageStream(stream protowire.RPC_MessageStreamServer) erro
 
 	return r.handleInboundConnection(stream.Context(), stream)
 }
+

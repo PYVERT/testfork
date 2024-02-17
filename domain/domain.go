@@ -225,3 +225,4 @@ func New(consensusConfig *consensus.Config, mempoolConfig *mempool.Config, db in
 	domainInstance.miningManager = miningManagerFactory.NewMiningManager(consensusReference, &consensusConfig.Params, mempoolConfig)
 	return domainInstance, nil
 }
+

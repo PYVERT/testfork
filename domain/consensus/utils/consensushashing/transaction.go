@@ -3,12 +3,12 @@ package consensushashing
 import (
 	"io"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/serialization"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/serialization"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/hashes"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/transactionhelper"
-	"github.com/karlsen-network/karlsend/util/binaryserializer"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/hashes"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/transactionhelper"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util/binaryserializer"
 	"github.com/pkg/errors"
 )
 
@@ -188,3 +188,4 @@ func writeTxOut(w io.Writer, to *externalapi.DomainTransactionOutput) error {
 	}
 	return writeVarBytes(w, to.ScriptPublicKey.Script)
 }
+

@@ -8,11 +8,11 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/version"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/version"
 
-	"github.com/karlsen-network/karlsend/infrastructure/network/netadapter/id"
-	"github.com/karlsen-network/karlsend/util/mstime"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/network/netadapter/id"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util/mstime"
 )
 
 // MaxUserAgentLen is the maximum allowed length for the user agent field in a
@@ -123,3 +123,4 @@ func (msg *MsgVersion) AddUserAgent(name string, version string,
 	newUserAgent = fmt.Sprintf("%s%s/", msg.UserAgent, newUserAgent)
 	msg.UserAgent = newUserAgent
 }
+

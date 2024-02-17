@@ -5,7 +5,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 )
 
 func Benchmark_serializeUTXO(b *testing.B) {
@@ -68,3 +68,4 @@ func Test_serializeUTXO(t *testing.T) {
 		t.Fatalf("deserialized outpoint is not equal to the original")
 	}
 }
+

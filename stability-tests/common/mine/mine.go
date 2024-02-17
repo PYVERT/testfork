@@ -6,13 +6,13 @@ import (
 	"strings"
 	"time"
 
-	"github.com/karlsen-network/karlsend/app/appmessage"
-	"github.com/karlsen-network/karlsend/domain/consensus"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/testapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/consensushashing"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/mining"
-	"github.com/karlsen-network/karlsend/stability-tests/common/rpc"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/appmessage"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/testapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/consensushashing"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/mining"
+	"github.com/karlsend/PYVERT/testfork/karlsend/stability-tests/common/rpc"
 	"github.com/pkg/errors"
 )
 
@@ -156,3 +156,4 @@ var random = rand.New(rand.NewSource(time.Now().UnixNano()))
 func SolveBlock(block *externalapi.DomainBlock) {
 	mining.SolveBlock(block, random)
 }
+

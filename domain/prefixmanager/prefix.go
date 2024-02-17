@@ -1,8 +1,8 @@
 package prefixmanager
 
 import (
-	"github.com/karlsen-network/karlsend/domain/prefixmanager/prefix"
-	"github.com/karlsen-network/karlsend/infrastructure/db/database"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/prefixmanager/prefix"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/db/database"
 )
 
 var activePrefixKey = database.MakeBucket(nil).Key([]byte("active-prefix"))
@@ -110,3 +110,4 @@ func SetPrefixAsActive(dataAccessor database.DataAccessor, prefix *prefix.Prefix
 func SetPrefixAsInactive(dataAccessor database.DataAccessor, prefix *prefix.Prefix) error {
 	return dataAccessor.Put(inactivePrefixKey, prefix.Serialize())
 }
+

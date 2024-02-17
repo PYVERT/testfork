@@ -3,10 +3,10 @@ package consensusstatemanager
 import (
 	"sort"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/infrastructure/logger"
-	"github.com/karlsen-network/karlsend/util/staging"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/logger"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util/staging"
 	"github.com/pkg/errors"
 )
 
@@ -223,3 +223,4 @@ func (csm *consensusStateManager) ResolveVirtual(maxBlocksToResolve uint64) (*ex
 		VirtualParents:                    virtualParentsOutcome,
 	}, isCompletelyResolved, nil
 }
+

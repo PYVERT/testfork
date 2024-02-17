@@ -1,6 +1,6 @@
 package model
 
-import "github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+import "github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 
 // MergeDepthManager is used to validate mergeDepth for blocks
 type MergeDepthManager interface {
@@ -8,3 +8,4 @@ type MergeDepthManager interface {
 	NonBoundedMergeDepthViolatingBlues(stagingArea *StagingArea, blockHash, mergeDepthRoot *externalapi.DomainHash) ([]*externalapi.DomainHash, error)
 	VirtualMergeDepthRoot(stagingArea *StagingArea) (*externalapi.DomainHash, error)
 }
+

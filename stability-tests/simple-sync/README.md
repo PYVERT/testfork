@@ -8,3 +8,4 @@ stay synced while one of them mines a chain.
  3. `./run.sh`
 
 
+

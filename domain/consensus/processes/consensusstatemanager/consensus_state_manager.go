@@ -1,8 +1,8 @@
 package consensusstatemanager
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 )
 
 // consensusStateManager manages the node's consensus state
@@ -116,3 +116,4 @@ func New(
 
 	return csm, nil
 }
+

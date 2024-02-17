@@ -1,8 +1,8 @@
 package database
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model"
-	"github.com/karlsen-network/karlsend/infrastructure/db/database"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/db/database"
 )
 
 func dbKeyToDatabaseKey(key model.DBKey) *database.Key {
@@ -34,3 +34,4 @@ func (d dbKey) Suffix() []byte {
 func newDBKey(key *database.Key) model.DBKey {
 	return dbKey{key: key}
 }
+

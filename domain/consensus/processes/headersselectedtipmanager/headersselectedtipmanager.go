@@ -1,8 +1,8 @@
 package headersselectedtipmanager
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 )
 
 type headerTipsManager struct {
@@ -77,3 +77,4 @@ func (h *headerTipsManager) AddHeaderTip(stagingArea *model.StagingArea, hash *e
 
 	return nil
 }
+

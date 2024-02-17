@@ -1,8 +1,8 @@
 package blockstatusstore
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 )
 
 type blockStatusStagingShard struct {
@@ -38,3 +38,4 @@ func (bsss *blockStatusStagingShard) Commit(dbTx model.DBTransaction) error {
 func (bsss *blockStatusStagingShard) isStaged() bool {
 	return len(bsss.toAdd) != 0
 }
+

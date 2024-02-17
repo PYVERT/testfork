@@ -3,10 +3,10 @@ package mempool
 import (
 	"fmt"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/constants"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/constants"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/consensushashing"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/consensushashing"
 )
 
 func (mp *mempool) validateTransactionPreUTXOEntry(transaction *externalapi.DomainTransaction) error {
@@ -78,3 +78,4 @@ func (mp *mempool) validateTransactionInContext(transaction *externalapi.DomainT
 
 	return nil
 }
+

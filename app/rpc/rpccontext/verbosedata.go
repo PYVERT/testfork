@@ -5,17 +5,17 @@ import (
 	"math"
 	"math/big"
 
-	difficultyPackage "github.com/karlsen-network/karlsend/util/difficulty"
+	difficultyPackage "github.com/karlsend/PYVERT/testfork/karlsend/util/difficulty"
 	"github.com/pkg/errors"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/hashes"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/hashes"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/txscript"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/txscript"
 
-	"github.com/karlsen-network/karlsend/app/appmessage"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/consensushashing"
-	"github.com/karlsen-network/karlsend/domain/dagconfig"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/appmessage"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/consensushashing"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/dagconfig"
 )
 
 // ErrBuildBlockVerboseDataInvalidBlock indicates that a block that was given to BuildBlockVerboseData is invalid.
@@ -174,3 +174,4 @@ func (ctx *Context) populateTransactionOutputWithVerboseData(transactionOutput *
 	}
 	return nil
 }
+

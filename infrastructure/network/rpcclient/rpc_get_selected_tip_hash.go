@@ -1,6 +1,6 @@
 package rpcclient
 
-import "github.com/karlsen-network/karlsend/app/appmessage"
+import "github.com/karlsend/PYVERT/testfork/karlsend/app/appmessage"
 
 // GetSelectedTipHash sends an RPC request respective to the function's name and returns the RPC server's response
 func (c *RPCClient) GetSelectedTipHash() (*appmessage.GetSelectedTipHashResponseMessage, error) {
@@ -18,3 +18,4 @@ func (c *RPCClient) GetSelectedTipHash() (*appmessage.GetSelectedTipHashResponse
 	}
 	return getSelectedTipHashResponse, nil
 }
+

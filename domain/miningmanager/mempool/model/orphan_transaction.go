@@ -1,8 +1,8 @@
 package model
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/consensushashing"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/consensushashing"
 )
 
 // OrphanTransaction represents a transaction in the OrphanPool
@@ -44,3 +44,4 @@ func (ot *OrphanTransaction) IsHighPriority() bool {
 func (ot *OrphanTransaction) AddedAtDAAScore() uint64 {
 	return ot.addedAtDAAScore
 }
+

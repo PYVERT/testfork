@@ -1,8 +1,8 @@
 package database
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model"
-	"github.com/karlsen-network/karlsend/infrastructure/db/database"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/db/database"
 )
 
 type dbManager struct {
@@ -46,3 +46,4 @@ func (dbw *dbManager) Begin() (model.DBTransaction, error) {
 func New(db database.Database) model.DBManager {
 	return &dbManager{db: db}
 }
+

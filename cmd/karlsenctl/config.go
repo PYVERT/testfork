@@ -2,7 +2,7 @@ package main
 
 import (
 	"github.com/jessevdk/go-flags"
-	"github.com/karlsen-network/karlsend/infrastructure/config"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/config"
 	"github.com/pkg/errors"
 )
 
@@ -53,3 +53,4 @@ func parseConfig() (*configFlags, error) {
 
 	return cfg, nil
 }
+

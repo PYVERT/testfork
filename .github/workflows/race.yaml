@@ -47,3 +47,4 @@ jobs:
           git checkout "${{ env.run_on }}"
           git status
           go test -timeout 20m -race ./...
+

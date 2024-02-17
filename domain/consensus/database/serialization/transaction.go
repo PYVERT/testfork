@@ -3,7 +3,7 @@ package serialization
 import (
 	"math"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 	"github.com/pkg/errors"
 )
 
@@ -85,3 +85,4 @@ func DbTransactionToDomainTransaction(dbTransaction *DbTransaction) (*externalap
 		Payload:      dbTransaction.Payload,
 	}, nil
 }
+

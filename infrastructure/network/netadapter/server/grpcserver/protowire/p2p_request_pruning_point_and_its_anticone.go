@@ -1,7 +1,7 @@
 package protowire
 
 import (
-	"github.com/karlsen-network/karlsend/app/appmessage"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/appmessage"
 	"github.com/pkg/errors"
 )
 
@@ -15,3 +15,4 @@ func (x *KarlsendMessage_RequestPruningPointAndItsAnticone) toAppMessage() (appm
 func (x *KarlsendMessage_RequestPruningPointAndItsAnticone) fromAppMessage(_ *appmessage.MsgRequestPruningPointAndItsAnticone) error {
 	return nil
 }
+

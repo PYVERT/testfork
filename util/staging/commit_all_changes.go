@@ -3,8 +3,8 @@ package staging
 import (
 	"sync/atomic"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model"
-	"github.com/karlsen-network/karlsend/infrastructure/logger"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/logger"
 )
 
 // CommitAllChanges creates a transaction in `databaseContext`, and commits all changes in `stagingArea` through it.
@@ -31,3 +31,4 @@ var lastShardingID uint64
 func GenerateShardingID() model.StagingShardID {
 	return model.StagingShardID(atomic.AddUint64(&lastShardingID, 1))
 }
+

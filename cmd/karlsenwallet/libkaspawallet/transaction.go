@@ -1,13 +1,13 @@
 package libkaspawallet
 
 import (
-	"github.com/karlsen-network/karlsend/cmd/karlsenwallet/libkaspawallet/bip32"
-	"github.com/karlsen-network/karlsend/cmd/karlsenwallet/libkaspawallet/serialization"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/constants"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/subnetworks"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/txscript"
-	"github.com/karlsen-network/karlsend/util"
+	"github.com/karlsend/PYVERT/testfork/karlsend/cmd/karlsenwallet/libkaspawallet/bip32"
+	"github.com/karlsend/PYVERT/testfork/karlsend/cmd/karlsenwallet/libkaspawallet/serialization"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/constants"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/subnetworks"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/txscript"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util"
 	"github.com/pkg/errors"
 )
 
@@ -259,3 +259,4 @@ func partiallySignedInputMultisigRedeemScript(input *serialization.PartiallySign
 
 	return multiSigRedeemScript(extendedPublicKeys, input.MinimumSignatures, "m", ecdsa)
 }
+

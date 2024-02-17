@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/karlsen-network/karlsend/infrastructure/logger"
-	"github.com/karlsen-network/karlsend/util/panics"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/logger"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util/panics"
 )
 
 var (
@@ -38,3 +38,4 @@ func initLog(logFile, errLogFile string) {
 	}
 
 }
+

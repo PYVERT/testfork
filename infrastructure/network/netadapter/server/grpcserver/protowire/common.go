@@ -3,12 +3,12 @@ package protowire
 import (
 	"math"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/subnetworks"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/transactionid"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/subnetworks"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/transactionid"
 
-	"github.com/karlsen-network/karlsend/app/appmessage"
-	"github.com/karlsen-network/karlsend/util/mstime"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/appmessage"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util/mstime"
 	"github.com/pkg/errors"
 )
 
@@ -160,3 +160,4 @@ func (x *ScriptPublicKey) toAppMessage() (*externalapi.ScriptPublicKey, error) {
 		Version: uint16(x.Version),
 	}, nil
 }
+

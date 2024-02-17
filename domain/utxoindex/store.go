@@ -3,10 +3,10 @@ package utxoindex
 import (
 	"encoding/binary"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/database/binaryserialization"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/infrastructure/db/database"
-	"github.com/karlsen-network/karlsend/infrastructure/logger"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/database/binaryserialization"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/db/database"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/logger"
 	"github.com/pkg/errors"
 )
 
@@ -431,3 +431,4 @@ func (uis *utxoIndexStore) getCirculatingSompiSupply() (uint64, error) {
 	}
 	return binaryserialization.DeserializeUint64(circulatingSupply)
 }
+

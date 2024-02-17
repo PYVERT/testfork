@@ -5,13 +5,13 @@ import (
 	"sort"
 	"testing"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model"
 
-	"github.com/karlsen-network/karlsend/domain/consensus"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/hashset"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/testutils"
-	"github.com/karlsen-network/karlsend/domain/dagconfig"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/hashset"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/testutils"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/dagconfig"
 	"github.com/pkg/errors"
 )
 
@@ -366,3 +366,4 @@ func checkWindowIDs(window []*externalapi.DomainHash, expectedIDs []string, idBy
 	}
 	return nil
 }
+

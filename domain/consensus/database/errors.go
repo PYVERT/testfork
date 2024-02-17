@@ -1,7 +1,7 @@
 package database
 
 import (
-	"github.com/karlsen-network/karlsend/infrastructure/db/database"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/db/database"
 )
 
 // ErrNotFound denotes that the requested item was not
@@ -12,3 +12,4 @@ var ErrNotFound = database.ErrNotFound
 func IsNotFoundError(err error) bool {
 	return database.IsNotFoundError(err)
 }
+

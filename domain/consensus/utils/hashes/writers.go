@@ -3,7 +3,7 @@ package hashes
 import (
 	"hash"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 	"github.com/pkg/errors"
 	"golang.org/x/crypto/sha3"
 	"lukechampine.com/blake3"
@@ -86,3 +86,4 @@ func (h *Blake3HashWriter) Finalize() *externalapi.DomainHash {
 	h.Hasher = nil // prevent double reading as it will return a different hash
 	return externalapi.NewDomainHashFromByteArray(&sum)
 }
+

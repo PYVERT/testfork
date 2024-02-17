@@ -1,13 +1,13 @@
 package libkaspawallet
 
 import (
-	"github.com/karlsen-network/karlsend/cmd/karlsenwallet/libkaspawallet/bip32"
-	"github.com/karlsen-network/karlsend/cmd/karlsenwallet/libkaspawallet/serialization"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/consensushashing"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/txscript"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/utxo"
-	"github.com/karlsen-network/karlsend/domain/dagconfig"
+	"github.com/karlsend/PYVERT/testfork/karlsend/cmd/karlsenwallet/libkaspawallet/bip32"
+	"github.com/karlsend/PYVERT/testfork/karlsend/cmd/karlsenwallet/libkaspawallet/serialization"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/consensushashing"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/txscript"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/utxo"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/dagconfig"
 	"github.com/pkg/errors"
 )
 
@@ -97,3 +97,4 @@ func sign(params *dagconfig.Params, mnemonic string, partiallySignedTransaction 
 
 	return nil
 }
+

@@ -1,8 +1,8 @@
 package model
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/ruleerrors"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/ruleerrors"
 )
 
 // Mempool maintains a set of known transactions that
@@ -41,3 +41,4 @@ type Mempool interface {
 	RevalidateHighPriorityTransactions() (validTransactions []*externalapi.DomainTransaction, err error)
 	IsTransactionOutputDust(output *externalapi.DomainTransactionOutput) bool
 }
+

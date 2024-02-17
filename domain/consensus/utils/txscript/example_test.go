@@ -8,11 +8,11 @@ import (
 	"encoding/hex"
 	"fmt"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/txscript"
-	"github.com/karlsen-network/karlsend/domain/dagconfig"
-	"github.com/karlsen-network/karlsend/util"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/txscript"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/dagconfig"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util"
 )
 
 // This example demonstrates creating a script which pays to a karlsen address.
@@ -78,3 +78,4 @@ func ExampleExtractScriptPubKeyAddress() {
 	// Script Class: pubkey
 	// Address: karlsen:qzy6cf82zzah2xh5jwtz8nx9u4gdj6zzke8gljs0v055ksmnl424us79fnlrm
 }
+

@@ -8,7 +8,7 @@ import (
 	_ "net/http/pprof"
 	"os"
 
-	"github.com/karlsen-network/karlsend/app"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app"
 )
 
 func main() {
@@ -16,3 +16,4 @@ func main() {
 		os.Exit(1)
 	}
 }
+

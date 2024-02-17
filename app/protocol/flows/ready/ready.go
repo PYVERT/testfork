@@ -3,12 +3,12 @@ package ready
 import (
 	"sync/atomic"
 
-	"github.com/karlsen-network/karlsend/app/appmessage"
-	"github.com/karlsen-network/karlsend/app/protocol/common"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/appmessage"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/protocol/common"
 
-	peerpkg "github.com/karlsen-network/karlsend/app/protocol/peer"
-	"github.com/karlsen-network/karlsend/app/protocol/protocolerrors"
-	routerpkg "github.com/karlsen-network/karlsend/infrastructure/network/netadapter/router"
+	peerpkg "github.com/karlsend/PYVERT/testfork/karlsend/app/protocol/peer"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/protocol/protocolerrors"
+	routerpkg "github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/network/netadapter/router"
 	"github.com/pkg/errors"
 )
 
@@ -55,3 +55,4 @@ func handleError(err error, flowName string, isStopping *uint32) error {
 	}
 	panic(err)
 }
+

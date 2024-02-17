@@ -1,6 +1,6 @@
 package model
 
-import "github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+import "github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 
 // BlockProcessor is responsible for processing incoming blocks
 type BlockProcessor interface {
@@ -8,3 +8,4 @@ type BlockProcessor interface {
 	ValidateAndInsertImportedPruningPoint(newPruningPoint *externalapi.DomainHash) error
 	ValidateAndInsertBlockWithTrustedData(block *externalapi.BlockWithTrustedData, validateUTXO bool) (*externalapi.VirtualChangeSet, externalapi.BlockStatus, error)
 }
+

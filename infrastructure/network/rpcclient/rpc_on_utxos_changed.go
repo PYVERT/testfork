@@ -1,8 +1,8 @@
 package rpcclient
 
 import (
-	"github.com/karlsen-network/karlsend/app/appmessage"
-	routerpkg "github.com/karlsen-network/karlsend/infrastructure/network/netadapter/router"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/appmessage"
+	routerpkg "github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/network/netadapter/router"
 	"github.com/pkg/errors"
 )
 
@@ -38,3 +38,4 @@ func (c *RPCClient) RegisterForUTXOsChangedNotifications(addresses []string,
 	})
 	return nil
 }
+

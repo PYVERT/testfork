@@ -4,13 +4,13 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/karlsen-network/karlsend/infrastructure/logger"
-	"github.com/karlsen-network/karlsend/util/math"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/logger"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util/math"
 
-	"github.com/karlsen-network/karlsend/util/difficulty"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util/difficulty"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 )
 
 // DifficultyManager provides a method to resolve the
@@ -211,3 +211,4 @@ func (dm *difficultyManager) calculateDaaScoreAndAddedBlocks(stagingArea *model.
 
 	return daaScore, daaAddedBlocks, nil
 }
+

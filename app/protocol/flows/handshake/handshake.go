@@ -3,18 +3,18 @@ package handshake
 import (
 	"sync/atomic"
 
-	"github.com/karlsen-network/karlsend/domain"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain"
 
-	"github.com/karlsen-network/karlsend/app/protocol/common"
-	"github.com/karlsen-network/karlsend/app/protocol/protocolerrors"
-	"github.com/karlsen-network/karlsend/infrastructure/network/addressmanager"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/protocol/common"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/protocol/protocolerrors"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/network/addressmanager"
 
-	"github.com/karlsen-network/karlsend/infrastructure/config"
-	"github.com/karlsen-network/karlsend/infrastructure/network/netadapter"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/config"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/network/netadapter"
 
-	"github.com/karlsen-network/karlsend/app/appmessage"
-	peerpkg "github.com/karlsen-network/karlsend/app/protocol/peer"
-	routerpkg "github.com/karlsen-network/karlsend/infrastructure/network/netadapter/router"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/appmessage"
+	peerpkg "github.com/karlsend/PYVERT/testfork/karlsend/app/protocol/peer"
+	routerpkg "github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/network/netadapter/router"
 	"github.com/pkg/errors"
 )
 
@@ -116,3 +116,4 @@ func handleError(err error, flowName string, isStopping *uint32, errChan chan er
 	}
 	panic(err)
 }
+

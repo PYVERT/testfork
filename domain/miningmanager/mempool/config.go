@@ -3,11 +3,11 @@ package mempool
 import (
 	"time"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/constants"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/constants"
 
-	"github.com/karlsen-network/karlsend/util"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util"
 
-	"github.com/karlsen-network/karlsend/domain/dagconfig"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/dagconfig"
 )
 
 const (
@@ -72,3 +72,4 @@ func DefaultConfig(dagParams *dagconfig.Params) *Config {
 		MaximumStandardTransactionVersion:     defaultMaximumStandardTransactionVersion,
 	}
 }
+

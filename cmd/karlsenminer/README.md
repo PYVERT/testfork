@@ -22,7 +22,7 @@ $ go version
 - Run the following commands to obtain and install karlsend including all dependencies:
 
 ```bash
-$ git clone https://github.com/karlsen-network/karlsend/
+$ git clone https://github.com/karlsend/PYVERT/testfork/karlsend/
 $ cd karlsend/cmd/karlsenminer
 $ go install .
 ```

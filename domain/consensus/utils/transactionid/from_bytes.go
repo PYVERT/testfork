@@ -1,7 +1,7 @@
 package transactionid
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 )
 
 // FromBytes creates a DomainTransactionID from the given byte slice
@@ -12,3 +12,4 @@ func FromBytes(transactionIDBytes []byte) (*externalapi.DomainTransactionID, err
 	}
 	return (*externalapi.DomainTransactionID)(hash), nil
 }
+

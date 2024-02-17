@@ -4,17 +4,17 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/karlsen-network/karlsend/app/appmessage"
-	"github.com/karlsen-network/karlsend/app/protocol/common"
-	peerpkg "github.com/karlsen-network/karlsend/app/protocol/peer"
-	"github.com/karlsen-network/karlsend/app/protocol/protocolerrors"
-	"github.com/karlsen-network/karlsend/domain"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/ruleerrors"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/consensushashing"
-	"github.com/karlsen-network/karlsend/infrastructure/config"
-	"github.com/karlsen-network/karlsend/infrastructure/logger"
-	"github.com/karlsen-network/karlsend/infrastructure/network/netadapter/router"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/appmessage"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/protocol/common"
+	peerpkg "github.com/karlsend/PYVERT/testfork/karlsend/app/protocol/peer"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/protocol/protocolerrors"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/ruleerrors"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/consensushashing"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/config"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/logger"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/network/netadapter/router"
 	"github.com/pkg/errors"
 )
 
@@ -750,3 +750,4 @@ func (flow *handleIBDFlow) resolveVirtual(estimatedVirtualDAAScoreTarget uint64)
 	log.Infof("Resolved virtual")
 	return nil
 }
+

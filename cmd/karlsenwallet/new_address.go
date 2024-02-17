@@ -4,8 +4,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/karlsen-network/karlsend/cmd/karlsenwallet/daemon/client"
-	"github.com/karlsen-network/karlsend/cmd/karlsenwallet/daemon/pb"
+	"github.com/karlsend/PYVERT/testfork/karlsend/cmd/karlsenwallet/daemon/client"
+	"github.com/karlsend/PYVERT/testfork/karlsend/cmd/karlsenwallet/daemon/pb"
 )
 
 func newAddress(conf *newAddressConfig) error {
@@ -26,3 +26,4 @@ func newAddress(conf *newAddressConfig) error {
 	fmt.Printf("New address:\n%s\n", response.Address)
 	return nil
 }
+

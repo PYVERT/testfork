@@ -7,10 +7,10 @@ package appmessage
 import (
 	"math/big"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/consensushashing"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/consensushashing"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/util/mstime"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util/mstime"
 )
 
 // BaseBlockHeaderPayload is the base number of bytes a block header can be,
@@ -100,3 +100,4 @@ func NewBlockHeader(version uint16, parents []externalapi.BlockLevelParents, has
 		PruningPoint:         pruningPoint,
 	}
 }
+

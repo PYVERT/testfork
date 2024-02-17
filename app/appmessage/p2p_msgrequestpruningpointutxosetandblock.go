@@ -1,7 +1,7 @@
 package appmessage
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 )
 
 // MsgRequestPruningPointUTXOSet represents a kaspa RequestPruningPointUTXOSet message
@@ -21,3 +21,4 @@ func NewMsgRequestPruningPointUTXOSet(pruningPointHash *externalapi.DomainHash) 
 		PruningPointHash: pruningPointHash,
 	}
 }
+

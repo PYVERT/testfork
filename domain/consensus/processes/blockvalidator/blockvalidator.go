@@ -4,11 +4,11 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/karlsen-network/karlsend/util/txmass"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util/txmass"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/util/difficulty"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util/difficulty"
 )
 
 // blockValidator exposes a set of validation classes, after which
@@ -133,3 +133,4 @@ func New(powMax *big.Int,
 		txMassCalculator: txMassCalculator,
 	}
 }
+

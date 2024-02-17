@@ -7,18 +7,18 @@ import (
 	"testing"
 	"time"
 
-	"github.com/karlsen-network/karlsend/domain/consensus"
-	"github.com/karlsen-network/karlsend/domain/consensus/model"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/ruleerrors"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/blockheader"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/consensushashing"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/constants"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/merkle"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/mining"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/pow"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/testutils"
-	"github.com/karlsen-network/karlsend/util/difficulty"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/ruleerrors"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/blockheader"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/consensushashing"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/constants"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/merkle"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/mining"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/pow"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/testutils"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util/difficulty"
 	"github.com/pkg/errors"
 )
 
@@ -365,3 +365,4 @@ func (dm *mocDifficultyManager) StageDAADataAndReturnRequiredDifficulty(stagingA
 func (dm *mocDifficultyManager) EstimateNetworkHashesPerSecond(startHash *externalapi.DomainHash, windowSize int) (uint64, error) {
 	return 0, nil
 }
+

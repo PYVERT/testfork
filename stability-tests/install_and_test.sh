@@ -31,3 +31,4 @@ go install -v ../...
 } || {
 	./run/run.sh
 }
+

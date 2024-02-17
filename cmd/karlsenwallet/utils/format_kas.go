@@ -7,7 +7,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/constants"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/constants"
 	"github.com/pkg/errors"
 )
 
@@ -66,3 +66,4 @@ func validateKASAmountFormat(amount string) error {
 
 	return nil
 }
+

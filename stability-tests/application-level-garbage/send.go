@@ -1,11 +1,11 @@
 package main
 
 import (
-	"github.com/karlsen-network/karlsend/app/appmessage"
-	"github.com/karlsen-network/karlsend/app/protocol/common"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/consensushashing"
-	"github.com/karlsen-network/karlsend/infrastructure/network/netadapter/standalone"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/appmessage"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/protocol/common"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/consensushashing"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/network/netadapter/standalone"
 	"github.com/pkg/errors"
 )
 
@@ -49,3 +49,4 @@ func sendBlocks(address string, minimalNetAdapter *standalone.MinimalNetAdapter,
 	}
 	return nil
 }
+

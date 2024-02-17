@@ -1,8 +1,8 @@
 package testapi
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 )
 
 // TestBlockBuilder adds to the main BlockBuilder methods required by tests
@@ -21,3 +21,4 @@ type TestBlockBuilder interface {
 
 	SetNonceCounter(nonceCounter uint64)
 }
+

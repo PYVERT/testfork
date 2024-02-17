@@ -3,9 +3,9 @@ package merkle
 import (
 	"math"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/consensushashing"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/hashes"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/consensushashing"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/hashes"
 )
 
 // nextPowerOfTwo returns the next highest power of two from a given number if
@@ -98,3 +98,4 @@ func merkleRoot(hashes []*externalapi.DomainHash) *externalapi.DomainHash {
 
 	return merkles[len(merkles)-1]
 }
+

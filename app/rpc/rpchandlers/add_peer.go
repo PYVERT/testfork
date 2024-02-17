@@ -1,10 +1,10 @@
 package rpchandlers
 
 import (
-	"github.com/karlsen-network/karlsend/app/appmessage"
-	"github.com/karlsen-network/karlsend/app/rpc/rpccontext"
-	"github.com/karlsen-network/karlsend/infrastructure/network/netadapter/router"
-	"github.com/karlsen-network/karlsend/util/network"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/appmessage"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/rpc/rpccontext"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/network/netadapter/router"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util/network"
 )
 
 // HandleAddPeer handles the respectively named RPC command
@@ -30,3 +30,4 @@ func HandleAddPeer(context *rpccontext.Context, _ *router.Router, request appmes
 	response := appmessage.NewAddPeerResponseMessage()
 	return response, nil
 }
+

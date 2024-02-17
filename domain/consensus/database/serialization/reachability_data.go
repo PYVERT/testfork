@@ -1,9 +1,9 @@
 package serialization
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/reachabilitydata"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/reachabilitydata"
 )
 
 // ReachablityDataToDBReachablityData converts ReachabilityData to DbReachabilityData
@@ -47,3 +47,4 @@ func DBReachablityDataToReachablityData(dbReachabilityData *DbReachabilityData) 
 
 	return reachabilitydata.New(children, parent, interval, futureCoveringSet), nil
 }
+

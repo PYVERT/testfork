@@ -4,8 +4,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 )
 
 func TestReachabilityData_Equal(t *testing.T) {
@@ -311,3 +311,4 @@ func TestReachabilityData_CloneWritable(t *testing.T) {
 		}
 	}
 }
+

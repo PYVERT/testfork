@@ -1,6 +1,6 @@
 package model
 
-import "github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+import "github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 
 // ReachabilityManager maintains a structure that allows to answer
 // reachability queries in sub-linear time
@@ -12,3 +12,4 @@ type ReachabilityManager interface {
 	UpdateReindexRoot(stagingArea *StagingArea, selectedTip *externalapi.DomainHash) error
 	FindNextAncestor(stagingArea *StagingArea, descendant, ancestor *externalapi.DomainHash) (*externalapi.DomainHash, error)
 }
+

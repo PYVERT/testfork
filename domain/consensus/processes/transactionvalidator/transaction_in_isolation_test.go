@@ -3,13 +3,13 @@ package transactionvalidator_test
 import (
 	"testing"
 
-	"github.com/karlsen-network/karlsend/domain/consensus"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/ruleerrors"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/constants"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/subnetworks"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/testutils"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/transactionhelper"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/ruleerrors"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/constants"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/subnetworks"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/testutils"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/transactionhelper"
 	"github.com/pkg/errors"
 )
 
@@ -158,3 +158,4 @@ func createTxForTest(numInputs uint32, numOutputs uint32, outputValue uint64, su
 
 	return transactionhelper.NewNativeTransaction(constants.MaxTransactionVersion, txIns, txOuts)
 }
+

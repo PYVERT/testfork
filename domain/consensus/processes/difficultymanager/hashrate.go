@@ -3,9 +3,9 @@ package difficultymanager
 import (
 	"math/big"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/infrastructure/logger"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/logger"
 	"github.com/pkg/errors"
 )
 
@@ -72,3 +72,4 @@ func (dm *difficultyManager) estimateNetworkHashesPerSecond(stagingArea *model.S
 	networkHashesPerSecondBigInt := new(big.Int).Div(nominator, denominator)
 	return networkHashesPerSecondBigInt.Uint64(), nil
 }
+

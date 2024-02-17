@@ -3,10 +3,10 @@ package main
 import (
 	"time"
 
-	"github.com/karlsen-network/karlsend/app/appmessage"
-	"github.com/karlsen-network/karlsend/stability-tests/common"
-	"github.com/karlsen-network/karlsend/stability-tests/common/rpc"
-	"github.com/karlsen-network/karlsend/util"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/appmessage"
+	"github.com/karlsend/PYVERT/testfork/karlsend/stability-tests/common"
+	"github.com/karlsend/PYVERT/testfork/karlsend/stability-tests/common/rpc"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util"
 	"github.com/kaspanet/go-secp256k1"
 	"github.com/pkg/errors"
 )
@@ -142,3 +142,4 @@ func mineBlock(syncerRPCAddress string, miningAddress util.Address) error {
 	}
 	return errors.Wrapf(karlsenminerCmd.Wait(), "error with command '%s'", karlsenminerCmd)
 }
+

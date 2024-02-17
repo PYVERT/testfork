@@ -23,3 +23,4 @@ if [ $TEST_EXIT_CODE -eq 0 ] && [ $KASPAD_EXIT_CODE -eq 0 ]; then
 fi
 echo "orphans test: FAILED"
 exit 1
+

@@ -27,3 +27,4 @@ systems and %LOCALAPPDATA%\karlsend\karlsend.conf on Windows. The -C (--configfi
 flag can be used to override this location.
 */
 package main
+

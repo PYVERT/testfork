@@ -5,9 +5,9 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/karlsen-network/karlsend/cmd/karlsenwallet/libkaspawallet/bip32"
-	"github.com/karlsen-network/karlsend/domain/dagconfig"
-	"github.com/karlsen-network/karlsend/util"
+	"github.com/karlsend/PYVERT/testfork/karlsend/cmd/karlsenwallet/libkaspawallet/bip32"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/dagconfig"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util"
 	"github.com/kaspanet/go-secp256k1"
 	"github.com/pkg/errors"
 )
@@ -167,3 +167,4 @@ func MinimumCosignerIndex(cosignerExtendedPublicKeys, allExtendedPublicKeys []st
 
 	return min, nil
 }
+

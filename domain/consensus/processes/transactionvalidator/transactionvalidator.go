@@ -1,10 +1,10 @@
 package transactionvalidator
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/txscript"
-	"github.com/karlsen-network/karlsend/util/txmass"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/txscript"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util/txmass"
 )
 
 const sigCacheSize = 10_000
@@ -53,3 +53,4 @@ func New(blockCoinbaseMaturity uint64,
 		txMassCalculator:                        txMassCalculator,
 	}
 }
+

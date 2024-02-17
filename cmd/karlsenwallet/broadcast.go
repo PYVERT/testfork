@@ -6,8 +6,8 @@ import (
 	"io/ioutil"
 	"strings"
 
-	"github.com/karlsen-network/karlsend/cmd/karlsenwallet/daemon/client"
-	"github.com/karlsen-network/karlsend/cmd/karlsenwallet/daemon/pb"
+	"github.com/karlsend/PYVERT/testfork/karlsend/cmd/karlsenwallet/daemon/client"
+	"github.com/karlsend/PYVERT/testfork/karlsend/cmd/karlsenwallet/daemon/pb"
 	"github.com/pkg/errors"
 )
 
@@ -54,3 +54,4 @@ func broadcast(conf *broadcastConfig) error {
 
 	return nil
 }
+

@@ -8,11 +8,11 @@ import (
 	"encoding/binary"
 	"strconv"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/consensushashing"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/consensushashing"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/subnetworks"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/subnetworks"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 )
 
 const (
@@ -317,3 +317,4 @@ func NewRegistryMsgTx(version uint16, txIn []*TxIn, txOut []*TxOut, gasLimit uin
 
 	return NewSubnetworkMsgTx(version, txIn, txOut, &subnetworks.SubnetworkIDRegistry, 0, payload)
 }
+

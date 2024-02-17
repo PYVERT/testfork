@@ -5,7 +5,7 @@
 package appmessage
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 )
 
 // MsgRequestHeaders implements the Message interface and represents a kaspa
@@ -32,3 +32,4 @@ func NewMsgRequstHeaders(lowHash, highHash *externalapi.DomainHash) *MsgRequestH
 		HighHash: highHash,
 	}
 }
+

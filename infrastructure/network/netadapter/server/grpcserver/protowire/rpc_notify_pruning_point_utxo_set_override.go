@@ -1,7 +1,7 @@
 package protowire
 
 import (
-	"github.com/karlsen-network/karlsend/app/appmessage"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/appmessage"
 	"github.com/pkg/errors"
 )
 
@@ -106,3 +106,4 @@ func (x *StopNotifyingPruningPointUTXOSetOverrideResponseMessage) toAppMessage()
 		Error: rpcErr,
 	}, nil
 }
+

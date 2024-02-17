@@ -1,8 +1,8 @@
 package rpcclient
 
 import (
-	"github.com/karlsen-network/karlsend/app/appmessage"
-	routerpkg "github.com/karlsen-network/karlsend/infrastructure/network/netadapter/router"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/appmessage"
+	routerpkg "github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/network/netadapter/router"
 )
 
 type rpcRouter struct {
@@ -30,3 +30,4 @@ func buildRPCRouter() (*rpcRouter, error) {
 func (r *rpcRouter) outgoingRoute() *routerpkg.Route {
 	return r.router.OutgoingRoute()
 }
+

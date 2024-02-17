@@ -7,10 +7,10 @@ package txscript
 import (
 	"fmt"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/consensushashing"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/constants"
-	"github.com/karlsen-network/karlsend/infrastructure/logger"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/consensushashing"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/constants"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/logger"
 )
 
 // ScriptFlags is a bitmask defining additional operations or tests that will be
@@ -513,3 +513,4 @@ func parseScriptAndVerifySize(script []byte) ([]parsedOpcode, error) {
 	}
 	return parseScript(script)
 }
+

@@ -1,8 +1,8 @@
 package reachabilitydata
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 )
 
 type reachabilityData struct {
@@ -110,3 +110,4 @@ func (rd *reachabilityData) Equal(other model.ReachabilityData) bool {
 
 	return true
 }
+

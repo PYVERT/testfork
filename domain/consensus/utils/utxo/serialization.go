@@ -4,9 +4,9 @@ import (
 	"bytes"
 	"io"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/serialization"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/transactionid"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/serialization"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/transactionid"
 	"github.com/pkg/errors"
 )
 
@@ -134,3 +134,4 @@ func deserializeUTXOEntry(r io.Reader) (externalapi.UTXOEntry, error) {
 
 	return NewUTXOEntry(amount, &scriptPubKey, isCoinbase, blockDAAScore), nil
 }
+

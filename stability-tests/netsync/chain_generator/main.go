@@ -5,8 +5,8 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/karlsen-network/karlsend/stability-tests/common"
-	"github.com/karlsen-network/karlsend/stability-tests/common/mine"
+	"github.com/karlsend/PYVERT/testfork/karlsend/stability-tests/common"
+	"github.com/karlsend/PYVERT/testfork/karlsend/stability-tests/common/mine"
 	"github.com/pkg/errors"
 )
 
@@ -55,3 +55,4 @@ func openFile(name string) (*os.File, error) {
 	f, err := os.Create(name)
 	return f, errors.WithStack(err)
 }
+

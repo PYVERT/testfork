@@ -9,17 +9,17 @@ import (
 	"math"
 	"testing"
 
-	"github.com/karlsen-network/karlsend/domain/consensusreference"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensusreference"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/testutils"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/testutils"
 
-	"github.com/karlsen-network/karlsend/domain/consensus"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/constants"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/constants"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/txscript"
-	"github.com/karlsen-network/karlsend/util"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/txscript"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util"
 	"github.com/pkg/errors"
 )
 
@@ -350,3 +350,4 @@ func TestCheckTransactionStandardInIsolation(t *testing.T) {
 		}
 	})
 }
+

@@ -9,15 +9,15 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/karlsen-network/karlsend/domain/consensus"
-	"github.com/karlsen-network/karlsend/domain/consensus/model"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/processes/ghostdag2"
-	"github.com/karlsen-network/karlsend/domain/consensus/processes/ghostdagmanager"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/blockheader"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/constants"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/testutils"
-	"github.com/karlsen-network/karlsend/util/difficulty"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/processes/ghostdag2"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/processes/ghostdagmanager"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/blockheader"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/constants"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/testutils"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util/difficulty"
 	"github.com/pkg/errors"
 )
 
@@ -458,3 +458,4 @@ func (b *blockHeadersStore) Delete(stagingArea *model.StagingArea, blockHash *ex
 func (b *blockHeadersStore) Count(*model.StagingArea) uint64 {
 	return uint64(len(b.dagMap))
 }
+

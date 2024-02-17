@@ -3,9 +3,9 @@ package mine
 import (
 	"path/filepath"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/infrastructure/db/database"
-	"github.com/karlsen-network/karlsend/infrastructure/db/database/ldb"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/db/database"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/db/database/ldb"
 )
 
 const leveldbCacheSizeMiB = 256
@@ -93,3 +93,4 @@ func newMiningDB(dataDir string) (*miningDB, error) {
 		db:            db,
 	}, nil
 }
+

@@ -11,13 +11,13 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/constants"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/constants"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/subnetworks"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/transactionid"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/subnetworks"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/transactionid"
 
 	"github.com/davecgh/go-spew/spew"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 )
 
 // TestTx tests the MsgTx API.
@@ -259,3 +259,4 @@ func TestTxHashAndID(t *testing.T) {
 		t.Errorf("tx2ID and newTx2Hash should not be the same even for transaction with an empty signature")
 	}
 }
+

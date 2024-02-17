@@ -7,12 +7,12 @@ package txscript
 import (
 	"fmt"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/constants"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/constants"
 	"github.com/pkg/errors"
 
-	"github.com/karlsen-network/karlsend/domain/dagconfig"
-	"github.com/karlsen-network/karlsend/util"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/dagconfig"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util"
 )
 
 // ScriptClass is an enumeration for the list of standard types of script.
@@ -441,3 +441,4 @@ func ExtractAtomicSwapDataPushes(version uint16, scriptPubKey []byte) (*AtomicSw
 	}
 	return pushes, nil
 }
+

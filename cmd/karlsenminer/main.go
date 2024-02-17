@@ -4,17 +4,17 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/karlsen-network/karlsend/util"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util"
 
-	"github.com/karlsen-network/karlsend/version"
+	"github.com/karlsend/PYVERT/testfork/karlsend/version"
 
 	"github.com/pkg/errors"
 
 	_ "net/http/pprof"
 
-	"github.com/karlsen-network/karlsend/infrastructure/os/signal"
-	"github.com/karlsen-network/karlsend/util/panics"
-	"github.com/karlsen-network/karlsend/util/profiling"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/os/signal"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util/panics"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util/profiling"
 )
 
 func main() {
@@ -65,3 +65,4 @@ func printErrorAndExit(err error) {
 	fmt.Fprintf(os.Stderr, "%+v\n", err)
 	os.Exit(1)
 }
+

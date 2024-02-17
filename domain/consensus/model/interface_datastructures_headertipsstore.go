@@ -1,6 +1,6 @@
 package model
 
-import "github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+import "github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 
 // HeaderSelectedTipStore represents a store of the headers selected tip
 type HeaderSelectedTipStore interface {
@@ -10,3 +10,4 @@ type HeaderSelectedTipStore interface {
 	HeadersSelectedTip(dbContext DBReader, stagingArea *StagingArea) (*externalapi.DomainHash, error)
 	Has(dbContext DBReader, stagingArea *StagingArea) (bool, error)
 }
+

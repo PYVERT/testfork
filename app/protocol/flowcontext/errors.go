@@ -5,9 +5,9 @@ import (
 	"strings"
 	"sync/atomic"
 
-	"github.com/karlsen-network/karlsend/infrastructure/network/netadapter/router"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/network/netadapter/router"
 
-	"github.com/karlsen-network/karlsend/app/protocol/protocolerrors"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/protocol/protocolerrors"
 )
 
 var (
@@ -47,3 +47,4 @@ func (*FlowContext) HandleError(err error, flowName string, isStopping *uint32, 
 func (*FlowContext) IsRecoverableError(err error) bool {
 	return err == nil || errors.Is(err, router.ErrRouteClosed) || errors.As(err, &protocolerrors.ProtocolError{})
 }
+

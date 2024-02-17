@@ -4,14 +4,14 @@ import (
 	"math/big"
 	"sync"
 
-	"github.com/karlsen-network/karlsend/util/mstime"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util/mstime"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/database"
-	"github.com/karlsen-network/karlsend/domain/consensus/model"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/ruleerrors"
-	"github.com/karlsen-network/karlsend/infrastructure/logger"
-	"github.com/karlsen-network/karlsend/util/staging"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/database"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/ruleerrors"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/logger"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util/staging"
 	"github.com/pkg/errors"
 )
 
@@ -1146,3 +1146,4 @@ func (s *consensus) isNearlySyncedNoLock() (bool, error) {
 		virtualSelectedParentHeader.TimeInMilliseconds())
 	return false, nil
 }
+

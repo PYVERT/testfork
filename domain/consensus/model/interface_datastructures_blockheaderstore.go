@@ -1,6 +1,6 @@
 package model
 
-import "github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+import "github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 
 // BlockHeaderStore represents a store of block headers
 type BlockHeaderStore interface {
@@ -13,3 +13,4 @@ type BlockHeaderStore interface {
 	Delete(stagingArea *StagingArea, blockHash *externalapi.DomainHash)
 	Count(stagingArea *StagingArea) uint64
 }
+

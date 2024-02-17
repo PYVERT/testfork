@@ -12,7 +12,7 @@ import (
 	"testing"
 	"unicode"
 
-	"github.com/karlsen-network/karlsend/util"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util"
 )
 
 // TestAppDataDir tests the API for AppDir to ensure it gives expected
@@ -131,3 +131,4 @@ func TestAppDataDir(t *testing.T) {
 		}
 	}
 }
+

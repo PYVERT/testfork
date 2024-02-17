@@ -3,10 +3,10 @@ package rpc
 import (
 	"time"
 
-	"github.com/karlsen-network/karlsend/app/appmessage"
-	"github.com/karlsen-network/karlsend/infrastructure/network/rpcclient"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/appmessage"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/network/rpcclient"
 
-	"github.com/karlsen-network/karlsend/domain/dagconfig"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/dagconfig"
 )
 
 const defaultRPCServer = "localhost"
@@ -59,3 +59,4 @@ func (c *Client) RegisterForBlockAddedNotifications() error {
 		c.OnBlockAdded <- struct{}{}
 	})
 }
+

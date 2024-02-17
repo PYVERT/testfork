@@ -1,10 +1,10 @@
 package consensusstatemanager
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/infrastructure/logger"
-	"github.com/karlsen-network/karlsend/util/staging"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/logger"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util/staging"
 )
 
 func (csm *consensusStateManager) ReverseUTXODiffs(tipHash *externalapi.DomainHash,
@@ -93,3 +93,4 @@ func (csm *consensusStateManager) commitUTXODiffInSeparateStagingArea(
 
 	return staging.CommitAllChanges(csm.databaseContext, stagingAreaForCurrentBlock)
 }
+

@@ -3,12 +3,12 @@ package standalone
 import (
 	"time"
 
-	"github.com/karlsen-network/karlsend/infrastructure/network/netadapter"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/network/netadapter"
 
 	"github.com/pkg/errors"
 
-	"github.com/karlsen-network/karlsend/app/appmessage"
-	"github.com/karlsen-network/karlsend/infrastructure/network/netadapter/router"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/appmessage"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/network/netadapter/router"
 )
 
 // Routes holds the incoming and outgoing routes of a connection created by MinimalNetAdapter
@@ -67,3 +67,4 @@ func (r *Routes) WaitForDisconnect(timeout time.Duration) error {
 func (r *Routes) Disconnect() {
 	r.netConnection.Disconnect()
 }
+

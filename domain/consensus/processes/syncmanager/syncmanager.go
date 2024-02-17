@@ -1,9 +1,9 @@
 package syncmanager
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/infrastructure/logger"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/logger"
 	"github.com/pkg/errors"
 )
 
@@ -116,3 +116,4 @@ func (sm *syncManager) GetSyncInfo(stagingArea *model.StagingArea) (*externalapi
 
 	return sm.syncInfo(stagingArea)
 }
+

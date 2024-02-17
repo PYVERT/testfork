@@ -1,6 +1,6 @@
 package model
 
-import "github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+import "github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 
 // PruningProofManager builds, validates and applies pruning proofs.
 type PruningProofManager interface {
@@ -8,3 +8,4 @@ type PruningProofManager interface {
 	ValidatePruningPointProof(pruningPointProof *externalapi.PruningPointProof) error
 	ApplyPruningPointProof(pruningPointProof *externalapi.PruningPointProof) error
 }
+

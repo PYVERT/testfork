@@ -1,9 +1,9 @@
 package daablocksstore
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/database/binaryserialization"
-	"github.com/karlsen-network/karlsend/domain/consensus/model"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/database/binaryserialization"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 )
 
 type daaBlocksStagingShard struct {
@@ -70,3 +70,4 @@ func (daass *daaBlocksStagingShard) isStaged() bool {
 		len(daass.daaScoreToDelete) != 0 ||
 		len(daass.daaAddedBlocksToDelete) != 0
 }
+

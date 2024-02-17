@@ -3,9 +3,9 @@ package templatemanager
 import (
 	"sync"
 
-	"github.com/karlsen-network/karlsend/app/appmessage"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/pow"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/appmessage"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/pow"
 )
 
 var currentTemplate *externalapi.DomainBlock
@@ -39,3 +39,4 @@ func Set(template *appmessage.GetBlockTemplateResponseMessage) error {
 	isSynced = template.IsSynced
 	return nil
 }
+

@@ -1,12 +1,12 @@
 # Karlsend
 
-[![Build Status](https://github.com/karlsen-network/karlsend/actions/workflows/tests.yaml/badge.svg)](https://github.com/karlsen-network/karlsend/actions/workflows/tests.yaml)
-[![Code Coverage](https://codecov.io/gh/karlsen-network/karlsend/graph/badge.svg)](https://codecov.io/gh/karlsen-network/karlsend)
-[![GitHub release](https://img.shields.io/github/v/release/karlsen-network/karlsend.svg)](https://github.com/karlsen-network/karlsend/releases)
-[![GitHub license](https://img.shields.io/github/license/karlsen-network/karlsend.svg)](https://github.com/karlsen-network/karlsend/blob/master/LICENSE)
-[![GitHub downloads](https://img.shields.io/github/downloads/karlsen-network/karlsend/total.svg)](https://github.com/karlsen-network/karlsend/releases)
+[![Build Status](https://github.com/karlsend/PYVERT/testfork/karlsend/actions/workflows/tests.yaml/badge.svg)](https://github.com/karlsend/PYVERT/testfork/karlsend/actions/workflows/tests.yaml)
+[![Code Coverage](https://codecov.io/gh/karlsend/PYVERT/testfork/karlsend/graph/badge.svg)](https://codecov.io/gh/karlsend/PYVERT/testfork/karlsend)
+[![GitHub release](https://img.shields.io/github/v/release/karlsend/PYVERT/testfork/karlsend.svg)](https://github.com/karlsend/PYVERT/testfork/karlsend/releases)
+[![GitHub license](https://img.shields.io/github/license/karlsend/PYVERT/testfork/karlsend.svg)](https://github.com/karlsend/PYVERT/testfork/karlsend/blob/master/LICENSE)
+[![GitHub downloads](https://img.shields.io/github/downloads/karlsend/PYVERT/testfork/karlsend/total.svg)](https://github.com/karlsend/PYVERT/testfork/karlsend/releases)
 [![Discord users](https://img.shields.io/discord/1169939685280337930.svg)](https://discord.gg/ZPZRvgMJDT)
-[![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)](http://godoc.org/github.com/karlsen-network/karlsend/)
+[![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)](http://godoc.org/github.com/karlsend/PYVERT/testfork/karlsend/)
 
 Karlsend is the reference full node Karlsen implementation written in
 Go (golang). It is a [blockDAG](https://en.wikipedia.org/wiki/Directed_acyclic_graph)
@@ -44,12 +44,12 @@ launched already our `testnet-1` with [FishHash](https://github.com/iron-fish/fi
 It is the worlds first implementation of FishHash with Golang in a
 1bps blockchain.
 
-`KarlsenHashv1` is currently used in [mainnet](https://github.com/karlsen-network/karlsend/releases/tag/v1.1.0)
+`KarlsenHashv1` is currently used in [mainnet](https://github.com/karlsend/PYVERT/testfork/karlsend/releases/tag/v1.1.0)
 and can be mined using the following miners maintained by the Karlsen
 developers:
 
 * Built-in CPU miner from `karlsend`
-* Karlsen [GPU miner](https://github.com/karlsen-network/karlsen-miner) as reference implementation of `kHeavyHash` with `blake3`.
+* Karlsen [GPU miner](https://github.com/karlsend/PYVERT/testfork/karlsen-miner) as reference implementation of `kHeavyHash` with `blake3`.
 
 The following third-party miners are available and have added
 `KarlsenHashv1`:
@@ -61,7 +61,7 @@ The following third-party miners are available and have added
 * [Rigel](https://github.com/rigelminer/rigel)
 * [GMiner](https://github.com/develsoftware/GMinerRelease)
 
-`KarlsenHashv2` is currently being investigated and tested in [testnet-1](https://github.com/karlsen-network/karlsend/releases/tag/v2.0.0-testnet-1-fishhash)
+`KarlsenHashv2` is currently being investigated and tested in [testnet-1](https://github.com/karlsend/PYVERT/testfork/karlsend/releases/tag/v2.0.0-testnet-1-fishhash)
 and can be mined using the following miners maintained by the Karlsen
 developers:
 
@@ -123,7 +123,7 @@ developers, users, and investors within the Cosmos ecosystem.
 ### Install from binaries
 
 Pre-compiled binaries for Linux `x86_64` and `aarch64`, Windows `x64`
-and macOS `x64` as universal binary can be downloaded at: [https://github.com/karlsen-network/karlsend/releases](https://github.com/karlsen-network/karlsend/releases)
+and macOS `x64` as universal binary can be downloaded at: [https://github.com/karlsend/PYVERT/testfork/karlsend/releases](https://github.com/karlsend/PYVERT/testfork/karlsend/releases)
 
 ### Build from Source
 
@@ -139,7 +139,7 @@ Run the following commands to obtain and install karlsend including
 all dependencies:
 
 ```bash
-git clone https://github.com/karlsen-network/karlsend
+git clone https://github.com/karlsend/PYVERT/testfork/karlsend
 cd karlsend
 go install . ./cmd/...
 ```
@@ -164,14 +164,15 @@ Join our discord server using the following link: [https://discord.gg/ZPZRvgMJDT
 
 ## Issue Tracker
 
-The [integrated github issue tracker](https://github.com/karlsen-network/karlsend/issues)
+The [integrated github issue tracker](https://github.com/karlsend/PYVERT/testfork/karlsend/issues)
 is used for this project.
 
 ## Documentation
 
-The [documentation](https://github.com/karlsen-network/docs) is a
+The [documentation](https://github.com/karlsend/PYVERT/testfork/docs) is a
 work-in-progress.
 
 ## License
 
 Karlsend is licensed under the copyfree [ISC License](https://choosealicense.com/licenses/isc/).
+

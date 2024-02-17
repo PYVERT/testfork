@@ -1,6 +1,6 @@
 package model
 
-import "github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+import "github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 
 // PruningManager resolves and manages the current pruning point
 type PruningManager interface {
@@ -16,3 +16,4 @@ type PruningManager interface {
 	ExpectedHeaderPruningPoint(stagingArea *StagingArea, blockHash *externalapi.DomainHash) (*externalapi.DomainHash, error)
 	TrustedBlockAssociatedGHOSTDAGDataBlockHashes(stagingArea *StagingArea, blockHash *externalapi.DomainHash) ([]*externalapi.DomainHash, error)
 }
+

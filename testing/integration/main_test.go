@@ -4,7 +4,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/karlsen-network/karlsend/infrastructure/logger"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/logger"
 )
 
 func TestMain(m *testing.M) {
@@ -13,3 +13,4 @@ func TestMain(m *testing.M) {
 
 	os.Exit(m.Run())
 }
+

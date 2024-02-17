@@ -5,9 +5,9 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/consensushashing"
-	"github.com/karlsen-network/karlsend/domain/miningmanager/mempool/model"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/consensushashing"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/miningmanager/mempool/model"
 )
 
 type transactionsPool struct {
@@ -250,3 +250,4 @@ func (tp *transactionsPool) getAllTransactions() []*externalapi.DomainTransactio
 func (tp *transactionsPool) transactionCount() int {
 	return len(tp.allTransactions)
 }
+

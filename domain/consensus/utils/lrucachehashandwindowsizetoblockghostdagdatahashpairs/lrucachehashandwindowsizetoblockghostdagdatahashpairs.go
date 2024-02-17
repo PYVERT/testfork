@@ -1,6 +1,6 @@
 package lrucachehashandwindowsizetoblockghostdagdatahashpairs
 
-import "github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+import "github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 
 type lruKey struct {
 	blockHash  externalapi.DomainHash
@@ -77,3 +77,4 @@ func (c *LRUCache) evictRandom() {
 	}
 	c.Remove(&keyToEvict.blockHash, keyToEvict.windowSize)
 }
+

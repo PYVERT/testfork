@@ -1,7 +1,7 @@
 package transactionvalidator
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 )
 
 // PopulateMass calculates and populates the mass of the given transaction
@@ -11,3 +11,4 @@ func (v *transactionValidator) PopulateMass(transaction *externalapi.DomainTrans
 	}
 	transaction.Mass = v.txMassCalculator.CalculateTransactionMass(transaction)
 }
+

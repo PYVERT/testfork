@@ -1,9 +1,10 @@
 package model
 
-import "github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+import "github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 
 // BlockBuilder is responsible for creating blocks from the current state
 type BlockBuilder interface {
 	BuildBlock(coinbaseData *externalapi.DomainCoinbaseData,
 		transactions []*externalapi.DomainTransaction) (block *externalapi.DomainBlock, coinbaseHasRedReward bool, err error)
 }
+

@@ -3,12 +3,12 @@ package rpchandlers
 import (
 	"encoding/json"
 
-	"github.com/karlsen-network/karlsend/app/appmessage"
-	"github.com/karlsen-network/karlsend/app/protocol/protocolerrors"
-	"github.com/karlsen-network/karlsend/app/rpc/rpccontext"
-	"github.com/karlsen-network/karlsend/domain/consensus/ruleerrors"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/consensushashing"
-	"github.com/karlsen-network/karlsend/infrastructure/network/netadapter/router"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/appmessage"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/protocol/protocolerrors"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/rpc/rpccontext"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/ruleerrors"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/consensushashing"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/network/netadapter/router"
 	"github.com/pkg/errors"
 )
 
@@ -82,3 +82,4 @@ func HandleSubmitBlock(context *rpccontext.Context, _ *router.Router, request ap
 	response := appmessage.NewSubmitBlockResponseMessage()
 	return response, nil
 }
+

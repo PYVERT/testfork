@@ -3,8 +3,8 @@ package coinbasemanager
 import (
 	"encoding/binary"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/ruleerrors"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/ruleerrors"
 	"github.com/pkg/errors"
 )
 
@@ -93,3 +93,4 @@ func (c *coinbaseManager) ExtractCoinbaseDataBlueScoreAndSubsidy(coinbaseTx *ext
 		ExtraData:       coinbaseTx.Payload[uint64Len+lengthOfSubsidy+lengthOfVersionScriptPubKey+lengthOfScriptPubKeyLength+scriptPubKeyScriptLength:],
 	}, subsidy, nil
 }
+

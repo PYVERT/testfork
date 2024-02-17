@@ -3,8 +3,8 @@ package testutils
 import (
 	"testing"
 
-	"github.com/karlsen-network/karlsend/domain/consensus"
-	"github.com/karlsen-network/karlsend/domain/dagconfig"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/dagconfig"
 )
 
 // ForAllNets runs the passed testFunc with all available networks
@@ -27,3 +27,4 @@ func ForAllNets(t *testing.T, skipPow bool, testFunc func(*testing.T, *consensus
 		})
 	}
 }
+

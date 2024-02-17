@@ -5,7 +5,7 @@
 package appmessage
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 )
 
 // MsgTransactionNotFound defines a kaspa TransactionNotFound message which is sent in response to
@@ -28,3 +28,4 @@ func NewMsgTransactionNotFound(id *externalapi.DomainTransactionID) *MsgTransact
 		ID: id,
 	}
 }
+

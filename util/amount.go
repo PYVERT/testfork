@@ -8,7 +8,7 @@ import (
 	"math"
 	"strconv"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/constants"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/constants"
 	"github.com/pkg/errors"
 )
 
@@ -123,3 +123,4 @@ func (a Amount) String() string {
 func (a Amount) MulF64(f float64) Amount {
 	return round(float64(a) * f)
 }
+

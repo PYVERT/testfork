@@ -3,10 +3,10 @@ package mempool
 import (
 	"fmt"
 
-	"github.com/karlsen-network/karlsend/infrastructure/logger"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/logger"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/consensushashing"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/consensushashing"
 )
 
 func (mp *mempool) validateAndInsertTransaction(transaction *externalapi.DomainTransaction, isHighPriority bool,
@@ -63,3 +63,4 @@ func (mp *mempool) validateAndInsertTransaction(transaction *externalapi.DomainT
 
 	return acceptedTransactions, nil
 }
+

@@ -4,12 +4,12 @@ import (
 	"context"
 	"time"
 
-	"github.com/karlsen-network/karlsend/app/appmessage"
-	"github.com/karlsen-network/karlsend/cmd/karlsenwallet/daemon/pb"
-	"github.com/karlsen-network/karlsend/cmd/karlsenwallet/libkaspawallet"
-	"github.com/karlsen-network/karlsend/cmd/karlsenwallet/libkaspawallet/serialization"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/infrastructure/network/rpcclient"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/appmessage"
+	"github.com/karlsend/PYVERT/testfork/karlsend/cmd/karlsenwallet/daemon/pb"
+	"github.com/karlsend/PYVERT/testfork/karlsend/cmd/karlsenwallet/libkaspawallet"
+	"github.com/karlsend/PYVERT/testfork/karlsend/cmd/karlsenwallet/libkaspawallet/serialization"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/network/rpcclient"
 	"github.com/pkg/errors"
 )
 
@@ -70,3 +70,4 @@ func sendTransaction(client *rpcclient.RPCClient, tx *externalapi.DomainTransact
 	}
 	return submitTransactionResponse.TransactionID, nil
 }
+

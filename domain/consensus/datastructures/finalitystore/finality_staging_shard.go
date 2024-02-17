@@ -1,8 +1,8 @@
 package finalitystore
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 )
 
 type finalityStagingShard struct {
@@ -34,3 +34,4 @@ func (fss *finalityStagingShard) Commit(dbTx model.DBTransaction) error {
 func (fss *finalityStagingShard) isStaged() bool {
 	return len(fss.toAdd) == 0
 }
+

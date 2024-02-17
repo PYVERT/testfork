@@ -28,3 +28,4 @@ go build -v -o karlsend .
 } || {
 	go test -timeout 20m -v ./...
 }
+

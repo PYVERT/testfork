@@ -4,18 +4,18 @@ import (
 	"math"
 	"sort"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/processes/coinbasemanager"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/merkle"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/transactionhelper"
-	"github.com/karlsen-network/karlsend/domain/consensusreference"
-	"github.com/karlsen-network/karlsend/util/mstime"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/processes/coinbasemanager"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/merkle"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/transactionhelper"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensusreference"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util/mstime"
 
-	"github.com/karlsen-network/karlsend/util/difficulty"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util/difficulty"
 
-	consensusexternalapi "github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/ruleerrors"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/subnetworks"
-	miningmanagerapi "github.com/karlsen-network/karlsend/domain/miningmanager/model"
+	consensusexternalapi "github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/ruleerrors"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/subnetworks"
+	miningmanagerapi "github.com/karlsend/PYVERT/testfork/karlsend/domain/miningmanager/model"
 	"github.com/pkg/errors"
 )
 
@@ -152,7 +152,7 @@ func (btb *blockTemplateBuilder) BuildBlockTemplate(
 		if err != nil {
 			// mempool.RemoveInvalidTransactions might return errors in situations that are perfectly fine in this context.
 			// TODO: Once the mempool invariants are clear, this should be converted back `return nil, err`:
-			// https://github.com/karlsen-network/karlsend/issues/1553
+			// https://github.com/karlsend/PYVERT/testfork/karlsend/issues/1553
 			log.Criticalf("Error from mempool.RemoveInvalidTransactions: %+v", err)
 		}
 		// We can call this recursively without worry because this should almost never happen
@@ -217,3 +217,4 @@ func (btb *blockTemplateBuilder) calcTxValue(tx *consensusexternalapi.DomainTran
 	gasLimit := uint64(math.MaxUint64)
 	return float64(fee) / (float64(mass)/float64(massLimit) + float64(tx.Gas)/float64(gasLimit))
 }
+

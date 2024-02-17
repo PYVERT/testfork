@@ -3,7 +3,7 @@ package integration
 import (
 	"testing"
 
-	"github.com/karlsen-network/karlsend/app/appmessage"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/appmessage"
 )
 
 func TestVirtualSelectedParentBlueScoreAndVirtualDAAScore(t *testing.T) {
@@ -76,3 +76,4 @@ func TestVirtualSelectedParentBlueScoreAndVirtualDAAScore(t *testing.T) {
 			blockAmountToMine, response.BlueScore)
 	}
 }
+

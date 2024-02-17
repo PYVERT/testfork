@@ -3,9 +3,9 @@ package serialization
 import (
 	"math"
 
-	"github.com/karlsen-network/karlsend/cmd/karlsenwallet/libkaspawallet/serialization/protoserialization"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/subnetworks"
+	"github.com/karlsend/PYVERT/testfork/karlsend/cmd/karlsenwallet/libkaspawallet/serialization/protoserialization"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/subnetworks"
 	"github.com/pkg/errors"
 	"google.golang.org/protobuf/proto"
 )
@@ -332,3 +332,4 @@ func scriptPublicKeyToProto(scriptPublicKey *externalapi.ScriptPublicKey) *proto
 		Version: uint32(scriptPublicKey.Version),
 	}
 }
+

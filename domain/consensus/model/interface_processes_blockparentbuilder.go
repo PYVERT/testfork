@@ -1,6 +1,6 @@
 package model
 
-import "github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+import "github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 
 // BlockParentBuilder exposes a method to build super-block parents for
 // a given set of direct parents
@@ -9,3 +9,4 @@ type BlockParentBuilder interface {
 		daaScore uint64,
 		directParentHashes []*externalapi.DomainHash) ([]externalapi.BlockLevelParents, error)
 }
+

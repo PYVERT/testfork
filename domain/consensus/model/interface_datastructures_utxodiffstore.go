@@ -1,6 +1,6 @@
 package model
 
-import "github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+import "github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 
 // UTXODiffStore represents a store of UTXODiffs
 type UTXODiffStore interface {
@@ -12,3 +12,4 @@ type UTXODiffStore interface {
 	HasUTXODiffChild(dbContext DBReader, stagingArea *StagingArea, blockHash *externalapi.DomainHash) (bool, error)
 	Delete(stagingArea *StagingArea, blockHash *externalapi.DomainHash)
 }
+

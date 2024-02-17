@@ -11,3 +11,4 @@ if [ $TEST_EXIT_CODE -eq 0 ]; then
 fi
 echo "many-tips test: FAILED"
 exit 1
+

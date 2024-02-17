@@ -7,18 +7,18 @@ import (
 	"sync"
 	"time"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 
-	"github.com/karlsen-network/karlsend/util/txmass"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util/txmass"
 
-	"github.com/karlsen-network/karlsend/util/profiling"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util/profiling"
 
-	"github.com/karlsen-network/karlsend/cmd/karlsenwallet/daemon/pb"
-	"github.com/karlsen-network/karlsend/cmd/karlsenwallet/keys"
-	"github.com/karlsen-network/karlsend/domain/dagconfig"
-	"github.com/karlsen-network/karlsend/infrastructure/network/rpcclient"
-	"github.com/karlsen-network/karlsend/infrastructure/os/signal"
-	"github.com/karlsen-network/karlsend/util/panics"
+	"github.com/karlsend/PYVERT/testfork/karlsend/cmd/karlsenwallet/daemon/pb"
+	"github.com/karlsend/PYVERT/testfork/karlsend/cmd/karlsenwallet/keys"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/dagconfig"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/network/rpcclient"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/os/signal"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util/panics"
 	"github.com/pkg/errors"
 
 	"google.golang.org/grpc"
@@ -141,3 +141,4 @@ func printErrorAndExit(err error) {
 	fmt.Fprintf(os.Stderr, "%+v\n", err)
 	os.Exit(1)
 }
+

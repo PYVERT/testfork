@@ -1,8 +1,8 @@
 package syncmanager
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 	"github.com/pkg/errors"
 )
 
@@ -151,7 +151,7 @@ func (sm *syncManager) missingBlockBodyHashes(stagingArea *model.StagingArea, hi
 			// In these cases - return an empty list of blocks to sync
 			return []*externalapi.DomainHash{}, nil
 		}
-		// TODO: Once block children are fixed (https://github.com/karlsen-network/karlsend/issues/1499),
+		// TODO: Once block children are fixed (https://github.com/karlsend/PYVERT/testfork/karlsend/issues/1499),
 		// this error should be returned rather the logged
 		log.Errorf("No header-only blocks between %s and %s",
 			lowHash, highHash)
@@ -193,3 +193,4 @@ func (sm *syncManager) isHeaderOnlyBlock(stagingArea *model.StagingArea, blockHa
 
 	return status == externalapi.StatusHeaderOnly, nil
 }
+

@@ -4,8 +4,8 @@ import (
 	"encoding/binary"
 	"io"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/database/serialization"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/database/serialization"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 	"github.com/pkg/errors"
 	"google.golang.org/protobuf/proto"
 )
@@ -71,3 +71,4 @@ func deserializeHashes(serializedHashes []byte) ([]*externalapi.DomainHash, erro
 
 	return hashes, nil
 }
+

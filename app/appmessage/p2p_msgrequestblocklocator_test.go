@@ -3,7 +3,7 @@ package appmessage
 import (
 	"testing"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 )
 
 // TestRequestBlockLocator tests the MsgRequestBlockLocator API.
@@ -22,3 +22,4 @@ func TestRequestBlockLocator(t *testing.T) {
 			cmd, wantCmd)
 	}
 }
+

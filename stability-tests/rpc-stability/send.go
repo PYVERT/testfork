@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/karlsen-network/karlsend/infrastructure/network/rpcclient/grpcclient"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/network/rpcclient/grpcclient"
 	"github.com/pkg/errors"
 )
 
@@ -18,3 +18,4 @@ func sendCommands(rpcClient *grpcclient.GRPCClient, commandsChan <-chan string) 
 
 	return nil
 }
+

@@ -5,8 +5,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/karlsen-network/karlsend/app/appmessage"
-	"github.com/karlsen-network/karlsend/util/mstime"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/appmessage"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util/mstime"
 )
 
 func TestAddressKeySerialization(t *testing.T) {
@@ -46,3 +46,4 @@ func TestAddressSerialization(t *testing.T) {
 			"testAddress:%+v\ndeserializedTestAddress:%+v", testAddress, deserializedTestAddress)
 	}
 }
+

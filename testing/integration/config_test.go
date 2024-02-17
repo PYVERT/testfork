@@ -5,8 +5,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/karlsen-network/karlsend/domain/dagconfig"
-	"github.com/karlsen-network/karlsend/infrastructure/config"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/dagconfig"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/config"
 )
 
 const (
@@ -70,3 +70,4 @@ func randomDirectory(t *testing.T) string {
 
 	return dir
 }
+

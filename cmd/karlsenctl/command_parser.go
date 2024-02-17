@@ -8,7 +8,7 @@ import (
 	"google.golang.org/protobuf/encoding/protojson"
 	"google.golang.org/protobuf/proto"
 
-	"github.com/karlsen-network/karlsend/infrastructure/network/netadapter/server/grpcserver/protowire"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/network/netadapter/server/grpcserver/protowire"
 	"github.com/pkg/errors"
 )
 
@@ -186,3 +186,4 @@ func stringToValue(parameterDesc *parameterDescription, valueStr string) (reflec
 
 	return reflect.ValueOf(value), nil
 }
+

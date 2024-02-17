@@ -5,9 +5,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/karlsen-network/karlsend/infrastructure/config"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/config"
 
-	"github.com/karlsen-network/karlsend/infrastructure/network/rpcclient"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/network/rpcclient"
 )
 
 const rpcTimeout = 10 * time.Second
@@ -114,3 +114,4 @@ func TestRPCMaxInboundConnections(t *testing.T) {
 	case <-time.After(time.Second * 15):
 	}
 }
+

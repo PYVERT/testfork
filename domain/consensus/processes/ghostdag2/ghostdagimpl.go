@@ -3,12 +3,12 @@ package ghostdag2
 import (
 	"sort"
 
-	"github.com/karlsen-network/karlsend/util/difficulty"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util/difficulty"
 
 	"math/big"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 )
 
 type ghostdagHelper struct {
@@ -414,3 +414,4 @@ func (gh *ghostdagHelper) Less(blockHashA *externalapi.DomainHash, ghostdagDataA
 func (gh *ghostdagHelper) GetSortedMergeSet(*model.StagingArea, *externalapi.DomainHash) ([]*externalapi.DomainHash, error) {
 	panic("implement me")
 }
+

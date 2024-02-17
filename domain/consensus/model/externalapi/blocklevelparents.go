@@ -1,7 +1,7 @@
 package externalapi
 
 // BlockLevelParents represent the parents within a single super-block level
-// See https://github.com/karlsen-network/research/issues/3 for further details
+// See https://github.com/karlsend/PYVERT/testfork/research/issues/3 for further details
 type BlockLevelParents []*DomainHash
 
 // Equal returns true if this BlockLevelParents is equal to `other`
@@ -61,3 +61,4 @@ func CloneParents(parents []BlockLevelParents) []BlockLevelParents {
 	}
 	return clone
 }
+

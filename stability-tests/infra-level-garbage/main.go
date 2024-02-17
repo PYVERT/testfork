@@ -5,8 +5,8 @@ import (
 	"os"
 	"time"
 
-	"github.com/karlsen-network/karlsend/stability-tests/common"
-	"github.com/karlsen-network/karlsend/util/profiling"
+	"github.com/karlsend/PYVERT/testfork/karlsend/stability-tests/common"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util/profiling"
 )
 
 const timeout = 5 * time.Second
@@ -33,3 +33,4 @@ func main() {
 		os.Exit(1)
 	}
 }
+

@@ -1,8 +1,8 @@
 package protowire
 
 import (
-	"github.com/karlsen-network/karlsend/app/appmessage"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/appmessage"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 	"github.com/pkg/errors"
 )
 
@@ -38,3 +38,4 @@ func (x *KarlsendMessage_BlockLocator) fromAppMessage(msgBlockLocator *appmessag
 	}
 	return nil
 }
+

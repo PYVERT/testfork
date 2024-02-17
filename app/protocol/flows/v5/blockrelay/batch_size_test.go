@@ -3,7 +3,7 @@ package blockrelay
 import (
 	"testing"
 
-	"github.com/karlsen-network/karlsend/infrastructure/network/netadapter/router"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/network/netadapter/router"
 )
 
 func TestIBDBatchSizeLessThanRouteCapacity(t *testing.T) {
@@ -15,3 +15,4 @@ func TestIBDBatchSizeLessThanRouteCapacity(t *testing.T) {
 			ibdBatchSize, router.DefaultMaxMessages)
 	}
 }
+

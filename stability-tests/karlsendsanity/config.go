@@ -4,7 +4,7 @@ import (
 	"path/filepath"
 
 	"github.com/jessevdk/go-flags"
-	"github.com/karlsen-network/karlsend/stability-tests/common"
+	"github.com/karlsend/PYVERT/testfork/karlsend/stability-tests/common"
 )
 
 const (
@@ -42,3 +42,4 @@ func parseConfig() error {
 
 	return nil
 }
+

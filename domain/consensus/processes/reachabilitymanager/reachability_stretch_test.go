@@ -8,12 +8,12 @@ import (
 	"os"
 	"testing"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model"
 
-	"github.com/karlsen-network/karlsend/domain/consensus"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/testapi"
-	"github.com/karlsen-network/karlsend/domain/dagconfig"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/testapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/dagconfig"
 	"github.com/pkg/errors"
 )
 
@@ -256,3 +256,4 @@ func TestAttackAlternateReorg(t *testing.T) {
 	tips := buildJsonDAG(t, tc, true)
 	addAlternatingReorgBlocks(t, tc, tips)
 }
+

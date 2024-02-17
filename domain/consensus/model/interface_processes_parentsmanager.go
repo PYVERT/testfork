@@ -1,9 +1,10 @@
 package model
 
-import "github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+import "github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 
 // ParentsManager lets is a wrapper above header parents that replaces empty parents with genesis when needed.
 type ParentsManager interface {
 	ParentsAtLevel(blockHeader externalapi.BlockHeader, level int) externalapi.BlockLevelParents
 	Parents(blockHeader externalapi.BlockHeader) []externalapi.BlockLevelParents
 }
+

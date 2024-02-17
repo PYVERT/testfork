@@ -3,9 +3,9 @@ package utxo
 import (
 	"fmt"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/consensushashing"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/transactionhelper"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/consensushashing"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/transactionhelper"
 	"github.com/pkg/errors"
 )
 
@@ -165,3 +165,4 @@ func (mud *mutableUTXODiff) Reversed() *mutableUTXODiff {
 		immutableReferences: mud.immutableReferences,
 	}
 }
+

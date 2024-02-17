@@ -1,8 +1,8 @@
 package mempool
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/miningmanager/mempool/model"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/miningmanager/mempool/model"
 )
 
 func (mp *mempool) removeTransaction(transactionID *externalapi.DomainTransactionID, removeRedeemers bool) error {
@@ -57,3 +57,4 @@ func (mp *mempool) removeTransactionFromSets(mempoolTransaction *model.MempoolTr
 
 	return nil
 }
+

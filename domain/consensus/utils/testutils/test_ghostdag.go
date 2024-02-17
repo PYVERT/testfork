@@ -4,9 +4,9 @@ import (
 	"sort"
 	"testing"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/testapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/testapi"
 )
 
 type testGhostDAGSorter struct {
@@ -47,3 +47,4 @@ func (sorter testGhostDAGSorter) Less(i, j int) bool {
 func (sorter testGhostDAGSorter) Swap(i, j int) {
 	sorter.slice[i], sorter.slice[j] = sorter.slice[j], sorter.slice[i]
 }
+

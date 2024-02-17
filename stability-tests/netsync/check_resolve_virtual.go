@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/karlsen-network/karlsend/app/appmessage"
-	"github.com/karlsen-network/karlsend/stability-tests/common/rpc"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/appmessage"
+	"github.com/karlsend/PYVERT/testfork/karlsend/stability-tests/common/rpc"
 	"github.com/pkg/errors"
 )
 
@@ -39,3 +39,4 @@ func checkResolveVirtual(syncerClient, syncedClient *rpc.Client) error {
 	log.Infof("It took %s to resolve the virtual", time.Since(start))
 	return nil
 }
+

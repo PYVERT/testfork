@@ -1,7 +1,8 @@
 package reachabilitymanager
 
 import (
-	"github.com/karlsen-network/karlsend/infrastructure/logger"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/logger"
 )
 
 var log = logger.RegisterSubSystem("REAC")
+

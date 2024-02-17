@@ -1,8 +1,8 @@
 package reachabilitymanager
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 )
 
 // reachabilityManager maintains a structure that allows to answer
@@ -84,3 +84,4 @@ func (rt *reachabilityManager) Init(stagingArea *model.StagingArea) error {
 
 	return nil
 }
+

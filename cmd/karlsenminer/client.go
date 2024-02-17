@@ -3,9 +3,9 @@ package main
 import (
 	"time"
 
-	"github.com/karlsen-network/karlsend/app/appmessage"
-	"github.com/karlsen-network/karlsend/infrastructure/logger"
-	"github.com/karlsen-network/karlsend/infrastructure/network/rpcclient"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/appmessage"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/logger"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/network/rpcclient"
 	"github.com/pkg/errors"
 )
 
@@ -59,3 +59,4 @@ func newMinerClient(cfg *configFlags) (*minerClient, error) {
 
 	return minerClient, nil
 }
+

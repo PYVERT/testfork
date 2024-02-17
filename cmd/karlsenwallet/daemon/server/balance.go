@@ -3,8 +3,8 @@ package server
 import (
 	"context"
 
-	"github.com/karlsen-network/karlsend/cmd/karlsenwallet/daemon/pb"
-	"github.com/karlsen-network/karlsend/cmd/karlsenwallet/libkaspawallet"
+	"github.com/karlsend/PYVERT/testfork/karlsend/cmd/karlsenwallet/daemon/pb"
+	"github.com/karlsend/PYVERT/testfork/karlsend/cmd/karlsenwallet/libkaspawallet"
 )
 
 type balancesType struct{ available, pending uint64 }
@@ -68,3 +68,4 @@ func isUTXOSpendable(entry *walletUTXO, virtualDAAScore uint64, coinbaseMaturity
 	}
 	return entry.UTXOEntry.BlockDAAScore()+coinbaseMaturity < virtualDAAScore
 }
+

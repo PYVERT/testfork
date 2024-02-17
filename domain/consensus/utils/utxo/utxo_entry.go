@@ -1,7 +1,7 @@
 package utxo
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 )
 
 type utxoEntry struct {
@@ -73,3 +73,4 @@ func (u *utxoEntry) Equal(other externalapi.UTXOEntry) bool {
 
 	return true
 }
+

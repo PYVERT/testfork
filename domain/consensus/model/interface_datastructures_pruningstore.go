@@ -1,6 +1,6 @@
 package model
 
-import "github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+import "github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 
 // PruningStore represents a store for the current pruning state
 type PruningStore interface {
@@ -32,3 +32,4 @@ type PruningStore interface {
 	PruningPointUTXOs(dbContext DBReader, fromOutpoint *externalapi.DomainOutpoint, limit int) ([]*externalapi.OutpointAndUTXOEntryPair, error)
 	PruningPointUTXOIterator(dbContext DBReader) (externalapi.ReadOnlyUTXOSetIterator, error)
 }
+

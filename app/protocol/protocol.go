@@ -4,18 +4,18 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"github.com/karlsen-network/karlsend/app/protocol/common"
-	"github.com/karlsen-network/karlsend/app/protocol/flows/ready"
-	v5 "github.com/karlsen-network/karlsend/app/protocol/flows/v5"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/protocol/common"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/protocol/flows/ready"
+	v5 "github.com/karlsend/PYVERT/testfork/karlsend/app/protocol/flows/v5"
 
-	"github.com/karlsen-network/karlsend/app/appmessage"
-	"github.com/karlsen-network/karlsend/app/protocol/flows/handshake"
-	peerpkg "github.com/karlsen-network/karlsend/app/protocol/peer"
-	"github.com/karlsen-network/karlsend/app/protocol/protocolerrors"
-	"github.com/karlsen-network/karlsend/infrastructure/network/addressmanager"
-	"github.com/karlsen-network/karlsend/infrastructure/network/connmanager"
-	"github.com/karlsen-network/karlsend/infrastructure/network/netadapter"
-	routerpkg "github.com/karlsen-network/karlsend/infrastructure/network/netadapter/router"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/appmessage"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/protocol/flows/handshake"
+	peerpkg "github.com/karlsend/PYVERT/testfork/karlsend/app/protocol/peer"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/protocol/protocolerrors"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/network/addressmanager"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/network/connmanager"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/network/netadapter"
+	routerpkg "github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/network/netadapter/router"
 	"github.com/pkg/errors"
 )
 
@@ -229,3 +229,4 @@ func removeHandshakeRoutes(router *routerpkg.Router) {
 		panic(err)
 	}
 }
+

@@ -1800,3 +1800,4 @@ func file_karlsenwalletd_proto_init() {
 	file_karlsenwalletd_proto_goTypes = nil
 	file_karlsenwalletd_proto_depIdxs = nil
 }
+

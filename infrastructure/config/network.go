@@ -7,11 +7,11 @@ import (
 	"os"
 	"time"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 
 	"github.com/jessevdk/go-flags"
-	"github.com/karlsen-network/karlsend/domain/dagconfig"
-	"github.com/karlsen-network/karlsend/util/difficulty"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/dagconfig"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util/difficulty"
 	"github.com/pkg/errors"
 )
 
@@ -216,3 +216,4 @@ func (networkFlags *NetworkFlags) overrideDAGParams() error {
 
 	return nil
 }
+

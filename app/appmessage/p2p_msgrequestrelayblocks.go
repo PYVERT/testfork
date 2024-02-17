@@ -1,7 +1,7 @@
 package appmessage
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 )
 
 // MaxRequestRelayBlocksHashes is the maximum number of hashes that can
@@ -29,3 +29,4 @@ func NewMsgRequestRelayBlocks(hashes []*externalapi.DomainHash) *MsgRequestRelay
 		Hashes: hashes,
 	}
 }
+

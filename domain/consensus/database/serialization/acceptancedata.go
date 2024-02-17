@@ -1,7 +1,7 @@
 package serialization
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 )
 
 // DomainAcceptanceDataToDbAcceptanceData converts model.AcceptanceData to DbAcceptanceData
@@ -88,3 +88,4 @@ func DbAcceptanceDataToDomainAcceptanceData(dbAcceptanceData *DbAcceptanceData) 
 
 	return domainAcceptanceData, nil
 }
+

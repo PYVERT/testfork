@@ -7,9 +7,9 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/karlsen-network/karlsend/cmd/karlsenwallet/libkaspawallet"
-	"github.com/karlsen-network/karlsend/cmd/karlsenwallet/utils"
-	"github.com/karlsen-network/karlsend/domain/dagconfig"
+	"github.com/karlsend/PYVERT/testfork/karlsend/cmd/karlsenwallet/libkaspawallet"
+	"github.com/karlsend/PYVERT/testfork/karlsend/cmd/karlsenwallet/utils"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/dagconfig"
 	"github.com/pkg/errors"
 	"github.com/tyler-smith/go-bip39"
 )
@@ -119,3 +119,4 @@ func encryptMnemonic(mnemonic string, password []byte) (*EncryptedMnemonic, erro
 		salt:   salt,
 	}, nil
 }
+

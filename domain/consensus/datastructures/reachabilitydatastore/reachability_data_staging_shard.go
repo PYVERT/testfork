@@ -1,8 +1,8 @@
 package reachabilitydatastore
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 )
 
 type reachabilityDataStagingShard struct {
@@ -51,3 +51,4 @@ func (rdss *reachabilityDataStagingShard) Commit(dbTx model.DBTransaction) error
 func (rdss *reachabilityDataStagingShard) isStaged() bool {
 	return len(rdss.reachabilityData) != 0 || rdss.reachabilityReindexRoot != nil
 }
+

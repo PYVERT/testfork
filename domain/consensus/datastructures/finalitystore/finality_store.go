@@ -1,10 +1,10 @@
 package finalitystore
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/lrucache"
-	"github.com/karlsen-network/karlsend/util/staging"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/lrucache"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util/staging"
 )
 
 var bucketName = []byte("finality-points")
@@ -61,3 +61,4 @@ func (fs *finalityStore) IsStaged(stagingArea *model.StagingArea) bool {
 func (fs *finalityStore) hashAsKey(hash *externalapi.DomainHash) model.DBKey {
 	return fs.bucket.Key(hash.ByteSlice())
 }
+

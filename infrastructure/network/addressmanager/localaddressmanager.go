@@ -7,7 +7,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/karlsen-network/karlsend/app/appmessage"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/appmessage"
 	"github.com/pkg/errors"
 )
 
@@ -397,3 +397,4 @@ func (a simpleAddr) Network() string {
 
 // Ensure simpleAddr implements the net.Addr interface.
 var _ net.Addr = simpleAddr{}
+

@@ -9,10 +9,10 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/karlsen-network/karlsend/app/appmessage"
-	"github.com/karlsen-network/karlsend/infrastructure/config"
-	"github.com/karlsen-network/karlsend/infrastructure/db/database/ldb"
-	"github.com/karlsen-network/karlsend/util/mstime"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/appmessage"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/config"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/db/database/ldb"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util/mstime"
 )
 
 func newAddressManagerForTest(t *testing.T, testName string) (addressManager *AddressManager, teardown func()) {
@@ -372,3 +372,4 @@ func TestOverfillAddressManager(t *testing.T) {
 		}
 	}
 }
+

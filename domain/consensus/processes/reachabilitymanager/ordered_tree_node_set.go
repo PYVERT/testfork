@@ -1,8 +1,8 @@
 package reachabilitymanager
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 )
 
 // orderedTreeNodeSet is an ordered set of model.DomainHash ordered by the respectful intervals.
@@ -60,3 +60,4 @@ func (rt *reachabilityManager) findAncestorIndexOfNode(stagingArea *model.Stagin
 	}
 	return low - 1, true, nil
 }
+

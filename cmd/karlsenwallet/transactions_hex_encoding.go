@@ -31,3 +31,4 @@ func decodeTransactionsFromHex(transactionsHex string) ([][]byte, error) {
 
 	return transactions, nil
 }
+

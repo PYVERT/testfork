@@ -3,8 +3,8 @@ package blockheader
 import (
 	"math/big"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/pow"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/pow"
 )
 
 type blockHeader struct {
@@ -224,3 +224,4 @@ func NewImmutableBlockHeader(
 		pruningPoint:         pruningPoint,
 	}
 }
+

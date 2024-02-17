@@ -1,8 +1,8 @@
 package utxodiffstore
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 )
 
 type utxoDiffStagingShard struct {
@@ -72,3 +72,4 @@ func (udss *utxoDiffStagingShard) Commit(dbTx model.DBTransaction) error {
 func (udss *utxoDiffStagingShard) isStaged() bool {
 	return len(udss.utxoDiffToAdd) != 0 || len(udss.utxoDiffChildToAdd) != 0 || len(udss.toDelete) != 0
 }
+

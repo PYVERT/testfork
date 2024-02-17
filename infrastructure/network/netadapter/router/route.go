@@ -4,9 +4,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/karlsen-network/karlsend/app/protocol/protocolerrors"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/protocol/protocolerrors"
 
-	"github.com/karlsen-network/karlsend/app/appmessage"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/appmessage"
 	"github.com/pkg/errors"
 )
 
@@ -114,3 +114,4 @@ func (r *Route) Close() {
 	r.closed = true
 	close(r.channel)
 }
+

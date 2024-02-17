@@ -1,8 +1,8 @@
 package ghostdagmanager
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 )
 
 func (gm *ghostdagManager) findSelectedParent(stagingArea *model.StagingArea, parentHashes []*externalapi.DomainHash) (
@@ -67,3 +67,4 @@ func (gm *ghostdagManager) Less(blockHashA *externalapi.DomainHash, ghostdagData
 		panic("big.Int.Cmp is defined to always return -1/1/0 and nothing else")
 	}
 }
+

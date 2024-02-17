@@ -5,9 +5,9 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/constants"
-	"github.com/karlsen-network/karlsend/domain/dagconfig"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/constants"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/dagconfig"
 )
 
 func TestCalcDeflationaryPeriodBlockSubsidy(t *testing.T) {
@@ -131,3 +131,4 @@ func TestBuildSubsidyTable(t *testing.T) {
 	tableStr += "\n}"
 	t.Logf(tableStr)
 }
+

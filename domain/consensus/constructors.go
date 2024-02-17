@@ -4,8 +4,8 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 )
 
 // GHOSTDAGManagerConstructor is the function signature for a constructor of a type implementing model.GHOSTDAGManager
@@ -25,3 +25,4 @@ type DifficultyManagerConstructor func(model.DBReader, model.GHOSTDAGManager, mo
 // PastMedianTimeManagerConstructor is the function signature for a constructor of a type implementing model.PastMedianTimeManager
 type PastMedianTimeManagerConstructor func(int, model.DBReader, model.DAGTraversalManager, model.BlockHeaderStore,
 	model.GHOSTDAGDataStore, *externalapi.DomainHash) model.PastMedianTimeManager
+

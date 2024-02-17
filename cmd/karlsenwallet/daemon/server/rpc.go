@@ -3,8 +3,8 @@ package server
 import (
 	"time"
 
-	"github.com/karlsen-network/karlsend/domain/dagconfig"
-	"github.com/karlsen-network/karlsend/infrastructure/network/rpcclient"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/dagconfig"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/network/rpcclient"
 )
 
 func connectToRPC(params *dagconfig.Params, rpcServer string, timeout uint32) (*rpcclient.RPCClient, error) {
@@ -24,3 +24,4 @@ func connectToRPC(params *dagconfig.Params, rpcServer string, timeout uint32) (*
 
 	return rpcClient, err
 }
+

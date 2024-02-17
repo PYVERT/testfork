@@ -3,7 +3,7 @@ package main
 import (
 	"time"
 
-	"github.com/karlsen-network/karlsend/stability-tests/common/rpc"
+	"github.com/karlsend/PYVERT/testfork/karlsend/stability-tests/common/rpc"
 
 	"github.com/pkg/errors"
 )
@@ -53,3 +53,4 @@ func checkSyncRate(syncerClient, syncedClient *rpc.Client) error {
 	log.Infof("IBD took approximately %s", time.Since(start))
 	return nil
 }
+

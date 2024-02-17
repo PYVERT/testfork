@@ -1,7 +1,7 @@
 syntax = "proto3";
 package protowire;
 
-option go_package = "github.com/karlsen-network/karlsend/protowire";
+option go_package = "github.com/karlsend/PYVERT/testfork/karlsend/protowire";
 
 message RequestAddressesMessage{
   bool includeAllSubnetworks = 1;
@@ -288,3 +288,4 @@ message TrustedDataMessage {
   repeated DaaBlockV4 daaWindow = 1;
   repeated BlockGhostdagDataHashPair ghostdagData = 2;
 }
+

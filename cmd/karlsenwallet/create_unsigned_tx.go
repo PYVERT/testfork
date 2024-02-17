@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/karlsen-network/karlsend/cmd/karlsenwallet/daemon/client"
-	"github.com/karlsen-network/karlsend/cmd/karlsenwallet/daemon/pb"
-	"github.com/karlsen-network/karlsend/cmd/karlsenwallet/utils"
+	"github.com/karlsend/PYVERT/testfork/karlsend/cmd/karlsenwallet/daemon/client"
+	"github.com/karlsend/PYVERT/testfork/karlsend/cmd/karlsenwallet/daemon/pb"
+	"github.com/karlsend/PYVERT/testfork/karlsend/cmd/karlsenwallet/utils"
 )
 
 func createUnsignedTransaction(conf *createUnsignedTransactionConfig) error {
@@ -42,3 +42,4 @@ func createUnsignedTransaction(conf *createUnsignedTransactionConfig) error {
 
 	return nil
 }
+

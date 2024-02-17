@@ -1,8 +1,8 @@
 package blockrelationstore
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 )
 
 type blockRelationStagingShard struct {
@@ -38,3 +38,4 @@ func (brss *blockRelationStagingShard) Commit(dbTx model.DBTransaction) error {
 func (brss *blockRelationStagingShard) isStaged() bool {
 	return len(brss.toAdd) != 0
 }
+

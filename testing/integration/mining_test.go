@@ -5,9 +5,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/karlsen-network/karlsend/app/appmessage"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/mining"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/appmessage"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/mining"
 )
 
 func mineNextBlock(t *testing.T, harness *appHarness) *externalapi.DomainBlock {
@@ -31,3 +31,4 @@ func mineNextBlock(t *testing.T, harness *appHarness) *externalapi.DomainBlock {
 
 	return block
 }
+

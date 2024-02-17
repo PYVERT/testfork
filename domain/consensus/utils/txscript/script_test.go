@@ -10,7 +10,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 )
 
 // TestParseOpcode tests for opcode parsing with bad data templates.
@@ -3820,3 +3820,4 @@ func TestIsUnspendable(t *testing.T) {
 		}
 	}
 }
+

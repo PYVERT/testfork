@@ -2,7 +2,7 @@ dagconfig
 ========
 
 [![ISC License](http://img.shields.io/badge/license-ISC-blue.svg)](https://choosealicense.com/licenses/isc/)
-[![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)](http://godoc.org/github.com/karlsen-network/karlsend/dagconfig)
+[![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)](http://godoc.org/github.com/karlsend/PYVERT/testfork/karlsend/dagconfig)
 
 Package dagconfig defines DAG configuration parameters for the standard
 Karlsend networks and provides the ability for callers to define their own custom
@@ -18,8 +18,8 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/karlsen-network/karlsend/util"
-	"github.com/karlsen-network/karlsend/domain/dagconfig"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/dagconfig"
 )
 
 var testnet = flag.Bool("testnet", false, "operate on the testnet Kaspa network")
@@ -46,3 +46,4 @@ func main() {
 	fmt.Println(addr)
 }
 ```
+

@@ -1,8 +1,8 @@
 package consensusstatestore
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 	"github.com/pkg/errors"
 )
 
@@ -74,3 +74,4 @@ func (css *consensusStateStore) ImportPruningPointUTXOSetIntoVirtualUTXOSet(dbCo
 
 	return nil
 }
+

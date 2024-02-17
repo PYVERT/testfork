@@ -1,7 +1,7 @@
 package serialization
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 )
 
 // DbHashToDomainHash converts a DbHash to a DomainHash
@@ -35,3 +35,4 @@ func DbHashesToDomainHashes(dbHashes []*DbHash) ([]*externalapi.DomainHash, erro
 	}
 	return domainHashes, nil
 }
+

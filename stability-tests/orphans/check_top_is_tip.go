@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/consensushashing"
-	"github.com/karlsen-network/karlsend/stability-tests/common/rpc"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/consensushashing"
+	"github.com/karlsend/PYVERT/testfork/karlsend/stability-tests/common/rpc"
 	"github.com/pkg/errors"
 )
 
@@ -21,3 +21,4 @@ func checkTopBlockIsTip(rpcClient *rpc.Client, topBlock *externalapi.DomainBlock
 
 	return nil
 }
+

@@ -4,9 +4,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/consensusreference"
-	miningmanagermodel "github.com/karlsen-network/karlsend/domain/miningmanager/model"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensusreference"
+	miningmanagermodel "github.com/karlsend/PYVERT/testfork/karlsend/domain/miningmanager/model"
 )
 
 // MiningManager creates block templates for mining as well as maintaining
@@ -154,3 +154,4 @@ func (mm *miningManager) RevalidateHighPriorityTransactions() (
 
 	return mm.mempool.RevalidateHighPriorityTransactions()
 }
+

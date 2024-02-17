@@ -6,7 +6,7 @@ import (
 	"math/rand"
 	"testing"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 	"github.com/pkg/errors"
 )
 
@@ -43,3 +43,4 @@ func Test_deserializeHashesFailure(t *testing.T) {
 		t.Fatalf("Expected error to be EOF, instead got: %v", err)
 	}
 }
+

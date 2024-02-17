@@ -1,7 +1,7 @@
 package protowire
 
 import (
-	"github.com/karlsen-network/karlsend/app/appmessage"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/appmessage"
 	"github.com/pkg/errors"
 )
 
@@ -33,3 +33,4 @@ func (x *KarlsendMessage_IbdBlockLocatorHighestHash) fromAppMessage(message *app
 	}
 	return nil
 }
+

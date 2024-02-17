@@ -4,13 +4,13 @@ import (
 	"sync"
 	"time"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/infrastructure/network/netadapter"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/network/netadapter"
 
-	"github.com/karlsen-network/karlsend/app/appmessage"
-	"github.com/karlsen-network/karlsend/infrastructure/network/netadapter/id"
-	mathUtil "github.com/karlsen-network/karlsend/util/math"
-	"github.com/karlsen-network/karlsend/util/mstime"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/appmessage"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/network/netadapter/id"
+	mathUtil "github.com/karlsend/PYVERT/testfork/karlsend/util/math"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util/mstime"
 )
 
 // Peer holds data about a peer.
@@ -151,3 +151,4 @@ func (p *Peer) LastPingDuration() time.Duration {
 func (p *Peer) IBDRequestChannel() chan *externalapi.DomainBlock {
 	return p.ibdRequestChannel
 }
+

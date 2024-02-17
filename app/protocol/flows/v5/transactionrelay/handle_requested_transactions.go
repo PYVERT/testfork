@@ -1,8 +1,8 @@
 package transactionrelay
 
 import (
-	"github.com/karlsen-network/karlsend/app/appmessage"
-	"github.com/karlsen-network/karlsend/infrastructure/network/netadapter/router"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/appmessage"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/network/netadapter/router"
 )
 
 type handleRequestedTransactionsFlow struct {
@@ -56,3 +56,4 @@ func (flow *handleRequestedTransactionsFlow) readRequestTransactions() (*appmess
 
 	return msg.(*appmessage.MsgRequestTransactions), nil
 }
+

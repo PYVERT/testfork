@@ -1,8 +1,8 @@
 package transactionhelper
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/subnetworks"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/subnetworks"
 )
 
 // CoinbaseTransactionIndex is the index of the coinbase transaction in every block
@@ -17,3 +17,4 @@ func IsCoinBase(tx *externalapi.DomainTransaction) bool {
 	// A coinbase transaction must have subnetwork id SubnetworkIDCoinbase
 	return tx.SubnetworkID == subnetworks.SubnetworkIDCoinbase
 }
+

@@ -6,8 +6,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/karlsen-network/karlsend/cmd/karlsenwallet/keys"
-	"github.com/karlsen-network/karlsend/cmd/karlsenwallet/libkaspawallet"
+	"github.com/karlsend/PYVERT/testfork/karlsend/cmd/karlsenwallet/keys"
+	"github.com/karlsend/PYVERT/testfork/karlsend/cmd/karlsenwallet/libkaspawallet"
 	"github.com/pkg/errors"
 )
 
@@ -75,3 +75,4 @@ func sign(conf *signConfig) error {
 	fmt.Println(encodeTransactionsToHex(updatedPartiallySignedTransactions))
 	return nil
 }
+

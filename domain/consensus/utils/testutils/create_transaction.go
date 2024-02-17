@@ -1,10 +1,10 @@
 package testutils
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/consensushashing"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/constants"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/txscript"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/consensushashing"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/constants"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/txscript"
 )
 
 // CreateTransaction create a transaction that spends the first output of provided transaction.
@@ -36,3 +36,4 @@ func CreateTransaction(txToSpend *externalapi.DomainTransaction, fee uint64) (*e
 		Payload: []byte{},
 	}, nil
 }
+

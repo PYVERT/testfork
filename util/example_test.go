@@ -5,9 +5,9 @@ import (
 	"math"
 	"math/big"
 
-	"github.com/karlsen-network/karlsend/util/difficulty"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util/difficulty"
 
-	"github.com/karlsen-network/karlsend/util"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util"
 )
 
 func ExampleAmount() {
@@ -110,3 +110,4 @@ func ExampleBigToCompact() {
 	// Output:
 	// 419465580
 }
+

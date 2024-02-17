@@ -1,9 +1,9 @@
 package transactionvalidator
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/testapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/txscript"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/testapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/txscript"
 )
 
 type testTransactionValidator struct {
@@ -22,3 +22,4 @@ func (tbv *testTransactionValidator) SigCache() *txscript.SigCache {
 func (tbv *testTransactionValidator) SetSigCache(sigCache *txscript.SigCache) {
 	tbv.sigCache = sigCache
 }
+

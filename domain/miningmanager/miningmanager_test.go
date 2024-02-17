@@ -5,25 +5,25 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/karlsen-network/karlsend/cmd/karlsenwallet/libkaspawallet"
-	"github.com/karlsen-network/karlsend/domain/consensusreference"
-	"github.com/karlsen-network/karlsend/domain/miningmanager/model"
-	"github.com/karlsen-network/karlsend/util"
-	"github.com/karlsen-network/karlsend/version"
+	"github.com/karlsend/PYVERT/testfork/karlsend/cmd/karlsenwallet/libkaspawallet"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensusreference"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/miningmanager/model"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util"
+	"github.com/karlsend/PYVERT/testfork/karlsend/version"
 
-	"github.com/karlsen-network/karlsend/domain/miningmanager/mempool"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/miningmanager/mempool"
 
-	"github.com/karlsen-network/karlsend/domain/consensus"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/testapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/consensushashing"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/constants"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/subnetworks"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/testutils"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/transactionhelper"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/txscript"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/utxo"
-	"github.com/karlsen-network/karlsend/domain/miningmanager"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/testapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/consensushashing"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/constants"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/subnetworks"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/testutils"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/transactionhelper"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/txscript"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/utxo"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/miningmanager"
 	"github.com/pkg/errors"
 )
 
@@ -1054,3 +1054,4 @@ func contains(transaction *externalapi.DomainTransaction, transactions []*extern
 	}
 	return false
 }
+

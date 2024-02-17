@@ -1,8 +1,8 @@
 package serialization
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/transactionid"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/transactionid"
 )
 
 // DbTransactionIDToDomainTransactionID converts DbTransactionId to DomainTransactionID
@@ -14,3 +14,4 @@ func DbTransactionIDToDomainTransactionID(dbTransactionID *DbTransactionId) (*ex
 func DomainTransactionIDToDbTransactionID(domainTransactionID *externalapi.DomainTransactionID) *DbTransactionId {
 	return &DbTransactionId{TransactionId: domainTransactionID.ByteSlice()}
 }
+

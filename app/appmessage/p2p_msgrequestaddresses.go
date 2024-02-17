@@ -5,7 +5,7 @@
 package appmessage
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 )
 
 // MsgRequestAddresses implements the Message interface and represents a kaspa
@@ -34,3 +34,4 @@ func NewMsgRequestAddresses(includeAllSubnetworks bool, subnetworkID *externalap
 		SubnetworkID:          subnetworkID,
 	}
 }
+

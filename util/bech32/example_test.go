@@ -8,7 +8,7 @@ import (
 	"encoding/hex"
 	"fmt"
 
-	"github.com/karlsen-network/karlsend/util/bech32"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util/bech32"
 )
 
 // This example demonstrates how to decode a bech32 encoded string.
@@ -41,3 +41,4 @@ func ExampleEncode() {
 	// Output:
 	// Encoded Data: customprefix!:::::q:ppzxzarpyp6x7grzv5sx2mnrdajx2epqd9h8gmeqgfjkx6pnxgc3swlew4
 }
+

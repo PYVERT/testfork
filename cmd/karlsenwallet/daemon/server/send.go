@@ -3,7 +3,7 @@ package server
 import (
 	"context"
 
-	"github.com/karlsen-network/karlsend/cmd/karlsenwallet/daemon/pb"
+	"github.com/karlsend/PYVERT/testfork/karlsend/cmd/karlsenwallet/daemon/pb"
 )
 
 func (s *server) Send(_ context.Context, request *pb.SendRequest) (*pb.SendResponse, error) {
@@ -29,3 +29,4 @@ func (s *server) Send(_ context.Context, request *pb.SendRequest) (*pb.SendRespo
 
 	return &pb.SendResponse{TxIDs: txIDs, SignedTransactions: signedTransactions}, nil
 }
+

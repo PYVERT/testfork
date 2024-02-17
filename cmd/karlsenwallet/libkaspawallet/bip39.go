@@ -3,8 +3,8 @@ package libkaspawallet
 import (
 	"fmt"
 
-	"github.com/karlsen-network/karlsend/cmd/karlsenwallet/libkaspawallet/bip32"
-	"github.com/karlsen-network/karlsend/domain/dagconfig"
+	"github.com/karlsend/PYVERT/testfork/karlsend/cmd/karlsenwallet/libkaspawallet/bip32"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/dagconfig"
 	"github.com/pkg/errors"
 	"github.com/tyler-smith/go-bip39"
 )
@@ -80,3 +80,4 @@ func versionFromParams(params *dagconfig.Params) ([4]byte, error) {
 
 	return [4]byte{}, errors.Errorf("unknown network %s", params.Name)
 }
+

@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"unicode"
 
-	"github.com/karlsen-network/karlsend/infrastructure/network/netadapter/server/grpcserver/protowire"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/network/netadapter/server/grpcserver/protowire"
 )
 
 // protobuf generates the command types with two types:
@@ -44,3 +44,4 @@ func pointerToValue(valuePointedTo reflect.Value) reflect.Value {
 	pointer.Elem().Set(valuePointedTo)
 	return pointer
 }
+

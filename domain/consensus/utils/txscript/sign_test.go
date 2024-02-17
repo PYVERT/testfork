@@ -8,16 +8,16 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/utxo"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/utxo"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/consensushashing"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/consensushashing"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 	"github.com/kaspanet/go-secp256k1"
 	"github.com/pkg/errors"
 
-	"github.com/karlsen-network/karlsend/domain/dagconfig"
-	"github.com/karlsen-network/karlsend/util"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/dagconfig"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util"
 )
 
 func mkGetKey(keys map[string]*secp256k1.SchnorrKeyPair) KeyDB {
@@ -891,3 +891,4 @@ nexttest:
 		}
 	}
 }
+

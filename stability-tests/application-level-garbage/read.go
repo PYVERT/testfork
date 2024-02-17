@@ -3,8 +3,8 @@ package main
 import (
 	"encoding/json"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/stability-tests/common"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/stability-tests/common"
 	"github.com/pkg/errors"
 )
 
@@ -30,3 +30,4 @@ func readBlocks() (<-chan *externalapi.DomainBlock, error) {
 
 	return c, nil
 }
+

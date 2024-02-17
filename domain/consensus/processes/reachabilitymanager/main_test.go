@@ -4,7 +4,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/karlsen-network/karlsend/infrastructure/logger"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/logger"
 )
 
 const logLevel = logger.LevelWarn
@@ -14,3 +14,4 @@ func TestMain(m *testing.M) {
 	logger.InitLogStdout(logLevel)
 	os.Exit(m.Run())
 }
+

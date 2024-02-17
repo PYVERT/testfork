@@ -6,11 +6,11 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/karlsen-network/karlsend/domain/consensus"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/testutils"
-	"github.com/karlsen-network/karlsend/domain/dagconfig"
-	"github.com/karlsen-network/karlsend/util/difficulty"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/testutils"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/dagconfig"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util/difficulty"
 )
 
 func TestGetHashrateString(t *testing.T) {
@@ -113,3 +113,4 @@ func TestCompactToBig(t *testing.T) {
 		}
 	}
 }
+

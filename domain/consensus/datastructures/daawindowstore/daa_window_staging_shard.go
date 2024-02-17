@@ -2,9 +2,9 @@ package daawindowstore
 
 import (
 	"github.com/golang/protobuf/proto"
-	"github.com/karlsen-network/karlsend/domain/consensus/database/serialization"
-	"github.com/karlsen-network/karlsend/domain/consensus/model"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/database/serialization"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 )
 
 type dbKey struct {
@@ -57,3 +57,4 @@ func serializePair(pair *externalapi.BlockGHOSTDAGDataHashPair) ([]byte, error) 
 func (daawss *daaWindowStagingShard) isStaged() bool {
 	return len(daawss.toAdd) == 0
 }
+

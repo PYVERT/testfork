@@ -31,3 +31,4 @@ done
 
 echo "netsync test: PASSED"
 exit 0
+

@@ -3,7 +3,7 @@ package subnetworks
 import (
 	"encoding/hex"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 )
 
 // FromString creates a DomainSubnetworkID from the given byte slice
@@ -14,3 +14,4 @@ func FromString(str string) (*externalapi.DomainSubnetworkID, error) {
 	}
 	return FromBytes(subnetworkIDBytes)
 }
+

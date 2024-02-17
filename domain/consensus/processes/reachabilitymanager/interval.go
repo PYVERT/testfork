@@ -3,7 +3,7 @@ package reachabilitymanager
 import (
 	"math"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model"
 	"github.com/pkg/errors"
 )
 
@@ -195,3 +195,4 @@ func exponentialFractions(sizes []uint64) []float64 {
 func intervalContains(ri *model.ReachabilityInterval, other *model.ReachabilityInterval) bool {
 	return ri.Start <= other.Start && other.End <= ri.End
 }
+

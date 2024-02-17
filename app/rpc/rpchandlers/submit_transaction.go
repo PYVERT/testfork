@@ -1,11 +1,11 @@
 package rpchandlers
 
 import (
-	"github.com/karlsen-network/karlsend/app/appmessage"
-	"github.com/karlsen-network/karlsend/app/rpc/rpccontext"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/consensushashing"
-	"github.com/karlsen-network/karlsend/domain/miningmanager/mempool"
-	"github.com/karlsen-network/karlsend/infrastructure/network/netadapter/router"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/appmessage"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/rpc/rpccontext"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/consensushashing"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/miningmanager/mempool"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/network/netadapter/router"
 	"github.com/pkg/errors"
 )
 
@@ -36,3 +36,4 @@ func HandleSubmitTransaction(context *rpccontext.Context, _ *router.Router, requ
 	response := appmessage.NewSubmitTransactionResponseMessage(transactionID.String())
 	return response, nil
 }
+

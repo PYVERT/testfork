@@ -1,7 +1,7 @@
 package model
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 )
 
 // DifficultyManager provides a method to resolve the
@@ -11,3 +11,4 @@ type DifficultyManager interface {
 	RequiredDifficulty(stagingArea *StagingArea, blockHash *externalapi.DomainHash) (uint32, error)
 	EstimateNetworkHashesPerSecond(startHash *externalapi.DomainHash, windowSize int) (uint64, error)
 }
+

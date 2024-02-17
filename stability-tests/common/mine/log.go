@@ -1,8 +1,8 @@
 package mine
 
 import (
-	"github.com/karlsen-network/karlsend/infrastructure/logger"
-	"github.com/karlsen-network/karlsend/util/panics"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/logger"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util/panics"
 )
 
 // log is a logger that is initialized with no output filters. This
@@ -33,3 +33,4 @@ func UseLogger(backend *logger.Backend, level logger.Level) {
 	log.SetLevel(level)
 	spawn = panics.GoroutineWrapperFunc(log)
 }
+

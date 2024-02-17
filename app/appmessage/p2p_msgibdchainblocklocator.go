@@ -1,7 +1,7 @@
 package appmessage
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 )
 
 // MsgIBDChainBlockLocator implements the Message interface and represents a kaspa
@@ -25,3 +25,4 @@ func NewMsgIBDChainBlockLocator(locatorHashes []*externalapi.DomainHash) *MsgIBD
 		BlockLocatorHashes: locatorHashes,
 	}
 }
+

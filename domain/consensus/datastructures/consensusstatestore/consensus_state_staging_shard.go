@@ -1,8 +1,8 @@
 package consensusstatestore
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 )
 
 type consensusStateStagingShard struct {
@@ -38,3 +38,4 @@ func (csss *consensusStateStagingShard) Commit(dbTx model.DBTransaction) error {
 func (csss *consensusStateStagingShard) isStaged() bool {
 	return csss.tipsStaging != nil || csss.virtualUTXODiffStaging != nil
 }
+

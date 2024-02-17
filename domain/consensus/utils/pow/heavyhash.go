@@ -3,8 +3,8 @@ package pow
 import (
 	"math"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/hashes"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/hashes"
 )
 
 const eps float64 = 1e-9
@@ -90,3 +90,4 @@ func (mat *matrix) HeavyHash(hash *externalapi.DomainHash) *externalapi.DomainHa
 	writer.InfallibleWrite(res[:])
 	return writer.Finalize()
 }
+

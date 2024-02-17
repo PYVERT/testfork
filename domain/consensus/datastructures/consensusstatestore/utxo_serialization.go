@@ -2,8 +2,8 @@ package consensusstatestore
 
 import (
 	"github.com/golang/protobuf/proto"
-	"github.com/karlsen-network/karlsend/domain/consensus/database/serialization"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/database/serialization"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 )
 
 func serializeOutpoint(outpoint *externalapi.DomainOutpoint) ([]byte, error) {
@@ -32,3 +32,4 @@ func deserializeUTXOEntry(entryBytes []byte) (externalapi.UTXOEntry, error) {
 	}
 	return serialization.DBUTXOEntryToUTXOEntry(dbEntry)
 }
+

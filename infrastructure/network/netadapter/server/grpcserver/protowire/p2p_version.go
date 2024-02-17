@@ -1,9 +1,9 @@
 package protowire
 
 import (
-	"github.com/karlsen-network/karlsend/app/appmessage"
-	"github.com/karlsen-network/karlsend/infrastructure/network/netadapter/id"
-	"github.com/karlsen-network/karlsend/util/mstime"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/appmessage"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/network/netadapter/id"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util/mstime"
 	"github.com/pkg/errors"
 )
 
@@ -87,3 +87,4 @@ func (x *KarlsendMessage_Version) fromAppMessage(msgVersion *appmessage.MsgVersi
 	}
 	return nil
 }
+

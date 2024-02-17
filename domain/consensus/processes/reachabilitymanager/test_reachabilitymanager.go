@@ -1,9 +1,9 @@
 package reachabilitymanager
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/testapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/testapi"
 )
 
 type testReachabilityManager struct {
@@ -38,3 +38,4 @@ func (t *testReachabilityManager) GetAllNodes(root *externalapi.DomainHash) ([]*
 func NewTestReachabilityManager(manager model.ReachabilityManager) testapi.TestReachabilityManager {
 	return &testReachabilityManager{reachabilityManager: manager.(*reachabilityManager)}
 }
+

@@ -2,10 +2,10 @@ package headersselectedtipstore
 
 import (
 	"github.com/golang/protobuf/proto"
-	"github.com/karlsen-network/karlsend/domain/consensus/database/serialization"
-	"github.com/karlsen-network/karlsend/domain/consensus/model"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/util/staging"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/database/serialization"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util/staging"
 )
 
 var keyName = []byte("headers-selected-tip")
@@ -86,3 +86,4 @@ func (hsts *headerSelectedTipStore) deserializeHeadersSelectedTip(selectedTipByt
 
 	return serialization.DbHashToDomainHash(dbHash)
 }
+

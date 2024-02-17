@@ -1,12 +1,12 @@
 package addressexchange
 
 import (
-	"github.com/karlsen-network/karlsend/app/appmessage"
-	"github.com/karlsen-network/karlsend/app/protocol/common"
-	peerpkg "github.com/karlsen-network/karlsend/app/protocol/peer"
-	"github.com/karlsen-network/karlsend/app/protocol/protocolerrors"
-	"github.com/karlsen-network/karlsend/infrastructure/network/addressmanager"
-	"github.com/karlsen-network/karlsend/infrastructure/network/netadapter/router"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/appmessage"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/protocol/common"
+	peerpkg "github.com/karlsend/PYVERT/testfork/karlsend/app/protocol/peer"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/protocol/protocolerrors"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/network/addressmanager"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/network/netadapter/router"
 )
 
 // ReceiveAddressesContext is the interface for the context needed for the ReceiveAddresses flow.
@@ -37,3 +37,4 @@ func ReceiveAddresses(context ReceiveAddressesContext, incomingRoute *router.Rou
 
 	return context.AddressManager().AddAddresses(msgAddresses.AddressList...)
 }
+

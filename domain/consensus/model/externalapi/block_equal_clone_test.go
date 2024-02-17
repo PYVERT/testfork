@@ -5,8 +5,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/blockheader"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/blockheader"
 )
 
 type blockToCompare struct {
@@ -497,3 +497,4 @@ func TestDomainBlock_Clone(t *testing.T) {
 		}
 	}
 }
+

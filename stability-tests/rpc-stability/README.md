@@ -7,3 +7,4 @@ This tests JSON-RPC stability by sending the node commands and making sure it do
  3. `./run.sh`
 
 
+

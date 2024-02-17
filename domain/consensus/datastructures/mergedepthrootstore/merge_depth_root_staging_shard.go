@@ -1,8 +1,8 @@
 package mergedepthrootstore
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 )
 
 type mergeDepthRootStagingShard struct {
@@ -34,3 +34,4 @@ func (mdrss *mergeDepthRootStagingShard) Commit(dbTx model.DBTransaction) error 
 func (mdrss *mergeDepthRootStagingShard) isStaged() bool {
 	return len(mdrss.toAdd) == 0
 }
+

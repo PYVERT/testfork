@@ -7,8 +7,8 @@ package blocklogger
 import (
 	"time"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/util/mstime"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util/mstime"
 )
 
 // BlockLogger is a type tracking the amount of blocks/headers/transactions to log the time it took to receive them
@@ -75,3 +75,4 @@ func (bl *BlockLogger) LogBlock(block *externalapi.DomainBlock) {
 	bl.receivedLogTransactions = 0
 	bl.lastBlockLogTime = now
 }
+

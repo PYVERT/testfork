@@ -1,6 +1,6 @@
 package rpcclient
 
-import "github.com/karlsen-network/karlsend/app/appmessage"
+import "github.com/karlsend/PYVERT/testfork/karlsend/app/appmessage"
 
 // GetMempoolEntriesByAddresses sends an RPC request respective to the function's name and returns the RPC server's response
 func (c *RPCClient) GetMempoolEntriesByAddresses(addresses []string, includeOrphanPool bool, filterTransactionPool bool) (*appmessage.GetMempoolEntriesByAddressesResponseMessage, error) {
@@ -18,3 +18,4 @@ func (c *RPCClient) GetMempoolEntriesByAddresses(addresses []string, includeOrph
 	}
 	return getMempoolEntriesByAddressesResponse, nil
 }
+

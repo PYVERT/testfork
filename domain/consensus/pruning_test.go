@@ -3,9 +3,9 @@ package consensus_test
 import (
 	"testing"
 
-	"github.com/karlsen-network/karlsend/domain/consensus"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/testutils"
-	"github.com/karlsen-network/karlsend/domain/dagconfig"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/testutils"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/dagconfig"
 )
 
 func TestPruningDepth(t *testing.T) {
@@ -25,3 +25,4 @@ func TestPruningDepth(t *testing.T) {
 		}
 	})
 }
+

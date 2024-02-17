@@ -6,10 +6,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/karlsen-network/karlsend/app/appmessage"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/appmessage"
 
-	"github.com/karlsen-network/karlsend/infrastructure/config"
-	"github.com/karlsen-network/karlsend/infrastructure/network/netadapter/router"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/config"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/network/netadapter/router"
 )
 
 // routerInitializerForTest returns new RouterInitializer which simply sets
@@ -164,3 +164,4 @@ func TestNetAdapter(t *testing.T) {
 		t.Fatalf("TestNetAdapter: error expected at attempt to stop adapter second time, but got nothing")
 	}
 }
+

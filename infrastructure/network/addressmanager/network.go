@@ -7,7 +7,7 @@ package addressmanager
 import (
 	"net"
 
-	"github.com/karlsen-network/karlsend/app/appmessage"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/appmessage"
 )
 
 var (
@@ -263,3 +263,4 @@ func (am *AddressManager) GroupKey(na *appmessage.NetAddress) string {
 
 	return na.IP.Mask(net.CIDRMask(bits, 128)).String()
 }
+

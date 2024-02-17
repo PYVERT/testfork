@@ -3,8 +3,8 @@ package common
 import (
 	"time"
 
-	peerpkg "github.com/karlsen-network/karlsend/app/protocol/peer"
-	routerpkg "github.com/karlsen-network/karlsend/infrastructure/network/netadapter/router"
+	peerpkg "github.com/karlsend/PYVERT/testfork/karlsend/app/protocol/peer"
+	routerpkg "github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/network/netadapter/router"
 
 	"github.com/pkg/errors"
 )
@@ -26,3 +26,4 @@ type Flow struct {
 
 // FlowInitializeFunc is a function that is used in order to initialize a flow
 type FlowInitializeFunc func(route *routerpkg.Route, peer *peerpkg.Peer) error
+

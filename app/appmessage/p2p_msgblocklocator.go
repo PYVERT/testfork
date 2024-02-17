@@ -1,7 +1,7 @@
 package appmessage
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 )
 
 // MaxBlockLocatorsPerMsg is the maximum number of block locator hashes allowed
@@ -29,3 +29,4 @@ func NewMsgBlockLocator(locatorHashes []*externalapi.DomainHash) *MsgBlockLocato
 		BlockLocatorHashes: locatorHashes,
 	}
 }
+

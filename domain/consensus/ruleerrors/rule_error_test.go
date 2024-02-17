@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/consensushashing"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/consensushashing"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 )
 
 func TestNewErrMissingTxOut(t *testing.T) {
@@ -83,3 +83,4 @@ func TestNewErrInvalidTransactionsInNewBlock(t *testing.T) {
 		t.Fatalf("TestNewErrInvalidTransactionsInNewBlock: Expected %s. found: %s", expectedOuterErr, outer.Error())
 	}
 }
+

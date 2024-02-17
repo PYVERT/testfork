@@ -5,9 +5,9 @@ import (
 	"sort"
 	"time"
 
-	"github.com/karlsen-network/karlsend/cmd/karlsenwallet/libkaspawallet"
+	"github.com/karlsend/PYVERT/testfork/karlsend/cmd/karlsenwallet/libkaspawallet"
 
-	"github.com/karlsen-network/karlsend/app/appmessage"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/appmessage"
 	"github.com/pkg/errors"
 )
 
@@ -321,3 +321,4 @@ func (s *server) updateSyncingProgressLog(currProcessedAddresses, currMaxUsedAdd
 			s.maxProcessedAddressesForLog, s.maxUsedAddressesForLog, percentProcessed)
 	}
 }
+

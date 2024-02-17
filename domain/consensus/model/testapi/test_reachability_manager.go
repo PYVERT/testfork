@@ -1,8 +1,8 @@
 package testapi
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 )
 
 // TestReachabilityManager adds to the main ReachabilityManager methods required by tests
@@ -14,3 +14,4 @@ type TestReachabilityManager interface {
 	ValidateIntervals(root *externalapi.DomainHash) error
 	GetAllNodes(root *externalapi.DomainHash) ([]*externalapi.DomainHash, error)
 }
+

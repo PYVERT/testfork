@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/karlsen-network/karlsend/stability-tests/common"
-	"github.com/karlsen-network/karlsend/util/profiling"
+	"github.com/karlsend/PYVERT/testfork/karlsend/stability-tests/common"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util/profiling"
 )
 
 func main() {
@@ -23,3 +23,4 @@ func main() {
 
 	testReorg(cfg)
 }
+

@@ -18,12 +18,12 @@ import (
 
 	"github.com/btcsuite/go-socks/socks"
 	"github.com/jessevdk/go-flags"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/dagconfig"
-	"github.com/karlsen-network/karlsend/infrastructure/logger"
-	"github.com/karlsen-network/karlsend/util"
-	"github.com/karlsen-network/karlsend/util/network"
-	"github.com/karlsen-network/karlsend/version"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/dagconfig"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/logger"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util/network"
+	"github.com/karlsend/PYVERT/testfork/karlsend/version"
 	"github.com/pkg/errors"
 )
 
@@ -595,3 +595,4 @@ func createDefaultConfigFile(destinationPath string) error {
 
 	return err
 }
+

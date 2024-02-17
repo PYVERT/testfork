@@ -1,8 +1,8 @@
 package serialization
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/subnetworks"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/subnetworks"
 )
 
 // DbSubnetworkIDToDomainSubnetworkID converts DbSubnetworkId to DomainSubnetworkID
@@ -14,3 +14,4 @@ func DbSubnetworkIDToDomainSubnetworkID(dbSubnetworkID *DbSubnetworkId) (*extern
 func DomainSubnetworkIDToDbSubnetworkID(domainSubnetworkID *externalapi.DomainSubnetworkID) *DbSubnetworkId {
 	return &DbSubnetworkId{SubnetworkId: domainSubnetworkID[:]}
 }
+

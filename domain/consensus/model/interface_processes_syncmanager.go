@@ -1,6 +1,6 @@
 package model
 
-import "github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+import "github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 
 // SyncManager exposes functions to support sync between karlsend nodes
 type SyncManager interface {
@@ -14,3 +14,4 @@ type SyncManager interface {
 		externalapi.BlockLocator, error)
 	GetSyncInfo(stagingArea *StagingArea) (*externalapi.SyncInfo, error)
 }
+

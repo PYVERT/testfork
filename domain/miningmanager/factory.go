@@ -4,10 +4,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/karlsen-network/karlsend/domain/consensusreference"
-	"github.com/karlsen-network/karlsend/domain/dagconfig"
-	"github.com/karlsen-network/karlsend/domain/miningmanager/blocktemplatebuilder"
-	mempoolpkg "github.com/karlsen-network/karlsend/domain/miningmanager/mempool"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensusreference"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/dagconfig"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/miningmanager/blocktemplatebuilder"
+	mempoolpkg "github.com/karlsend/PYVERT/testfork/karlsend/domain/miningmanager/mempool"
 )
 
 // Factory instantiates new mining managers
@@ -37,3 +37,4 @@ func (f *factory) NewMiningManager(consensusReference consensusreference.Consens
 func NewFactory() Factory {
 	return &factory{}
 }
+

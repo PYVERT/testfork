@@ -1,8 +1,8 @@
 package multiset
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 	"github.com/kaspanet/go-muhash"
 	"github.com/pkg/errors"
 )
@@ -52,3 +52,4 @@ func FromBytes(multisetBytes []byte) (model.Multiset, error) {
 func New() model.Multiset {
 	return &multiset{ms: muhash.NewMuHash()}
 }
+

@@ -1,11 +1,11 @@
 package rpc
 
 import (
-	"github.com/karlsen-network/karlsend/app/appmessage"
-	"github.com/karlsen-network/karlsend/app/rpc/rpccontext"
-	"github.com/karlsen-network/karlsend/app/rpc/rpchandlers"
-	"github.com/karlsen-network/karlsend/infrastructure/network/netadapter"
-	"github.com/karlsen-network/karlsend/infrastructure/network/netadapter/router"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/appmessage"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/rpc/rpccontext"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/rpc/rpchandlers"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/network/netadapter"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/network/netadapter/router"
 	"github.com/pkg/errors"
 )
 
@@ -105,3 +105,4 @@ func (m *Manager) handleError(err error, netConnection *netadapter.NetConnection
 	}
 	panic(err)
 }
+

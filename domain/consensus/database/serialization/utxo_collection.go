@@ -1,8 +1,8 @@
 package serialization
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/utxo"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/utxo"
 )
 
 func utxoCollectionToDBUTXOCollection(utxoCollection externalapi.UTXOCollection) ([]*DbUtxoCollectionItem, error) {
@@ -41,3 +41,4 @@ func dbUTXOCollectionToUTXOCollection(items []*DbUtxoCollectionItem) (externalap
 	}
 	return utxo.NewUTXOCollection(utxoMap), nil
 }
+

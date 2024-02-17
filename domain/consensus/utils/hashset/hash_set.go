@@ -3,7 +3,7 @@ package hashset
 import (
 	"strings"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 )
 
 // HashSet is an unsorted unique collection of DomainHashes
@@ -91,3 +91,4 @@ func (hs HashSet) ToSlice() []*externalapi.DomainHash {
 func (hs HashSet) Length() int {
 	return len(hs)
 }
+

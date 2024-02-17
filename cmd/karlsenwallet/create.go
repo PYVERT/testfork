@@ -5,12 +5,12 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/karlsen-network/karlsend/cmd/karlsenwallet/libkaspawallet"
-	"github.com/karlsen-network/karlsend/cmd/karlsenwallet/libkaspawallet/bip32"
-	"github.com/karlsen-network/karlsend/cmd/karlsenwallet/utils"
+	"github.com/karlsend/PYVERT/testfork/karlsend/cmd/karlsenwallet/libkaspawallet"
+	"github.com/karlsend/PYVERT/testfork/karlsend/cmd/karlsenwallet/libkaspawallet/bip32"
+	"github.com/karlsend/PYVERT/testfork/karlsend/cmd/karlsenwallet/utils"
 	"github.com/pkg/errors"
 
-	"github.com/karlsen-network/karlsend/cmd/karlsenwallet/keys"
+	"github.com/karlsend/PYVERT/testfork/karlsend/cmd/karlsenwallet/keys"
 )
 
 func create(conf *createConfig) error {
@@ -91,3 +91,4 @@ func create(conf *createConfig) error {
 	fmt.Printf("Wrote the keys into %s\n", file.Path())
 	return nil
 }
+

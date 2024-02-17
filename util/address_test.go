@@ -13,7 +13,7 @@ import (
 
 	"golang.org/x/crypto/blake2b"
 
-	"github.com/karlsen-network/karlsend/util"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util"
 )
 
 func TestAddresses(t *testing.T) {
@@ -457,3 +457,4 @@ func TestPrefixToString(t *testing.T) {
 		}
 	}
 }
+

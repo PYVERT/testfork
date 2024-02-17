@@ -8,7 +8,7 @@ import (
 	"github.com/pkg/errors"
 	"golang.org/x/crypto/blake2b"
 
-	"github.com/karlsen-network/karlsend/util/bech32"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util/bech32"
 )
 
 var (
@@ -349,3 +349,4 @@ func (a *AddressScriptHash) String() string {
 func (a *AddressScriptHash) HashBlake2b() *[blake2b.Size256]byte {
 	return &a.hash
 }
+

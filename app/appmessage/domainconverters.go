@@ -6,14 +6,14 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/blockheader"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/hashes"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/utxo"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/blockheader"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/hashes"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/utxo"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/subnetworks"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/transactionid"
-	"github.com/karlsen-network/karlsend/util/mstime"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/subnetworks"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/transactionid"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util/mstime"
 )
 
 // DomainBlockToMsgBlock converts an externalapi.DomainBlock to MsgBlock
@@ -600,3 +600,4 @@ func DomainPruningPointProofToMsgPruningPointProof(pruningPointProof *externalap
 		Headers: headers,
 	}
 }
+

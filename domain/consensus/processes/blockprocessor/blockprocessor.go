@@ -3,10 +3,10 @@ package blockprocessor
 import (
 	"time"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/processes/blockprocessor/blocklogger"
-	"github.com/karlsen-network/karlsend/infrastructure/logger"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/processes/blockprocessor/blocklogger"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/logger"
 )
 
 // blockProcessor is responsible for processing incoming blocks
@@ -170,3 +170,4 @@ func (bp *blockProcessor) ValidateAndInsertBlockWithTrustedData(block *externala
 
 	return bp.validateAndInsertBlockWithTrustedData(stagingArea, block, shouldValidateAgainstUTXO)
 }
+

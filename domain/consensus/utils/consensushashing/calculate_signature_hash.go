@@ -1,10 +1,10 @@
 package consensushashing
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/hashes"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/serialization"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/subnetworks"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/hashes"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/serialization"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/subnetworks"
 	"github.com/pkg/errors"
 )
 
@@ -242,3 +242,4 @@ func infallibleWriteElement(hashWriter hashes.HashWriter, element interface{}) {
 		panic(errors.Wrap(err, "TransactionHashForSigning() failed. this should never fail for structurally-valid transactions"))
 	}
 }
+

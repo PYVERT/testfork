@@ -7,13 +7,13 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/karlsen-network/karlsend/infrastructure/config"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/config"
 
-	"github.com/karlsen-network/karlsend/util"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util"
 	"github.com/pkg/errors"
 
 	"github.com/jessevdk/go-flags"
-	"github.com/karlsen-network/karlsend/version"
+	"github.com/karlsend/PYVERT/testfork/karlsend/version"
 )
 
 const (
@@ -91,3 +91,4 @@ func parseConfig() (*configFlags, error) {
 
 	return cfg, nil
 }
+

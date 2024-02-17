@@ -4,8 +4,8 @@ import (
 	"math"
 	"math/rand"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/pow"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/pow"
 	"github.com/pkg/errors"
 )
 
@@ -23,3 +23,4 @@ func SolveBlock(block *externalapi.DomainBlock, rd *rand.Rand) {
 
 	panic(errors.New("went over all the nonce space and couldn't find a single one that gives a valid block"))
 }
+

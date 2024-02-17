@@ -15,3 +15,4 @@ if [ "$PUSH" = "push" ]; then
   docker push $DOCKER_REPO:$tag
   docker push $DOCKER_REPO:latest
 fi
+

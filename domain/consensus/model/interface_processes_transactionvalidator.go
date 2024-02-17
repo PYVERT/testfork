@@ -1,7 +1,7 @@
 package model
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 )
 
 // TransactionValidator exposes a set of validation classes, after which
@@ -14,3 +14,4 @@ type TransactionValidator interface {
 		tx *externalapi.DomainTransaction, povBlockHash *externalapi.DomainHash) error
 	PopulateMass(transaction *externalapi.DomainTransaction)
 }
+

@@ -1,7 +1,7 @@
 package utxolrucache
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 )
 
 // LRUCache is a least-recently-used cache for UTXO entries
@@ -75,3 +75,4 @@ func (c *LRUCache) evictRandom() {
 	}
 	c.Remove(&keyToEvict)
 }
+

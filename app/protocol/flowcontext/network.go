@@ -1,11 +1,11 @@
 package flowcontext
 
 import (
-	"github.com/karlsen-network/karlsend/app/appmessage"
-	"github.com/karlsen-network/karlsend/app/protocol/common"
-	peerpkg "github.com/karlsen-network/karlsend/app/protocol/peer"
-	"github.com/karlsen-network/karlsend/infrastructure/network/connmanager"
-	"github.com/karlsen-network/karlsend/infrastructure/network/netadapter"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/appmessage"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/protocol/common"
+	peerpkg "github.com/karlsend/PYVERT/testfork/karlsend/app/protocol/peer"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/network/connmanager"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/network/netadapter"
 	"github.com/pkg/errors"
 )
 
@@ -79,3 +79,4 @@ func (f *FlowContext) HasPeers() bool {
 	defer f.peersMutex.RUnlock()
 	return len(f.peers) > 0
 }
+

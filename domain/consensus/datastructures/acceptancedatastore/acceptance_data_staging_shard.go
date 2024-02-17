@@ -1,8 +1,8 @@
 package acceptancedatastore
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 )
 
 type acceptanceDataStagingShard struct {
@@ -48,3 +48,4 @@ func (adss *acceptanceDataStagingShard) Commit(dbTx model.DBTransaction) error {
 func (adss *acceptanceDataStagingShard) isStaged() bool {
 	return len(adss.toAdd) != 0 || len(adss.toDelete) != 0
 }
+

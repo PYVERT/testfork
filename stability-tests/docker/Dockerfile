@@ -6,9 +6,9 @@ FROM ${KASPAMINER_IMAGE} as karlsenminer
 
 FROM golang:1.19-alpine
 
-RUN mkdir -p /go/src/github.com/karlsen-network/karlsend/
+RUN mkdir -p /go/src/github.com/karlsend/PYVERT/testfork/karlsend/
 
-WORKDIR /go/src/github.com/karlsen-network/karlsend/
+WORKDIR /go/src/github.com/karlsend/PYVERT/testfork/karlsend/
 
 RUN apk add bash build-base git
 
@@ -23,7 +23,7 @@ COPY --from=karlsend /app/ /app/
 COPY --from=karlsenminer /app/ /app/
 ENV PATH="/app:${PATH}"
 
-WORKDIR /go/src/github.com/karlsen-network/karlsend/stability-tests
+WORKDIR /go/src/github.com/karlsend/PYVERT/testfork/karlsend/stability-tests
 
 RUN go install ./...
 

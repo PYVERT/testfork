@@ -1,8 +1,8 @@
 package testapi
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 )
 
 // TestConsensusStateManager  adds to the main ConsensusStateManager methods required by tests
@@ -13,3 +13,4 @@ type TestConsensusStateManager interface {
 	ResolveBlockStatus(stagingArea *model.StagingArea, blockHash *externalapi.DomainHash,
 		useSeparateStagingAreaPerBlock bool) (externalapi.BlockStatus, error)
 }
+

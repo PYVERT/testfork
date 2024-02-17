@@ -4,9 +4,9 @@ import (
 	"math"
 	"math/big"
 
-	"github.com/karlsen-network/karlsend/app/appmessage"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/util/mstime"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/appmessage"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util/mstime"
 	"github.com/pkg/errors"
 )
 
@@ -115,3 +115,4 @@ func domainParentsToProto(parents []externalapi.BlockLevelParents) []*BlockLevel
 	}
 	return protoParents
 }
+

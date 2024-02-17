@@ -7,7 +7,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/karlsen-network/karlsend/infrastructure/logger"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/logger"
 )
 
 const exitHandlerTimeout = 5 * time.Second
@@ -83,3 +83,4 @@ func handleSpawnedFunction(log *logger.Logger, stackTrace []byte, spawnedFunctio
 	defer HandlePanic(log, goroutineName, stackTrace)
 	spawnedFunction()
 }
+

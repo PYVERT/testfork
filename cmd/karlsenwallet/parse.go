@@ -6,10 +6,10 @@ import (
 	"io/ioutil"
 	"strings"
 
-	"github.com/karlsen-network/karlsend/cmd/karlsenwallet/libkaspawallet/serialization"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/consensushashing"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/constants"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/txscript"
+	"github.com/karlsend/PYVERT/testfork/karlsend/cmd/karlsenwallet/libkaspawallet/serialization"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/consensushashing"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/constants"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/txscript"
 	"github.com/pkg/errors"
 )
 
@@ -84,3 +84,4 @@ func parse(conf *parseConfig) error {
 
 	return nil
 }
+

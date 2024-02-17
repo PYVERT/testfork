@@ -8,9 +8,9 @@ import (
 	"bytes"
 	"fmt"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/constants"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/constants"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 )
 
 // These are the constants specified for maximums in individual scripts.
@@ -331,3 +331,4 @@ func IsUnspendable(scriptPubKey []byte) bool {
 
 	return len(pops) > 0 && pops[0].opcode.value == OpReturn
 }
+

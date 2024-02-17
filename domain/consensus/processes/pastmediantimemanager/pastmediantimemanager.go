@@ -3,10 +3,10 @@ package pastmediantimemanager
 import (
 	"sort"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/sorters"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/sorters"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 	"github.com/pkg/errors"
 )
 
@@ -100,3 +100,4 @@ func (pmtm *pastMedianTimeManager) windowMedianTimestamp(
 func (pmtm *pastMedianTimeManager) InvalidateVirtualPastMedianTimeCache() {
 	pmtm.virtualPastMedianTimeCache = 0
 }
+

@@ -1,6 +1,6 @@
 package model
 
-import "github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+import "github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 
 // Multiset represents a secp256k1 multiset
 type Multiset interface {
@@ -10,3 +10,4 @@ type Multiset interface {
 	Serialize() []byte
 	Clone() Multiset
 }
+

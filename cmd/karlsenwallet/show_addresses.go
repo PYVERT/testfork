@@ -4,8 +4,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/karlsen-network/karlsend/cmd/karlsenwallet/daemon/client"
-	"github.com/karlsen-network/karlsend/cmd/karlsenwallet/daemon/pb"
+	"github.com/karlsend/PYVERT/testfork/karlsend/cmd/karlsenwallet/daemon/client"
+	"github.com/karlsend/PYVERT/testfork/karlsend/cmd/karlsenwallet/daemon/pb"
 )
 
 func showAddresses(conf *showAddressesConfig) error {
@@ -32,3 +32,4 @@ func showAddresses(conf *showAddressesConfig) error {
 		"that have a positive balance, use the command 'balance -v'\n")
 	return nil
 }
+

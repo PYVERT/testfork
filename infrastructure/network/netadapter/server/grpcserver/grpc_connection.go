@@ -5,13 +5,13 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"github.com/karlsen-network/karlsend/infrastructure/network/netadapter/router"
-	"github.com/karlsen-network/karlsend/infrastructure/network/netadapter/server/grpcserver/protowire"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/network/netadapter/router"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/network/netadapter/server/grpcserver/protowire"
 	"github.com/pkg/errors"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 
-	"github.com/karlsen-network/karlsend/infrastructure/network/netadapter/server"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/network/netadapter/server"
 	"google.golang.org/grpc"
 )
 
@@ -157,3 +157,4 @@ func (c *gRPCConnection) closeSend() {
 	_ = clientStream.CloseSend()
 	_ = c.lowLevelClientConnection.Close()
 }
+

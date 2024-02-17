@@ -3,8 +3,8 @@ package protowire
 import (
 	"math/big"
 
-	"github.com/karlsen-network/karlsend/app/appmessage"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/appmessage"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 	"github.com/pkg/errors"
 )
 
@@ -193,3 +193,4 @@ func maxKType() uint32 {
 	max := zero - 1
 	return uint32(max)
 }
+

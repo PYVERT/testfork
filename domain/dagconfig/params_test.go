@@ -7,7 +7,7 @@ package dagconfig
 import (
 	"testing"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 )
 
 func TestNewHashFromStr(t *testing.T) {
@@ -87,3 +87,4 @@ func TestSkipProofOfWork(t *testing.T) {
 		}
 	}
 }
+

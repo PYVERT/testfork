@@ -1,9 +1,9 @@
 package blockprocessor
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/ruleerrors"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/ruleerrors"
 	"github.com/pkg/errors"
 )
 
@@ -45,3 +45,4 @@ func (bp *blockProcessor) validateAndInsertImportedPruningPoint(
 
 	return nil
 }
+

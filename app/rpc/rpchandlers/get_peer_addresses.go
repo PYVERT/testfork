@@ -4,9 +4,9 @@ import (
 	"net"
 	"strconv"
 
-	"github.com/karlsen-network/karlsend/app/appmessage"
-	"github.com/karlsen-network/karlsend/app/rpc/rpccontext"
-	"github.com/karlsen-network/karlsend/infrastructure/network/netadapter/router"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/appmessage"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/rpc/rpccontext"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/network/netadapter/router"
 )
 
 // HandleGetPeerAddresses handles the respectively named RPC command
@@ -28,3 +28,4 @@ func HandleGetPeerAddresses(context *rpccontext.Context, _ *router.Router, _ app
 	response := appmessage.NewGetPeerAddressesResponseMessage(addressMessages, bannedAddressMessages)
 	return response, nil
 }
+

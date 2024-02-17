@@ -13,10 +13,10 @@ import (
 
 	"github.com/gofrs/flock"
 
-	"github.com/karlsen-network/karlsend/cmd/karlsenwallet/utils"
+	"github.com/karlsend/PYVERT/testfork/karlsend/cmd/karlsenwallet/utils"
 
-	"github.com/karlsen-network/karlsend/domain/dagconfig"
-	"github.com/karlsen-network/karlsend/util"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/dagconfig"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util"
 	"github.com/pkg/errors"
 	"golang.org/x/crypto/argon2"
 	"golang.org/x/crypto/chacha20poly1305"
@@ -432,3 +432,4 @@ func (d *File) TryLock() error {
 	}
 	return nil
 }
+

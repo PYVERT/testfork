@@ -4,11 +4,11 @@ import (
 	"context"
 	"time"
 
-	"github.com/karlsen-network/karlsend/cmd/karlsenwallet/daemon/server"
+	"github.com/karlsend/PYVERT/testfork/karlsend/cmd/karlsenwallet/daemon/server"
 
 	"github.com/pkg/errors"
 
-	"github.com/karlsen-network/karlsend/cmd/karlsenwallet/daemon/pb"
+	"github.com/karlsend/PYVERT/testfork/karlsend/cmd/karlsenwallet/daemon/pb"
 	"google.golang.org/grpc"
 )
 
@@ -30,3 +30,4 @@ func Connect(address string) (pb.KaspawalletdClient, func(), error) {
 		conn.Close()
 	}, nil
 }
+

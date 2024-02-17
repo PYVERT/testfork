@@ -1,12 +1,12 @@
 package main
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/consensushashing"
-	"github.com/karlsen-network/karlsend/infrastructure/db/database/ldb"
-	"github.com/karlsen-network/karlsend/stability-tests/common"
-	"github.com/karlsen-network/karlsend/stability-tests/common/mine"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/consensushashing"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/db/database/ldb"
+	"github.com/karlsend/PYVERT/testfork/karlsend/stability-tests/common"
+	"github.com/karlsend/PYVERT/testfork/karlsend/stability-tests/common/mine"
 	"github.com/pkg/errors"
 )
 
@@ -60,3 +60,4 @@ func prepareBlocks() (blocks []*externalapi.DomainBlock, topBlock *externalapi.D
 
 	return blocks[:len(blocks)-1], blocks[len(blocks)-1], nil
 }
+

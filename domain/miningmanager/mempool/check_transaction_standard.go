@@ -3,13 +3,13 @@ package mempool
 import (
 	"fmt"
 
-	"github.com/karlsen-network/karlsend/util/txmass"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util/txmass"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/consensushashing"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/consensushashing"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/constants"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/txscript"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/constants"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/txscript"
 )
 
 const (
@@ -204,3 +204,4 @@ func (mp *mempool) minimumRequiredTransactionRelayFee(mass uint64) uint64 {
 
 	return minimumFee
 }
+

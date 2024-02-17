@@ -4,14 +4,14 @@ import (
 	"testing"
 	"time"
 
-	"github.com/karlsen-network/karlsend/app/protocol/flows/v5/addressexchange"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/protocol/flows/v5/addressexchange"
 
-	"github.com/karlsen-network/karlsend/app/appmessage"
-	peerpkg "github.com/karlsen-network/karlsend/app/protocol/peer"
-	"github.com/karlsen-network/karlsend/domain/consensus"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/testutils"
-	"github.com/karlsen-network/karlsend/infrastructure/network/addressmanager"
-	"github.com/karlsen-network/karlsend/infrastructure/network/netadapter/router"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/appmessage"
+	peerpkg "github.com/karlsend/PYVERT/testfork/karlsend/app/protocol/peer"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/testutils"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/network/addressmanager"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/network/netadapter/router"
 )
 
 type fakeReceiveAddressesContext struct{}
@@ -50,3 +50,4 @@ func TestReceiveAddressesErrors(t *testing.T) {
 		}
 	})
 }
+

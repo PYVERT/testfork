@@ -1,13 +1,13 @@
 package blockvalidator
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/ruleerrors"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/pow"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/virtual"
-	"github.com/karlsen-network/karlsend/infrastructure/db/database"
-	"github.com/karlsen-network/karlsend/infrastructure/logger"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/ruleerrors"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/pow"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/virtual"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/db/database"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/logger"
 	"github.com/pkg/errors"
 )
 
@@ -256,3 +256,4 @@ func (v *blockValidator) checkPruningPointViolation(stagingArea *model.StagingAr
 	}
 	return nil
 }
+

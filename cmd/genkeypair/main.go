@@ -3,8 +3,8 @@ package main
 import (
 	"fmt"
 
-	"github.com/karlsen-network/karlsend/cmd/karlsenwallet/libkaspawallet"
-	"github.com/karlsen-network/karlsend/util"
+	"github.com/karlsend/PYVERT/testfork/karlsend/cmd/karlsenwallet/libkaspawallet"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util"
 )
 
 func main() {
@@ -26,3 +26,4 @@ func main() {
 	fmt.Printf("Private key: %x\n", privateKey)
 	fmt.Printf("Address: %s\n", addr)
 }
+

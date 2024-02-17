@@ -1,7 +1,7 @@
 package appmessage
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 )
 
 // MaxInvPerRequestTransactionsMsg is the maximum number of hashes that can
@@ -29,3 +29,4 @@ func NewMsgRequestTransactions(ids []*externalapi.DomainTransactionID) *MsgReque
 		IDs: ids,
 	}
 }
+

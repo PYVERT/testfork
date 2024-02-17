@@ -1,6 +1,6 @@
 package model
 
-import "github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+import "github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 
 // DAABlocksStore represents a store of ???
 type DAABlocksStore interface {
@@ -12,3 +12,4 @@ type DAABlocksStore interface {
 	DAAScore(dbContext DBReader, stagingArea *StagingArea, blockHash *externalapi.DomainHash) (uint64, error)
 	Delete(stagingArea *StagingArea, blockHash *externalapi.DomainHash)
 }
+

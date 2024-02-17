@@ -8,9 +8,9 @@ import (
 	"math"
 	"testing"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/constants"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/constants"
 
-	. "github.com/karlsen-network/karlsend/util"
+	. "github.com/karlsend/PYVERT/testfork/karlsend/util"
 )
 
 func TestAmountCreation(t *testing.T) {
@@ -255,3 +255,4 @@ func TestAmountMulF64(t *testing.T) {
 		}
 	}
 }
+

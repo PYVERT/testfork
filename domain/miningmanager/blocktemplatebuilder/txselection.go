@@ -5,9 +5,9 @@ import (
 	"math/rand"
 	"sort"
 
-	consensusexternalapi "github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/consensushashing"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/subnetworks"
+	consensusexternalapi "github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/consensushashing"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/subnetworks"
 )
 
 const (
@@ -211,3 +211,4 @@ func findTx(candidateTxs []*candidateTx, r float64) *candidateTx {
 		return candidateTx
 	}
 }
+

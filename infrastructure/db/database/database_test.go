@@ -9,7 +9,7 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/karlsen-network/karlsend/infrastructure/db/database"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/db/database"
 )
 
 func TestDatabasePut(t *testing.T) {
@@ -167,3 +167,4 @@ func testDatabaseDelete(t *testing.T, db database.Database, testName string) {
 			"unexpectedly returned that the value exists", testName)
 	}
 }
+

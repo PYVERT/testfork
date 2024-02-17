@@ -7,7 +7,7 @@ package dagconfig
 import (
 	"testing"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/consensushashing"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/consensushashing"
 )
 
 // TestGenesisBlock tests the genesis block of the main network for validity by
@@ -56,3 +56,4 @@ func TestDevnetGenesisBlock(t *testing.T) {
 			DevnetParams.GenesisHash)
 	}
 }
+

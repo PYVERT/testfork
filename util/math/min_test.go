@@ -4,7 +4,7 @@ import (
 	"math"
 	"testing"
 
-	utilMath "github.com/karlsen-network/karlsend/util/math"
+	utilMath "github.com/karlsend/PYVERT/testfork/karlsend/util/math"
 )
 
 const (
@@ -63,3 +63,4 @@ func TestMinUint32(t *testing.T) {
 		}
 	}
 }
+

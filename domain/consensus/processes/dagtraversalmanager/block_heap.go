@@ -3,8 +3,8 @@ package dagtraversalmanager
 import (
 	"container/heap"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 )
 
 func blockGHOSTDAGDataHashPairLess(left, right *externalapi.BlockGHOSTDAGDataHashPair, gm model.GHOSTDAGManager) bool {
@@ -202,3 +202,4 @@ func (sbh *sizedUpBlockHeap) tryPush(blockHash *externalapi.DomainHash) (bool, e
 	}
 	return sbh.tryPushWithGHOSTDAGData(blockHash, ghostdagData)
 }
+

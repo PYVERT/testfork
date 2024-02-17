@@ -1,9 +1,9 @@
 package rejects
 
 import (
-	"github.com/karlsen-network/karlsend/app/appmessage"
-	"github.com/karlsen-network/karlsend/app/protocol/protocolerrors"
-	"github.com/karlsen-network/karlsend/infrastructure/network/netadapter/router"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/appmessage"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/protocol/protocolerrors"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/network/netadapter/router"
 )
 
 // HandleRejectsContext is the interface for the context needed for the HandleRejects flow.
@@ -35,3 +35,4 @@ func (flow *handleRejectsFlow) start() error {
 
 	return protocolerrors.Errorf(false, "got reject message: `%s`", rejectMessage.Reason)
 }
+

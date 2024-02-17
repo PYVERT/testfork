@@ -1,8 +1,8 @@
 package database
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model"
-	"github.com/karlsen-network/karlsend/infrastructure/db/database"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/db/database"
 )
 
 func dbBucketToDatabaseBucket(bucket model.DBBucket) *database.Bucket {
@@ -37,3 +37,4 @@ func (d dbBucket) Path() []byte {
 func newDBBucket(bucket *database.Bucket) model.DBBucket {
 	return dbBucket{bucket: bucket}
 }
+

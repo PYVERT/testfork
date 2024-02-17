@@ -1,6 +1,6 @@
 package rpcclient
 
-import "github.com/karlsen-network/karlsend/app/appmessage"
+import "github.com/karlsend/PYVERT/testfork/karlsend/app/appmessage"
 
 // GetVirtualSelectedParentChainFromBlock sends an RPC request respective to the function's name and returns the RPC server's response
 func (c *RPCClient) GetVirtualSelectedParentChainFromBlock(startHash string, includeAcceptedTransactionIDs bool) (
@@ -20,3 +20,4 @@ func (c *RPCClient) GetVirtualSelectedParentChainFromBlock(startHash string, inc
 	}
 	return GetVirtualSelectedParentChainFromBlockResponse, nil
 }
+

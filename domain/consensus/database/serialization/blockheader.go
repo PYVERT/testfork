@@ -4,8 +4,8 @@ import (
 	"math"
 	"math/big"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/blockheader"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/blockheader"
 	"github.com/pkg/errors"
 )
 
@@ -69,3 +69,4 @@ func DbBlockHeaderToDomainBlockHeader(dbBlockHeader *DbBlockHeader) (externalapi
 		pruningPoint,
 	), nil
 }
+

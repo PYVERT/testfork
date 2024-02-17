@@ -1,10 +1,10 @@
 package consensus
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/testapi"
-	"github.com/karlsen-network/karlsend/infrastructure/db/database"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/testapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/db/database"
 )
 
 func (tc *testConsensus) DatabaseContext() model.DBManager {
@@ -150,3 +150,4 @@ func (tc *testConsensus) DAABlocksStore() model.DAABlocksStore {
 func (tc *testConsensus) Consensus() externalapi.Consensus {
 	return tc
 }
+

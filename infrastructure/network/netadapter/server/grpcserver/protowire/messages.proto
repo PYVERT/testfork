@@ -1,7 +1,7 @@
 syntax = "proto3";
 package protowire;
 
-option go_package = "github.com/karlsen-network/karlsend/protowire";
+option go_package = "github.com/karlsend/PYVERT/testfork/karlsend/protowire";
 
 import "p2p.proto";
 import "rpc.proto";
@@ -149,3 +149,4 @@ service P2P {
 service RPC {
   rpc MessageStream (stream KarlsendMessage) returns (stream KarlsendMessage) {}
 }
+

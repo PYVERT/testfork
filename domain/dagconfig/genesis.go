@@ -7,10 +7,10 @@ package dagconfig
 import (
 	"math/big"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/blockheader"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/subnetworks"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/transactionhelper"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/blockheader"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/subnetworks"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/transactionhelper"
 	"github.com/kaspanet/go-muhash"
 )
 
@@ -40,10 +40,10 @@ var genesisCoinbaseTx = transactionhelper.NewSubnetworkTransaction(0, []*externa
 // genesisHash is the hash of the first block in the block DAG for the main
 // network (genesis block).
 var genesisHash = externalapi.NewDomainHashFromByteArray(&[externalapi.DomainHashSize]byte{
-	0xb3, 0xba, 0x08, 0xbb, 0x0d, 0x35, 0xd2, 0x9d,
-	0x05, 0x46, 0xfb, 0x97, 0xc2, 0x9e, 0x61, 0x8f,
-	0x91, 0x87, 0xa1, 0x7d, 0x44, 0xa5, 0x07, 0x45,
-	0xdf, 0x60, 0x50, 0x58, 0x95, 0x13, 0x02, 0x22,
+	0x1a, 0x2b, 0x3c, 0x4d, 0x5e, 0x6f, 0x7a, 0x8b,
+	0x9c, 0xad, 0xbe, 0xcf, 0xda, 0xeb, 0xfc, 0x0d,
+	0x1e, 0x2f, 0x3a, 0x4b, 0x5c, 0x6d, 0x7e, 0x8f,
+	0x9a, 0xab, 0xbc, 0xcd, 0xde, 0xef, 0xfa, 0x0b,
 })
 
 // genesisMerkleRoot is the hash of the first transaction in the genesis block

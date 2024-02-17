@@ -1,7 +1,7 @@
 package binaryserialization
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 	"github.com/pkg/errors"
 )
 
@@ -45,3 +45,4 @@ func DeserializeHashes(hashesBytes []byte) ([]*externalapi.DomainHash, error) {
 	}
 	return hashes, nil
 }
+

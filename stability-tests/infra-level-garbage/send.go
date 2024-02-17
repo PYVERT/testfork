@@ -5,7 +5,7 @@ import (
 	"net"
 	"time"
 
-	"github.com/karlsen-network/karlsend/app/protocol/common"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/protocol/common"
 	"github.com/pkg/errors"
 )
 
@@ -54,3 +54,4 @@ func dialToNode(address string) (net.Conn, error) {
 	}
 	return connection, nil
 }
+

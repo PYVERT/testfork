@@ -1,9 +1,9 @@
 package rpchandlers
 
 import (
-	"github.com/karlsen-network/karlsend/app/appmessage"
-	"github.com/karlsen-network/karlsend/app/rpc/rpccontext"
-	"github.com/karlsen-network/karlsend/infrastructure/network/netadapter/router"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/appmessage"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/rpc/rpccontext"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/network/netadapter/router"
 )
 
 // HandleNotifyUTXOsChanged handles the respectively named RPC command
@@ -31,3 +31,4 @@ func HandleNotifyUTXOsChanged(context *rpccontext.Context, router *router.Router
 	response := appmessage.NewNotifyUTXOsChangedResponseMessage()
 	return response, nil
 }
+

@@ -1,6 +1,6 @@
 package winservice
 
-import "github.com/karlsen-network/karlsend/infrastructure/config"
+import "github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/config"
 
 // ServiceDescription contains information about a service, needed to administer it
 type ServiceDescription struct {
@@ -15,3 +15,4 @@ type MainFunc func(startedChan chan<- struct{}) error
 // WinServiceMain is only invoked on Windows. It detects when karlsend is running
 // as a service and reacts accordingly.
 var WinServiceMain = func(MainFunc, *ServiceDescription, *config.Config) (bool, error) { return false, nil }
+

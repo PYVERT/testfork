@@ -3,7 +3,7 @@ package utxo
 import (
 	"testing"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 )
 
 func TestUTXOEntry_Equal(t *testing.T) {
@@ -112,3 +112,4 @@ func TestUTXOEntry_Equal(t *testing.T) {
 		}
 	}
 }
+

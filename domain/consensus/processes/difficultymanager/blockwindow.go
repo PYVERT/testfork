@@ -4,9 +4,9 @@ import (
 	"math"
 	"math/big"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/util/difficulty"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util/difficulty"
 )
 
 type difficultyBlock struct {
@@ -101,3 +101,4 @@ func (window blockWindow) averageTarget() *big.Int {
 	}
 	return averageTarget.Div(averageTarget, big.NewInt(int64(len(window))))
 }
+

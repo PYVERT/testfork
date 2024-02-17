@@ -1,7 +1,7 @@
 package protowire
 
 import (
-	"github.com/karlsen-network/karlsend/app/appmessage"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/appmessage"
 	"github.com/pkg/errors"
 )
 
@@ -77,3 +77,4 @@ func (x *BlockAddedNotificationMessage) toAppMessage() (appmessage.Message, erro
 		Block: block,
 	}, nil
 }
+

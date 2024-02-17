@@ -1,7 +1,7 @@
 syntax = "proto3";
 package serialization;
 
-option go_package = "github.com/karlsen-network/karlsend/serialization";
+option go_package = "github.com/karlsend/PYVERT/testfork/karlsend/serialization";
 
 message DbBlock {
   DbBlockHeader header = 1;
@@ -163,3 +163,4 @@ message DbBlockGHOSTDAGDataHashPair {
   DbHash hash = 1;
   DbBlockGhostdagData GhostdagData = 2;
 }
+

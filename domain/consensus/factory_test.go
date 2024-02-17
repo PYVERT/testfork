@@ -4,10 +4,10 @@ import (
 	"io/ioutil"
 	"testing"
 
-	"github.com/karlsen-network/karlsend/domain/prefixmanager/prefix"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/prefixmanager/prefix"
 
-	"github.com/karlsen-network/karlsend/domain/dagconfig"
-	"github.com/karlsen-network/karlsend/infrastructure/db/database/ldb"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/dagconfig"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/db/database/ldb"
 )
 
 func TestNewConsensus(t *testing.T) {
@@ -34,3 +34,4 @@ func TestNewConsensus(t *testing.T) {
 		t.Fatalf("A fresh consensus should never return shouldMigrate=true")
 	}
 }
+

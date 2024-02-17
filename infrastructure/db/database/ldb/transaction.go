@@ -1,7 +1,7 @@
 package ldb
 
 import (
-	"github.com/karlsen-network/karlsend/infrastructure/db/database"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/db/database"
 	"github.com/pkg/errors"
 	"github.com/syndtr/goleveldb/leveldb"
 )
@@ -113,3 +113,4 @@ func (tx *LevelDBTransaction) Cursor(bucket *database.Bucket) (database.Cursor, 
 
 	return tx.db.Cursor(bucket)
 }
+

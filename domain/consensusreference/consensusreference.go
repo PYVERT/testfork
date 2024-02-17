@@ -1,6 +1,6 @@
 package consensusreference
 
-import "github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+import "github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 
 // ConsensusReference holds a reference to a consensus object.
 // The consensus object may be swapped with a new one entirely
@@ -20,3 +20,4 @@ func (ref ConsensusReference) Consensus() externalapi.Consensus {
 func NewConsensusReference(consensus **externalapi.Consensus) ConsensusReference {
 	return ConsensusReference{consensus: consensus}
 }
+

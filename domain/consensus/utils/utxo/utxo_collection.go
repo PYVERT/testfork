@@ -5,7 +5,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 )
 
 type utxoCollection map[externalapi.DomainOutpoint]externalapi.UTXOEntry
@@ -91,3 +91,4 @@ func (uc utxoCollection) containsWithDAAScore(outpoint *externalapi.DomainOutpoi
 	entry, ok := uc.Get(outpoint)
 	return ok && entry.BlockDAAScore() == daaScore
 }
+

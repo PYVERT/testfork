@@ -1,8 +1,8 @@
 package database
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model"
-	"github.com/karlsen-network/karlsend/infrastructure/db/database"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/db/database"
 	"github.com/pkg/errors"
 )
 
@@ -68,3 +68,4 @@ func (d dbCursor) Close() error {
 func newDBCursor(cursor database.Cursor) model.DBCursor {
 	return &dbCursor{cursor: cursor}
 }
+

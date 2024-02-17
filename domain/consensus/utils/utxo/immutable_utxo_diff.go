@@ -1,7 +1,7 @@
 package utxo
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 	"github.com/pkg/errors"
 )
 
@@ -101,3 +101,4 @@ func (iud *immutableUTXODiff) cloneMutable() *mutableUTXODiff {
 func (iud immutableUTXODiff) String() string {
 	return iud.mutableUTXODiff.String()
 }
+

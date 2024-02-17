@@ -30,3 +30,4 @@ rm -rf /tmp/STABILITY_TEMP_DIR_*
 echo "netsync (fast) test: PASSED"
 exit 0
 
+

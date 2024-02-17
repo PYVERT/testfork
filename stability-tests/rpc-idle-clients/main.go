@@ -3,10 +3,10 @@ package main
 import (
 	"time"
 
-	"github.com/karlsen-network/karlsend/stability-tests/common"
-	"github.com/karlsen-network/karlsend/stability-tests/common/rpc"
-	"github.com/karlsen-network/karlsend/util/panics"
-	"github.com/karlsen-network/karlsend/util/profiling"
+	"github.com/karlsend/PYVERT/testfork/karlsend/stability-tests/common"
+	"github.com/karlsend/PYVERT/testfork/karlsend/stability-tests/common/rpc"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util/panics"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util/profiling"
 	"github.com/pkg/errors"
 )
 
@@ -42,3 +42,4 @@ func main() {
 		client.Close()
 	}
 }
+

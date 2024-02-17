@@ -4,14 +4,14 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/karlsen-network/karlsend/domain/dagconfig"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/dagconfig"
 
-	"github.com/karlsen-network/karlsend/infrastructure/db/database/ldb"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/db/database/ldb"
 
-	"github.com/karlsen-network/karlsend/infrastructure/db/database"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/db/database"
 
-	"github.com/karlsen-network/karlsend/app"
-	"github.com/karlsen-network/karlsend/infrastructure/config"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/config"
 )
 
 type appHarness struct {
@@ -138,3 +138,4 @@ func openDB(cfg *config.Config) (database.Database, error) {
 	dbPath := filepath.Join(cfg.AppDir, "db")
 	return ldb.NewLevelDB(dbPath, 8)
 }
+

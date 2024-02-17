@@ -7,9 +7,9 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/subnetworks"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/subnetworks"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 )
 
 func TestCreateDefaultConfigFile(t *testing.T) {
@@ -70,3 +70,4 @@ func TestConstants(t *testing.T) {
 		t.Errorf("subnetworks.SubnetworkIDRegistry value was changed from 2, therefore you probably need to update the help text for SubnetworkID")
 	}
 }
+

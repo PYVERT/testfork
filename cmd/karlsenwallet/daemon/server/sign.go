@@ -3,9 +3,9 @@ package server
 import (
 	"context"
 
-	"github.com/karlsen-network/karlsend/cmd/karlsenwallet/libkaspawallet"
+	"github.com/karlsend/PYVERT/testfork/karlsend/cmd/karlsenwallet/libkaspawallet"
 
-	"github.com/karlsen-network/karlsend/cmd/karlsenwallet/daemon/pb"
+	"github.com/karlsend/PYVERT/testfork/karlsend/cmd/karlsenwallet/daemon/pb"
 )
 
 func (s *server) Sign(_ context.Context, request *pb.SignRequest) (*pb.SignResponse, error) {
@@ -34,3 +34,4 @@ func (s *server) signTransactions(unsignedTransactions [][]byte, password string
 	}
 	return signedTransactions, nil
 }
+

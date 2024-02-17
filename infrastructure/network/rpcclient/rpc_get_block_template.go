@@ -1,6 +1,6 @@
 package rpcclient
 
-import "github.com/karlsen-network/karlsend/app/appmessage"
+import "github.com/karlsend/PYVERT/testfork/karlsend/app/appmessage"
 
 // GetBlockTemplate sends an RPC request respective to the function's name and returns the RPC server's response
 func (c *RPCClient) GetBlockTemplate(miningAddress, extraData string) (*appmessage.GetBlockTemplateResponseMessage, error) {
@@ -18,3 +18,4 @@ func (c *RPCClient) GetBlockTemplate(miningAddress, extraData string) (*appmessa
 	}
 	return getBlockTemplateResponse, nil
 }
+

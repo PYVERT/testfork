@@ -3,15 +3,15 @@ package ping
 import (
 	"time"
 
-	"github.com/karlsen-network/karlsend/app/protocol/common"
-	"github.com/karlsen-network/karlsend/app/protocol/flowcontext"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/protocol/common"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/protocol/flowcontext"
 	"github.com/pkg/errors"
 
-	"github.com/karlsen-network/karlsend/app/appmessage"
-	peerpkg "github.com/karlsen-network/karlsend/app/protocol/peer"
-	"github.com/karlsen-network/karlsend/app/protocol/protocolerrors"
-	"github.com/karlsen-network/karlsend/infrastructure/network/netadapter/router"
-	"github.com/karlsen-network/karlsend/util/random"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/appmessage"
+	peerpkg "github.com/karlsend/PYVERT/testfork/karlsend/app/protocol/peer"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/protocol/protocolerrors"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/network/netadapter/router"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util/random"
 )
 
 // SendPingsContext is the interface for the context needed for the SendPings flow.
@@ -76,3 +76,4 @@ func (flow *sendPingsFlow) start() error {
 		flow.peer.SetPingIdle()
 	}
 }
+

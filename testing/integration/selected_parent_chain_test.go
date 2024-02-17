@@ -3,10 +3,10 @@ package integration
 import (
 	"testing"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 
-	"github.com/karlsen-network/karlsend/app/appmessage"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/consensushashing"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/appmessage"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/consensushashing"
 )
 
 func TestVirtualSelectedParentChain(t *testing.T) {
@@ -104,3 +104,4 @@ func TestVirtualSelectedParentChain(t *testing.T) {
 			chain2TipHashString, lastAddedChainBlock)
 	}
 }
+

@@ -1,8 +1,8 @@
 package serialization
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/utxo"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/utxo"
 )
 
 // UTXODiffToDBUTXODiff converts UTXODiff to DbUtxoDiff
@@ -37,3 +37,4 @@ func DBUTXODiffToUTXODiff(diff *DbUtxoDiff) (externalapi.UTXODiff, error) {
 
 	return utxo.NewUTXODiffFromCollections(toAdd, toRemove)
 }
+

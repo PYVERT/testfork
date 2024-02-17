@@ -1,6 +1,6 @@
 package model
 
-import "github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+import "github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 
 // SubDAG represents a context-free representation of a partial DAG
 type SubDAG struct {
@@ -15,3 +15,4 @@ type SubDAGBlock struct {
 	ParentHashes []*externalapi.DomainHash
 	ChildHashes  []*externalapi.DomainHash
 }
+

@@ -3,7 +3,7 @@ package integration
 import (
 	"testing"
 
-	"github.com/karlsen-network/karlsend/app/appmessage"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/appmessage"
 )
 
 func setOnBlockAddedHandler(t *testing.T, harness *appHarness, handler func(notification *appmessage.BlockAddedNotificationMessage)) {
@@ -12,3 +12,4 @@ func setOnBlockAddedHandler(t *testing.T, harness *appHarness, handler func(noti
 		t.Fatalf("Error from RegisterForBlockAddedNotifications: %s", err)
 	}
 }
+

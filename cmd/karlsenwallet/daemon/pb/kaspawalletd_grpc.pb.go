@@ -391,3 +391,4 @@ var Kaspawalletd_ServiceDesc = grpc.ServiceDesc{
 	Streams:  []grpc.StreamDesc{},
 	Metadata: "karlsenwalletd.proto",
 }
+

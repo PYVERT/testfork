@@ -8,14 +8,14 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/karlsen-network/karlsend/domain/consensus"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus"
 
-	"github.com/karlsen-network/karlsend/app/appmessage"
-	"github.com/karlsen-network/karlsend/stability-tests/common"
-	"github.com/karlsen-network/karlsend/stability-tests/common/mine"
-	"github.com/karlsen-network/karlsend/stability-tests/common/rpc"
-	"github.com/karlsen-network/karlsend/util"
-	"github.com/karlsen-network/karlsend/util/panics"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/appmessage"
+	"github.com/karlsend/PYVERT/testfork/karlsend/stability-tests/common"
+	"github.com/karlsend/PYVERT/testfork/karlsend/stability-tests/common/mine"
+	"github.com/karlsend/PYVERT/testfork/karlsend/stability-tests/common/rpc"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util/panics"
 	"github.com/pkg/errors"
 )
 
@@ -202,3 +202,4 @@ func mineOnTips(client *rpc.Client) (appmessage.RejectReason, error) {
 
 	return client.SubmitBlockAlsoIfNonDAA(domainBlock)
 }
+

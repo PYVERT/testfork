@@ -7,7 +7,7 @@ import (
 	"syscall"
 	"testing"
 
-	"github.com/karlsen-network/karlsend/domain/dagconfig"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/dagconfig"
 )
 
 // RunKarlsendForTesting runs karlsend for testing purposes
@@ -52,3 +52,4 @@ func RunKarlsendForTesting(t *testing.T, testName string, rpcAddress string) fun
 		t.Logf("Karlsend stopped")
 	}
 }
+

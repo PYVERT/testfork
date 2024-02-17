@@ -4,7 +4,7 @@ import (
 	"encoding/binary"
 	"math/bits"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 )
 
 type xoShiRo256PlusPlus struct {
@@ -36,3 +36,4 @@ func (x *xoShiRo256PlusPlus) Uint64() uint64 {
 	x.s3 = bits.RotateLeft64(x.s3, 45)
 	return res
 }
+

@@ -1,9 +1,9 @@
 package rpchandlers
 
 import (
-	"github.com/karlsen-network/karlsend/app/appmessage"
-	"github.com/karlsen-network/karlsend/app/rpc/rpccontext"
-	"github.com/karlsen-network/karlsend/infrastructure/network/netadapter/router"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/appmessage"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/rpc/rpccontext"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/network/netadapter/router"
 )
 
 // HandleGetConnectedPeerInfo handles the respectively named RPC command
@@ -28,3 +28,4 @@ func HandleGetConnectedPeerInfo(context *rpccontext.Context, _ *router.Router, _
 	response := appmessage.NewGetConnectedPeerInfoResponseMessage(infos)
 	return response, nil
 }
+

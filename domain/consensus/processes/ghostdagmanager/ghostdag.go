@@ -3,9 +3,9 @@ package ghostdagmanager
 import (
 	"math/big"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/util/difficulty"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util/difficulty"
 	"github.com/pkg/errors"
 )
 
@@ -267,3 +267,4 @@ func (gm *ghostdagManager) blueAnticoneSize(stagingArea *model.StagingArea,
 	}
 	return 0, errors.Errorf("block %s is not in blue set of the given context", block)
 }
+

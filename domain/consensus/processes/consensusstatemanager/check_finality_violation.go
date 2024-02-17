@@ -1,8 +1,8 @@
 package consensusstatemanager
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 )
 
 func (csm *consensusStateManager) isViolatingFinality(stagingArea *model.StagingArea, blockHash *externalapi.DomainHash,
@@ -68,3 +68,4 @@ func (csm *consensusStateManager) isViolatingFinality(stagingArea *model.Staging
 
 	return false, false, nil
 }
+

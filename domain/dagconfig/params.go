@@ -175,7 +175,7 @@ type Params struct {
 	// CoinbasePayloadScriptPublicKeyMaxLength is the maximum allowed script public key in the coinbase's payload
 	CoinbasePayloadScriptPublicKeyMaxLength uint8
 
-	// PruningProofM is the 'm' constant in the pruning proof. For more details see: https://github.com/karlsen-network/research/issues/3
+	// PruningProofM is the 'm' constant in the pruning proof. For more details see: https://github.com/karlsend/PYVERT/testfork/research/issues/3
 	PruningProofM uint64
 
 	// DeflationaryPhaseDaaScore is the DAA score after which the monetary policy switches
@@ -506,3 +506,4 @@ func init() {
 	mustRegister(&SimnetParams)
 	mustRegister(&DevnetParams)
 }
+

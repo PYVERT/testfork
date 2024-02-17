@@ -1,8 +1,8 @@
 package consensusstatemanager
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 )
 
 func (csm *consensusStateManager) stageDiff(stagingArea *model.StagingArea, blockHash *externalapi.DomainHash,
@@ -14,3 +14,4 @@ func (csm *consensusStateManager) stageDiff(stagingArea *model.StagingArea, bloc
 	log.Debugf("Staging block %s as the diff child of %s", utxoDiffChild, blockHash)
 	csm.utxoDiffStore.Stage(stagingArea, blockHash, utxoDiff, utxoDiffChild)
 }
+

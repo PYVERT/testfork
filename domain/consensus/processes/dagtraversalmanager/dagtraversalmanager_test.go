@@ -3,11 +3,11 @@ package dagtraversalmanager_test
 import (
 	"testing"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model"
 
-	"github.com/karlsen-network/karlsend/domain/consensus"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/testutils"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/testutils"
 )
 
 func TestLowestChainBlockAboveOrEqualToBlueScore(t *testing.T) {
@@ -115,3 +115,4 @@ func TestLowestChainBlockAboveOrEqualToBlueScore(t *testing.T) {
 		checkExpectedBlock(tipHash, 10, blueScore11BlockHash)
 	})
 }
+

@@ -6,15 +6,15 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/karlsen-network/karlsend/app/appmessage"
-	"github.com/karlsen-network/karlsend/infrastructure/network/dnsseed"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/appmessage"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/network/dnsseed"
 	"github.com/pkg/errors"
 
-	"github.com/karlsen-network/karlsend/infrastructure/network/addressmanager"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/network/addressmanager"
 
-	"github.com/karlsen-network/karlsend/infrastructure/network/netadapter"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/network/netadapter"
 
-	"github.com/karlsen-network/karlsend/infrastructure/config"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/config"
 )
 
 // connectionRequest represents a user request (either through CLI or RPC) to connect to a certain node
@@ -270,3 +270,4 @@ func (c *ConnectionManager) seedFromDNS() {
 			})
 	}
 }
+

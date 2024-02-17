@@ -3,7 +3,7 @@ package flowcontext
 import (
 	"sync"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 )
 
 // SharedRequestedBlocks is a data structure that is shared between peers that
@@ -47,3 +47,4 @@ func NewSharedRequestedBlocks() *SharedRequestedBlocks {
 		blocks: make(map[externalapi.DomainHash]struct{}),
 	}
 }
+

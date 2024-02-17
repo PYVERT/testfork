@@ -8,7 +8,7 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/karlsen-network/karlsend/infrastructure/logger"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/logger"
 
 	// Required for profiling
 	_ "net/http/pprof"
@@ -16,7 +16,7 @@ import (
 	"runtime"
 	"runtime/pprof"
 
-	"github.com/karlsen-network/karlsend/util/panics"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util/panics"
 )
 
 // heapDumpFileName is the name of the heap dump file. We want every run to have its own
@@ -77,3 +77,4 @@ func dumpHeapProfile(heapLimit uint64, dumpFolder string, memStats *runtime.MemS
 		log.Infof("Could not write heap profile: %s", err)
 	}
 }
+

@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 )
 
 func initTestBlockRelationsForClone() []*BlockRelations {
@@ -144,3 +144,4 @@ func TestBlockRelations_Clone(t *testing.T) {
 		}
 	}
 }
+

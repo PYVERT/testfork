@@ -5,8 +5,8 @@ import (
 	"os/exec"
 	"strings"
 
-	"github.com/karlsen-network/karlsend/domain/dagconfig"
-	"github.com/karlsen-network/karlsend/infrastructure/logger"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/dagconfig"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/logger"
 	"github.com/pkg/errors"
 )
 
@@ -30,3 +30,4 @@ func StartCmd(name string, args ...string) (*exec.Cmd, error) {
 func NetworkCliArgumentFromNetParams(params *dagconfig.Params) string {
 	return fmt.Sprintf("--%s", strings.TrimPrefix(params.Name, "karlsen-"))
 }
+

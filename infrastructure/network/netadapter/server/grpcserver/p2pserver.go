@@ -5,9 +5,9 @@ import (
 	"net"
 	"time"
 
-	"github.com/karlsen-network/karlsend/infrastructure/network/netadapter/server"
-	"github.com/karlsen-network/karlsend/infrastructure/network/netadapter/server/grpcserver/protowire"
-	"github.com/karlsen-network/karlsend/util/panics"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/network/netadapter/server"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/network/netadapter/server/grpcserver/protowire"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util/panics"
 	"github.com/pkg/errors"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/encoding/gzip"
@@ -82,3 +82,4 @@ func (p *p2pServer) Connect(address string) (server.Connection, error) {
 
 	return connection, nil
 }
+

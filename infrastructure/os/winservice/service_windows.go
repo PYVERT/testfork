@@ -9,9 +9,9 @@ import (
 
 	"github.com/btcsuite/winsvc/eventlog"
 	"github.com/btcsuite/winsvc/svc"
-	"github.com/karlsen-network/karlsend/infrastructure/config"
-	"github.com/karlsen-network/karlsend/infrastructure/os/signal"
-	"github.com/karlsen-network/karlsend/version"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/config"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/os/signal"
+	"github.com/karlsend/PYVERT/testfork/karlsend/version"
 )
 
 // Service houses the main service handler which handles all service
@@ -117,3 +117,4 @@ func (s *Service) logServiceStart() {
 	message += fmt.Sprintf("Application directory: %s\n", s.cfg.AppDir)
 	message += fmt.Sprintf("Logs directory: %s\n", s.cfg.LogDir)
 }
+

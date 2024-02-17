@@ -1,4 +1,4 @@
-module github.com/karlsen-network/karlsend
+module github.com/karlsend/PYVERT/testfork/karlsend
 
 go 1.18
 
@@ -33,3 +33,4 @@ require (
 	google.golang.org/genproto v0.0.0-20210604141403-392c879c8b08 // indirect
 	gopkg.in/yaml.v2 v2.3.0 // indirect
 )
+

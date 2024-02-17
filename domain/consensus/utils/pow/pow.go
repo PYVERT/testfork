@@ -1,11 +1,11 @@
 package pow
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/consensushashing"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/hashes"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/serialization"
-	"github.com/karlsen-network/karlsend/util/difficulty"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/consensushashing"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/hashes"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/serialization"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util/difficulty"
 
 	"math/big"
 
@@ -111,3 +111,4 @@ func BlockLevel(header externalapi.BlockHeader, maxBlockLevel int) int {
 	}
 	return level
 }
+

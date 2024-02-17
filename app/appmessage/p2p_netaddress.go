@@ -7,7 +7,7 @@ package appmessage
 import (
 	"net"
 
-	"github.com/karlsen-network/karlsend/util/mstime"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util/mstime"
 )
 
 // NetAddress defines information about a peer on the network including the time
@@ -62,3 +62,4 @@ func NewNetAddress(addr *net.TCPAddr) *NetAddress {
 func (na NetAddress) String() string {
 	return na.TCPAddress().String()
 }
+

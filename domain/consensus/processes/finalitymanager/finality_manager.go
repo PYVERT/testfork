@@ -3,9 +3,9 @@ package finalitymanager
 import (
 	"errors"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/database"
-	"github.com/karlsen-network/karlsend/domain/consensus/model"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/database"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 )
 
 type finalityManager struct {
@@ -156,3 +156,4 @@ func (fm *finalityManager) calculateFinalityPoint(stagingArea *model.StagingArea
 		current = next
 	}
 }
+

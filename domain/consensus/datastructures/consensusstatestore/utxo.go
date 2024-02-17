@@ -1,9 +1,9 @@
 package consensusstatestore
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/utxo"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/utxo"
 	"github.com/pkg/errors"
 )
 
@@ -267,3 +267,4 @@ func (u utxoSetIterator) Close() error {
 	u.cursor = nil
 	return nil
 }
+

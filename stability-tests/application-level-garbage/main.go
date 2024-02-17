@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/karlsen-network/karlsend/infrastructure/config"
-	"github.com/karlsen-network/karlsend/infrastructure/network/netadapter/standalone"
-	"github.com/karlsen-network/karlsend/stability-tests/common"
-	"github.com/karlsen-network/karlsend/util/panics"
-	"github.com/karlsen-network/karlsend/util/profiling"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/config"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/network/netadapter/standalone"
+	"github.com/karlsend/PYVERT/testfork/karlsend/stability-tests/common"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util/panics"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util/profiling"
 )
 
 func main() {
@@ -49,3 +49,4 @@ func main() {
 		os.Exit(1)
 	}
 }
+

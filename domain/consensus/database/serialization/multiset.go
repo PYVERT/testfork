@@ -1,8 +1,8 @@
 package serialization
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/multiset"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/multiset"
 )
 
 // MultisetToDBMultiset converts Multiset to DbMultiset
@@ -16,3 +16,4 @@ func MultisetToDBMultiset(multiset model.Multiset) *DbMultiset {
 func DBMultisetToMultiset(dbMultiset *DbMultiset) (model.Multiset, error) {
 	return multiset.FromBytes(dbMultiset.Multiset)
 }
+

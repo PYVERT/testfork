@@ -1,8 +1,8 @@
 package database
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model"
-	"github.com/karlsen-network/karlsend/infrastructure/db/database"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/db/database"
 )
 
 type dbTransaction struct {
@@ -48,3 +48,4 @@ func (d *dbTransaction) RollbackUnlessClosed() error {
 func newDBTransaction(transaction database.Transaction) model.DBTransaction {
 	return &dbTransaction{transaction: transaction}
 }
+

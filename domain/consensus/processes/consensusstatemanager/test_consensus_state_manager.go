@@ -1,9 +1,9 @@
 package consensusstatemanager
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/testapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/testapi"
 )
 
 type testConsensusStateManager struct {
@@ -27,3 +27,4 @@ func (csm *testConsensusStateManager) ResolveBlockStatus(stagingArea *model.Stag
 	status, _, err := csm.resolveBlockStatus(stagingArea, blockHash, useSeparateStagingAreaPerBlock)
 	return status, err
 }
+

@@ -3,10 +3,10 @@ package testapi
 import (
 	"io"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/dagconfig"
-	"github.com/karlsen-network/karlsend/infrastructure/db/database"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/dagconfig"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/db/database"
 )
 
 // MineJSONBlockType indicates which type of blocks MineJSON mines
@@ -93,3 +93,4 @@ type TestConsensus interface {
 	SyncManager() model.SyncManager
 	TransactionValidator() TestTransactionValidator
 }
+

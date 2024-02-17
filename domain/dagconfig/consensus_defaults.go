@@ -3,7 +3,7 @@ package dagconfig
 import (
 	"time"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/constants"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/constants"
 )
 
 // The documentation refers to the following constants which aren't explicated in the code:
@@ -86,3 +86,4 @@ const (
 
 	defaultMergeDepth = 3600
 )
+

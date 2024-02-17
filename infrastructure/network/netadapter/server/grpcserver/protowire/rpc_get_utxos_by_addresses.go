@@ -1,7 +1,7 @@
 package protowire
 
 import (
-	"github.com/karlsen-network/karlsend/app/appmessage"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/appmessage"
 	"github.com/pkg/errors"
 )
 
@@ -80,3 +80,4 @@ func (x *GetUtxosByAddressesResponseMessage) toAppMessage() (appmessage.Message,
 		Error:   rpcErr,
 	}, nil
 }
+

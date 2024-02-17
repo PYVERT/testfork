@@ -1,10 +1,10 @@
 package main
 
 import (
-	"github.com/karlsen-network/karlsend/app/appmessage"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/consensushashing"
-	"github.com/karlsen-network/karlsend/infrastructure/network/netadapter/standalone"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/appmessage"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/consensushashing"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/network/netadapter/standalone"
 	"github.com/pkg/errors"
 )
 
@@ -77,3 +77,4 @@ func waitForRequestAndSend(routes *standalone.Routes, block *externalapi.DomainB
 
 	return routes.OutgoingRoute.Enqueue(appmessage.DomainBlockToMsgBlock(block))
 }
+

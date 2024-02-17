@@ -12,15 +12,15 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 
-	"github.com/karlsen-network/karlsend/app/appmessage"
-	pb2 "github.com/karlsen-network/karlsend/infrastructure/network/dnsseed/pb"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/appmessage"
+	pb2 "github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/network/dnsseed/pb"
 	"google.golang.org/grpc"
 
-	"github.com/karlsen-network/karlsend/util/mstime"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util/mstime"
 
-	"github.com/karlsen-network/karlsend/domain/dagconfig"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/dagconfig"
 )
 
 const (
@@ -168,3 +168,4 @@ func fromProtobufAddresses(proto []*pb2.NetAddress) []net.IP {
 
 	return addresses
 }
+

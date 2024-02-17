@@ -1,9 +1,9 @@
 package headersselectedchainstore
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/database/binaryserialization"
-	"github.com/karlsen-network/karlsend/domain/consensus/model"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/database/binaryserialization"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 )
 
 type headersSelectedChainStagingShard struct {
@@ -85,3 +85,4 @@ func (hscss *headersSelectedChainStagingShard) isStaged() bool {
 		len(hscss.addedByIndex) != 0 ||
 		len(hscss.addedByIndex) != 0
 }
+

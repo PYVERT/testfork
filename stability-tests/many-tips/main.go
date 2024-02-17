@@ -11,15 +11,15 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/karlsen-network/karlsend/app/appmessage"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/mining"
-	"github.com/karlsen-network/karlsend/util"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/appmessage"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/mining"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util"
 	"github.com/kaspanet/go-secp256k1"
 
-	"github.com/karlsen-network/karlsend/stability-tests/common"
-	"github.com/karlsen-network/karlsend/stability-tests/common/rpc"
-	"github.com/karlsen-network/karlsend/util/panics"
-	"github.com/karlsen-network/karlsend/util/profiling"
+	"github.com/karlsend/PYVERT/testfork/karlsend/stability-tests/common"
+	"github.com/karlsend/PYVERT/testfork/karlsend/stability-tests/common/rpc"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util/panics"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util/profiling"
 	"github.com/pkg/errors"
 )
 
@@ -303,3 +303,4 @@ func killWithSigterm(cmd *exec.Cmd, commandName string) {
 		log.Criticalf("Error sending SIGKILL to %s", commandName)
 	}
 }
+

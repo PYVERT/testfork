@@ -10,3 +10,4 @@ if [ $TEST_EXIT_CODE -eq 0 ]; then
 fi
 echo "karlsendsanity test: FAILED"
 exit 1
+

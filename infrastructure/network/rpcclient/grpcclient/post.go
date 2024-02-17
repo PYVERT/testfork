@@ -1,8 +1,8 @@
 package grpcclient
 
 import (
-	"github.com/karlsen-network/karlsend/app/appmessage"
-	"github.com/karlsen-network/karlsend/infrastructure/network/netadapter/server/grpcserver/protowire"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/appmessage"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/network/netadapter/server/grpcserver/protowire"
 	"github.com/pkg/errors"
 	"google.golang.org/protobuf/encoding/protojson"
 )
@@ -62,3 +62,4 @@ func (c *GRPCClient) Post(request *protowire.KarlsendMessage) (*protowire.Karlse
 	}
 	return response, nil
 }
+

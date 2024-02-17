@@ -3,7 +3,7 @@ package appmessage
 import (
 	"testing"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 
 	"github.com/davecgh/go-spew/spew"
 )
@@ -33,3 +33,4 @@ func TestBlockLocator(t *testing.T) {
 			spew.Sprint(locatorHash))
 	}
 }
+

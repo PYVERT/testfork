@@ -10,7 +10,7 @@
 syntax = "proto3";
 package protowire;
 
-option go_package = "github.com/karlsen-network/karlsend/protowire";
+option go_package = "github.com/karlsend/PYVERT/testfork/karlsend/protowire";
 
 // RPCError represents a generic non-internal error.
 //
@@ -721,3 +721,4 @@ message GetCoinSupplyResponseMessage{
 
         RPCError error = 1000;
 }
+

@@ -3,7 +3,7 @@ package appmessage
 import (
 	"math/big"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 )
 
 // MsgBlockWithTrustedData represents a kaspa BlockWithTrustedData message
@@ -53,3 +53,4 @@ type BlockGHOSTDAGDataHashPair struct {
 	Hash         *externalapi.DomainHash
 	GHOSTDAGData *BlockGHOSTDAGData
 }
+

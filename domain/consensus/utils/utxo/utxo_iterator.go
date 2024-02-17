@@ -1,7 +1,7 @@
 package utxo
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 	"github.com/pkg/errors"
 )
 
@@ -77,3 +77,4 @@ func (uci *utxoCollectionIterator) Close() error {
 	uci.pairs = nil
 	return nil
 }
+

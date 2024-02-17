@@ -7,10 +7,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/karlsen-network/karlsend/domain/consensus"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/testutils"
-	"github.com/karlsen-network/karlsend/domain/dagconfig"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/testutils"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/dagconfig"
 )
 
 // TestGenerateFastPruningIBDTest generates the json needed for dag-for-fast-pruning-ibd-test.json.gz
@@ -147,3 +147,4 @@ func TestGenerateFastPruningIBDTest(t *testing.T) {
 		t.Logf("DAG saved at %s", path.Join(os.TempDir(), stat.Name()))
 	})
 }
+

@@ -3,7 +3,7 @@ package integration
 import (
 	"testing"
 
-	"github.com/karlsen-network/karlsend/infrastructure/network/addressmanager"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/network/addressmanager"
 )
 
 func TestAddressExchange(t *testing.T) {
@@ -32,3 +32,4 @@ func TestAddressExchange(t *testing.T) {
 
 	t.Errorf("Didn't find testAddress in list of addresses of appHarness3")
 }
+

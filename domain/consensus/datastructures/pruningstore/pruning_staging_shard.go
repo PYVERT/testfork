@@ -1,8 +1,8 @@
 package pruningstore
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 )
 
 type pruningStagingShard struct {
@@ -79,3 +79,4 @@ func (mss *pruningStagingShard) Commit(dbTx model.DBTransaction) error {
 func (mss *pruningStagingShard) isStaged() bool {
 	return len(mss.pruningPointByIndex) > 0 || mss.newPruningPointCandidate != nil || mss.startUpdatingPruningPointUTXOSet
 }
+

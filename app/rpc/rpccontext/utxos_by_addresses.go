@@ -3,12 +3,12 @@ package rpccontext
 import (
 	"encoding/hex"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/txscript"
-	"github.com/karlsen-network/karlsend/util"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/txscript"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util"
 	"github.com/pkg/errors"
 
-	"github.com/karlsen-network/karlsend/app/appmessage"
-	"github.com/karlsen-network/karlsend/domain/utxoindex"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/appmessage"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/utxoindex"
 )
 
 // ConvertUTXOOutpointEntryPairsToUTXOsByAddressesEntries converts
@@ -56,3 +56,4 @@ func (ctx *Context) ConvertAddressStringsToUTXOsChangedNotificationAddresses(
 	}
 	return addresses, nil
 }
+

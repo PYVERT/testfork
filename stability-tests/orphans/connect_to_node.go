@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/karlsen-network/karlsend/infrastructure/config"
-	"github.com/karlsen-network/karlsend/infrastructure/network/netadapter/standalone"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/config"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/network/netadapter/standalone"
 )
 
 func connectToNode() *standalone.Routes {
@@ -26,3 +26,4 @@ func connectToNode() *standalone.Routes {
 	}
 	return routes
 }
+

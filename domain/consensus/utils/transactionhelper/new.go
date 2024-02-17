@@ -1,8 +1,8 @@
 package transactionhelper
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/subnetworks"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/subnetworks"
 )
 
 // NewSubnetworkTransaction returns a new trsnactions in the specified subnetwork with specified gas and payload
@@ -38,3 +38,4 @@ func NewNativeTransaction(version uint16, inputs []*externalapi.DomainTransactio
 		Mass:         0,
 	}
 }
+

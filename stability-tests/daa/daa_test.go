@@ -7,12 +7,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/karlsen-network/karlsend/app/appmessage"
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/pow"
-	"github.com/karlsen-network/karlsend/domain/dagconfig"
-	"github.com/karlsen-network/karlsend/infrastructure/network/rpcclient"
-	"github.com/karlsen-network/karlsend/stability-tests/common"
+	"github.com/karlsend/PYVERT/testfork/karlsend/app/appmessage"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/pow"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/dagconfig"
+	"github.com/karlsend/PYVERT/testfork/karlsend/infrastructure/network/rpcclient"
+	"github.com/karlsend/PYVERT/testfork/karlsend/stability-tests/common"
 )
 
 const rpcAddress = "localhost:9000"
@@ -318,3 +318,4 @@ func loopForDuration(duration time.Duration, runFunction func(isFinished *bool))
 	time.Sleep(duration)
 	isFinished = true
 }
+

@@ -4,8 +4,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
-	"github.com/karlsen-network/karlsend/domain/consensus/utils/utxo"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/utils/utxo"
 )
 
 // Changed fields of a test struct compared to a base test struct marked as "changed" and
@@ -1105,3 +1105,4 @@ func TestDomainTransactionID_Equal(t *testing.T) {
 		}
 	}
 }
+

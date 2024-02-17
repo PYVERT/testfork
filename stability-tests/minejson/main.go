@@ -1,12 +1,12 @@
 package main
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus"
-	"github.com/karlsen-network/karlsend/stability-tests/common"
-	"github.com/karlsen-network/karlsend/stability-tests/common/mine"
-	"github.com/karlsen-network/karlsend/stability-tests/common/rpc"
-	"github.com/karlsen-network/karlsend/util/panics"
-	"github.com/karlsen-network/karlsend/util/profiling"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus"
+	"github.com/karlsend/PYVERT/testfork/karlsend/stability-tests/common"
+	"github.com/karlsend/PYVERT/testfork/karlsend/stability-tests/common/mine"
+	"github.com/karlsend/PYVERT/testfork/karlsend/stability-tests/common/rpc"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util/panics"
+	"github.com/karlsend/PYVERT/testfork/karlsend/util/profiling"
 	"github.com/pkg/errors"
 )
 
@@ -41,3 +41,4 @@ func main() {
 		panic(errors.Wrap(err, "error in mine.FromFile"))
 	}
 }
+

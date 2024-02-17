@@ -3,7 +3,7 @@ package domain
 import (
 	"math"
 
-	"github.com/karlsen-network/karlsend/domain/consensus/model/externalapi"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/model/externalapi"
 	"github.com/pkg/errors"
 )
 
@@ -239,3 +239,4 @@ func syncConsensuses(syncer, syncee externalapi.Consensus) error {
 
 	return nil
 }
+

@@ -1,7 +1,7 @@
 package protocolerrors
 
 import (
-	"github.com/karlsen-network/karlsend/domain/consensus/ruleerrors"
+	"github.com/karlsend/PYVERT/testfork/karlsend/domain/consensus/ruleerrors"
 	"github.com/pkg/errors"
 )
 
@@ -65,3 +65,4 @@ func ConvertToBanningProtocolErrorIfRuleError(err error, format string, args ...
 
 	return Wrapf(true, err, format, args...)
 }
+
