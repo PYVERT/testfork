@@ -1,4 +1,4 @@
-module github.com/karlsend/PYVERT/testfork/karlsend
+module github.com/PYVERT/testfork/karlsend
 
 go 1.18
 
